@@ -93,12 +93,12 @@ export function KPISection() {
         </h2>
       </div>
       {/* KPI Cards */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {kpiCards.map((card) => (
           <div
             key={card.label}
             className={cn(
-              "relative rounded-2xl p-5 flex flex-col justify-between min-h-32.5",
+              "relative rounded-2xl p-5 flex flex-col justify-between sm:min-h-32.5",
               card.bg,
             )}
           >
