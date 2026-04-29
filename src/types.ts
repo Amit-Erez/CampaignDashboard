@@ -1,12 +1,15 @@
+
+
 export type Campaign = {
   id: string;
   name: string;
-  brand: string;
-  image: string;
-  status: "active" | "paused" | "completed";
+  channel: "Google" | "Meta" | "LinkedIn" | "TikTok";
+  status: "Active" | "Paused" | "Ended";
+  startDate: string;
+  endDate: string | null;
   impressions: number;
   clicks: number;
-  ctr: number;
+  conversions: number;
   spend: number;
-  startDate: string;
+  budget: number;
 };

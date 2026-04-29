@@ -1,38 +1,36 @@
 import { cn } from "../lib/utils";
 
+// const campaigns: Campaign[] = campaignsData
+
 const kpiCards = [
   {
-    label: "Total Impressions",
-    value: "2.1M",
-    subtext: "10% Increase from Last Week",
-    positive: true,
-    bg: "bg-[#fde8d8]",
-    arrowColor: "text-orange-500",
-  },
-  {
-    label: "Total Clicks",
-    value: "843.5k",
-    subtext: "12% Increase from Last Week",
-    positive: true,
-    bg: "bg-[#ddf3e4]",
-    arrowColor: "text-green-500",
+    label: "Total Spend",
+    value: "45.8k",
+    positive: false,
+    bg: "bg-gray-900",
+    arrowColor: "text-gray-400",
+    dark: true,
   },
   {
     label: "Avg. CTR",
-    value: "5.1%",
-    subtext: "3% Decrease from Last Week",
+    value: "42.5%",
     positive: false,
     bg: "bg-[#daeef9]",
     arrowColor: "text-blue-400",
   },
   {
-    label: "Total Spend",
-    value: "$54.2k",
-    subtext: "16% Decrease from Last Week",
-    positive: false,
-    bg: "bg-gray-900",
-    arrowColor: "text-gray-400",
-    dark: true,
+    label: "Total Impressions",
+    value: "6.1M",
+    positive: true,
+    bg: "bg-[#fde8d8]",
+    arrowColor: "text-orange-500",
+  },
+  {
+    label: "Total Conversions",
+    value: "5.7M",
+    positive: true,
+    bg: "bg-[#ddf3e4]",
+    arrowColor: "text-green-500",
   },
 ] as const;
 
@@ -85,22 +83,6 @@ function DollarIcon({ className }: { className?: string }) {
   );
 }
 
-function ChevronDown({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M6 9l6 6 6-6" />
-    </svg>
-  );
-}
-
 export function KPISection() {
   return (
     <div className="w-full">
@@ -109,14 +91,9 @@ export function KPISection() {
         <h2 className="text-xl font-semibold text-gray-900">
           Analytics Overview
         </h2>
-        <button className="flex items-center gap-2 border border-gray-200 rounded-lg px-3 py-1.5 text-sm text-gray-500 bg-white hover:bg-gray-50 transition-colors cursor-pointer">
-          Last 9 Months
-          <ChevronDown className="w-3.5 h-3.5 text-gray-400" />
-        </button>
       </div>
-
       {/* KPI Cards */}
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {kpiCards.map((card) => (
           <div
             key={card.label}
@@ -128,7 +105,7 @@ export function KPISection() {
             {/* Top-right icon */}
             <div className="absolute top-4 right-4">
               {"dark" in card && card.dark ? (
-                <div className="w-7 h-7 rounded-full bg-gray-700 flex items-center justify-center">
+                <div className="w-5 h-5 rounded-full bg-gray-700 flex items-center justify-center">
                   <DollarIcon className="w-3.5 h-3.5 text-gray-300" />
                 </div>
               ) : card.positive ? (
@@ -159,18 +136,6 @@ export function KPISection() {
                 {card.label}
               </p>
             </div>
-
-            {/* Subtext */}
-            <p
-              className={cn(
-                "text-xs mt-3",
-                "dark" in card && card.dark
-                  ? "text-gray-500"
-                  : "text-stone-400",
-              )}
-            >
-              {card.subtext}
-            </p>
           </div>
         ))}
       </div>
