@@ -47,6 +47,14 @@ export type CampaignFilters = {
   search: string;
   channels: CampaignChannel[];
   statuses: CampaignStatus[];
-  startDate: string;
-  endDate: string | null;
+  startDateFrom: string | null;
+  startDateTo: string | null;
+};
+
+export type FilterSlice = CampaignFilters & {
+  updateSearch: (search: string) => void;
+  updateStatuses: (statuses: CampaignStatus[]) => void;
+  updateChannels: (channels: CampaignChannel[]) => void;
+  updateStartDateFrom: (startDateFrom: string | null) => void;
+  updateStartDateTo: (startDateTo: string | null) => void;
 };
