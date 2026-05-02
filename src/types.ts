@@ -1,5 +1,5 @@
 
-// Enums
+// Instead of Enums
 
 export const CampaignStatus = {
   Active: "Active",
@@ -36,13 +36,6 @@ export type Campaign = {
   budget: number;
 };
 
-export type SortDirection = "asc" | "desc";
-
-export type SortConfig<T> = {
-  key: keyof T;
-  direction: SortDirection;
-};
-
 export type CampaignFilters = {
   search: string;
   channels: CampaignChannel[];
@@ -57,4 +50,11 @@ export type FilterSlice = CampaignFilters & {
   updateChannels: (channels: CampaignChannel[]) => void;
   updateStartDateFrom: (startDateFrom: string | null) => void;
   updateStartDateTo: (startDateTo: string | null) => void;
+};
+
+export type SortDirection = "asc" | "desc";
+
+export type SortConfig<T> = {
+  key: keyof T;
+  direction: SortDirection;
 };

@@ -88,7 +88,7 @@ export function KPISection() {
     <div className="w-full">
       {/* Section Header */}
       <div className="flex items-center justify-between mb-5">
-        <h2 className="text-xl font-semibold text-gray-900">
+        <h2 className="text-xxl font-semibold text-gray-900">
           Analytics Overview
         </h2>
       </div>

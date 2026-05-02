@@ -1,3 +1,4 @@
+import { useCampaignStore } from "../store/store";
 import type { Campaign, CampaignChannel, CampaignFilters, CampaignStatus } from "../types";
 
 export function cn(...classes: string[]) {
@@ -59,3 +60,48 @@ result = filterByStatus(result, filters.statuses)
 result = filterByDateRange(result, filters.startDateFrom, filters.startDateTo)
 return result
 }
+
+
+
+// *****************************************************************************************************
+// Filter Strip UI Functions - When user filters, the store states change --> 'filtered' list re-renders
+// *****************************************************************************************************
+
+// Google - Meta - LinkedIn - TikTok
+  export function handleChannelChange(channel: CampaignChannel) {
+  const currentChannels = useCampaignStore.getState().channels;
+  const updateChannels = useCampaignStore.getState().updateChannels;
+
+  const newChannels = currentChannels.includes(channel)
+    ? currentChannels.filter((c) => c !== channel)
+    : [...currentChannels, channel];
+
+  updateChannels(newChannels);
+  }
+
+// Active - Paused - Ended
+  export function handleStatusChange(status: CampaignStatus) {
+    const currentStatuses = useCampaignStore.getState().statuses;
+    const updateStatuses = useCampaignStore.getState().updateStatuses;
+    const newStatuses = currentStatuses.includes(status)
+      ? currentStatuses.filter((s) => s !== status)
+      : [...currentStatuses, status];
+    updateStatuses(newStatuses);
+  }
+
+  // Start Date Range
+  export function handleStartDateFrom(startDateFrom: string | null) {
+    const updateStartDateFrom = useCampaignStore.getState().updateStartDateFrom;
+    updateStartDateFrom(startDateFrom)
+  }
+
+   export function handleStartDateTo(startDateTo: string | null) {
+    const updateStartDateFrom = useCampaignStore.getState().updateStartDateTo;
+    updateStartDateFrom(startDateTo)
+  }
+
+  // Searching by name via input field 
+  export function handleSearch(search: string) {
+    const updateSearch = useCampaignStore.getState().updateSearch;
+    updateSearch(search)
+  }
