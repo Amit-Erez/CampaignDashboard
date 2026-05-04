@@ -9,6 +9,7 @@ import Filters from "./components/Filters";
 
 function App() {
   const [statusDropdownOpen, setStatusDropdownOpen] = useState(false);
+  const [logoScreen, setLogoScreen] = useState(true);
   const search = useCampaignStore((state) => state.search);
   const channels = useCampaignStore((state) => state.channels);
   const statuses = useCampaignStore((state) => state.statuses);
@@ -35,6 +36,12 @@ function App() {
 
   return (
     <div className="h-screen w-screen bg-[#E3FAFF] p-8">
+      {logoScreen && 
+      <div className="absolute flex items-center justify-center h-screen top-0 left-0 w-full bg-gray-50 z-1000">
+        <img src={logo} alt="Logo" className="w-300 inline-block mb-6 animate-pulse cursor-pointer" 
+        onClick={() => setLogoScreen(false)}/>
+      </div>
+      }
       <div
         className={cn(
           "h-full grid grid-cols-[220px_1fr] gap-4 text-2xl max-w-8xl mx-auto rounded-[20px]",
@@ -57,7 +64,7 @@ function App() {
             </div>
           </div>
           <div className="pl-6 pr-6 pt-4 pb-4">
-            <KPISection />
+            <KPISection filtered={filtered}/>
           </div>
           <Filters
             statusDropdownOpen={statusDropdownOpen}

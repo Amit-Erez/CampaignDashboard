@@ -1,38 +1,5 @@
-import { cn } from "../lib/utils";
-
-// const campaigns: Campaign[] = campaignsData
-
-const kpiCards = [
-  {
-    label: "Total Spend",
-    value: "45.8k",
-    positive: false,
-    bg: "bg-gray-900",
-    arrowColor: "text-gray-400",
-    dark: true,
-  },
-  {
-    label: "Avg. CTR",
-    value: "42.5%",
-    positive: false,
-    bg: "bg-[#daeef9]",
-    arrowColor: "text-blue-400",
-  },
-  {
-    label: "Total Impressions",
-    value: "6.1M",
-    positive: true,
-    bg: "bg-[#fde8d8]",
-    arrowColor: "text-orange-500",
-  },
-  {
-    label: "Total Conversions",
-    value: "5.7M",
-    positive: true,
-    bg: "bg-[#ddf3e4]",
-    arrowColor: "text-green-500",
-  },
-] as const;
+import { avgCtr, cn, totals } from "../lib/utils";
+import type { Campaign } from "../types";
 
 function ArrowUpRight({ className }: { className?: string }) {
   return (
@@ -83,7 +50,40 @@ function DollarIcon({ className }: { className?: string }) {
   );
 }
 
-export function KPISection() {
+export function KPISection({filtered}: {filtered: Campaign[]}) {
+
+  const kpiCards = [
+  {
+    label: "Total Spend",
+    value: totals(filtered, "spend"),
+    positive: false,
+    bg: "bg-gray-900",
+    arrowColor: "text-gray-400",
+    dark: true,
+  },
+  {
+    label: "Avg. CTR",
+    value: avgCtr(filtered),
+    positive: false,
+    bg: "bg-[#daeef9]",
+    arrowColor: "text-blue-400",
+  },
+  {
+    label: "Total Impressions",
+    value: totals(filtered, "impressions"),
+    positive: true,
+    bg: "bg-[#fde8d8]",
+    arrowColor: "text-orange-500",
+  },
+  {
+    label: "Total Conversions",
+    value: totals(filtered, "conversions"),
+    positive: true,
+    bg: "bg-[#ddf3e4]",
+    arrowColor: "text-green-500",
+  },
+] as const;
+
   return (
     <div className="w-full">
       {/* Section Header */}

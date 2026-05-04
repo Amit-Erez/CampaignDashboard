@@ -22,6 +22,8 @@ export type CampaignChannel =
 
 // Types
 
+export type key = "spend" | "impressions" | "clicks" | "conversions"
+
 export type Campaign = {
   id: string;
   name: string;
