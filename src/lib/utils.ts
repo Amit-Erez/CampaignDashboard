@@ -5,6 +5,7 @@ import type {
   CampaignFilters,
   CampaignStatus,
   key,
+  SortConfig,
 } from "../types";
 
 // *******************
@@ -26,7 +27,6 @@ export function formatNumber(num: number) {
 
   return (num / 1_000_000).toFixed(1) + "M";
 }
-
 
 // ********************
 // FILTER LOGIC
@@ -133,6 +133,30 @@ export function handleSearch(search: string) {
   updateSearch(search);
 }
 
+// ********************
+// SORT LOGIC
+// ********************
+
+export function sortCampaigns(
+  campaigns: Campaign[],
+  sortConfig: SortConfig<Campaign>[],
+): Campaign[] {
+  if (sortConfig.length === 0) return [...campaigns];
+
+  return [...campaigns].sort((a, b) => {
+    for (const sort of sortConfig) {
+      const valueA = a[sort.key];
+      const valueB = b[sort.key];
+      if(valueA === null && valueB === null) continue
+      if (valueA === null) return 1;
+      if (valueB === null) return -1;
+      if (valueA < valueB) return sort.direction === "asc" ? -1 : 1;
+      if (valueA > valueB) return sort.direction === "asc" ? 1 : -1;
+    }
+    return 0;
+  });
+}
+
 // KPI Cards Functions
 
 export function totals(campaigns: Campaign[], key: key): string | undefined {
@@ -150,7 +174,5 @@ export function avgCtr(campaigns: Campaign[]): string {
     0,
   );
   const avgCtr = (totalClicks / totalImpressions) * 100;
-  return avgCtr ? avgCtr.toFixed(1) + "%" : "0%"
+  return avgCtr ? avgCtr.toFixed(1) + "%" : "0%";
 }
-
-

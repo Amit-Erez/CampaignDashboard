@@ -60,3 +60,9 @@ export type SortConfig<T> = {
   key: keyof T;
   direction: SortDirection;
 };
+
+export type SortSlice = {
+  sortConfig: SortConfig<Campaign>[];
+  updateSortConfig: (sortConfig: SortConfig<Campaign>[]) => void
+  clearSortConfig: () => void
+}
