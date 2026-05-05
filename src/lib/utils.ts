@@ -150,7 +150,7 @@ export function avgCtr(campaigns: Campaign[]): string {
     0,
   );
   const avgCtr = (totalClicks / totalImpressions) * 100;
-  return avgCtr.toFixed(1) + "%";
+  return avgCtr ? avgCtr.toFixed(1) + "%" : "0%"
 }
 
 

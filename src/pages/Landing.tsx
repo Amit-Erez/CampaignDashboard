@@ -1,0 +1,28 @@
+import logo from "../assets/logo2.png";
+import mylogo from "../assets/AE-LOGO.svg";
+import { useNavigate } from "react-router-dom"
+
+
+const Landing = () => {
+    const navigate = useNavigate()
+
+  return (
+    <div className="h-screen w-screen bg-[#E3FAFF] p-8">
+      <div className="absolute flex flex-col items-center justify-center h-screen top-0 left-0 w-full bg-gray-50 z-1000">
+        <img
+          src={logo}
+          alt="Logo"
+          className="w-300 inline-block mb-6 animate-pulse cursor-pointer"
+          onClick={() => navigate("/home")}
+        />
+        <br/> 
+        <div className="flex items-center animate-pulse">
+        <img src={mylogo} alt="AmitLogo" className="w-6" />
+        <p className="pl-2 text-[16px] text-[#02252b] font-semibold">© Amit Erez 2026</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Landing;
