@@ -11,7 +11,7 @@ const StatusSelector = ({
   filters: CampaignFilters;
 }) => {
   return (
-    <div className="relative group">
+    <div className="relative group z-1000">
       <button
         className="cursor-pointer px-4 py-2 border border-gray-300 rounded-lg text-lg bg-white hover:bg-gray-50 flex items-center gap-2"
         onClick={() => setStatusDropdownOpen((prev) => !prev)}

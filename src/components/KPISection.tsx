@@ -57,7 +57,7 @@ export function KPISection({filtered}: {filtered: Campaign[]}) {
     label: "Total Spend",
     value: totals(filtered, "spend"),
     positive: false,
-    bg: "bg-gray-900",
+    bg: "bg-gray-700",
     arrowColor: "text-gray-400",
     dark: true,
   },
@@ -65,21 +65,21 @@ export function KPISection({filtered}: {filtered: Campaign[]}) {
     label: "Avg. CTR",
     value: avgCtr(filtered),
     positive: false,
-    bg: "bg-[#daeef9]",
-    arrowColor: "text-blue-400",
+    bg: "ctr-blue",
+    arrowColor: "text-blue-800",
   },
   {
     label: "Total Impressions",
     value: totals(filtered, "impressions"),
     positive: true,
-    bg: "bg-[#fde8d8]",
-    arrowColor: "text-orange-500",
+    bg: "imp-violet",
+    arrowColor: "text-black-500",
   },
   {
     label: "Total Conversions",
     value: totals(filtered, "conversions"),
     positive: true,
-    bg: "bg-[#ddf3e4]",
+    bg: "conv-mint",
     arrowColor: "text-green-500",
   },
 ] as const;
@@ -98,15 +98,15 @@ export function KPISection({filtered}: {filtered: Campaign[]}) {
           <div
             key={card.label}
             className={cn(
-              "relative rounded-2xl p-5 flex flex-col justify-between sm:min-h-32.5",
+              "relative rounded-2xl p-5 flex flex-col justify-between sm:min-h-32.5 shadow-md",
               card.bg,
             )}
           >
             {/* Top-right icon */}
             <div className="absolute top-4 right-4">
               {"dark" in card && card.dark ? (
-                <div className="w-5 h-5 rounded-full bg-gray-700 flex items-center justify-center">
-                  <DollarIcon className="w-3.5 h-3.5 text-gray-300" />
+                <div className="w-5 h-5 rounded-full bg-gray-500 flex items-center justify-center">
+                  <DollarIcon className="w-3.5 h-3.5 text-gray-00" />
                 </div>
               ) : card.positive ? (
                 <ArrowUpRight className={cn("w-4 h-4", card.arrowColor)} />
@@ -129,8 +129,8 @@ export function KPISection({filtered}: {filtered: Campaign[]}) {
                 className={cn(
                   "text-sm font-medium mt-1",
                   "dark" in card && card.dark
-                    ? "text-gray-400"
-                    : "text-stone-500",
+                    ? "text-gray-300"
+                    : "text-stone-800",
                 )}
               >
                 {card.label}

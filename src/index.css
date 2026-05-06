@@ -4,3 +4,39 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+
+/* hide scrollbar but keep scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.bg-blue {
+background: #3a7bd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.ctr-blue {
+background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #b0d7e5, #6DD5FA, #297fb9d0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #b0d7e5, #6DD5FA, #297fb9d0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.conv-mint {
+background: #A1FFCE;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #ebffd1, #b3ebce);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #ebffd1, #b3ebce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.imp-violet {
+  background: #654ea3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #eaafc8, #654ea3b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}

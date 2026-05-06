@@ -157,7 +157,10 @@ export function sortCampaigns(
   });
 }
 
+
+// ***********************
 // KPI Cards Functions
+// ***********************
 
 export function totals(campaigns: Campaign[], key: key): string | undefined {
   const total = campaigns.reduce((total, campaign) => total + campaign[key], 0);

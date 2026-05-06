@@ -13,6 +13,8 @@ const Filters = ({
   setStatusDropdownOpen: React.Dispatch<React.SetStateAction<boolean>>;
   filters: CampaignFilters;
 }) => {
+
+
   return (
     <div className="px-6 py-4 border-b border-gray-200">
       <div className="flex flex-wrap items-center justify-end gap-6">
