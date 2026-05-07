@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import type { StateCreator } from "zustand";
-import type { Campaign, CampaignChannel, CampaignStatus, FilterSlice, SortConfig, SortSlice } from "../types";
+import type { CampaignChannel, CampaignStatus, FilterSlice, SortConfig, SortSlice } from "../types";
 
 // SETTING SLICES
 
@@ -21,7 +21,7 @@ export const filterSlice: StateCreator<FilterSlice> = (set) => ({
 
 export const sortSlice: StateCreator<SortSlice> = (set) => ({
   sortConfig: [],
-  updateSortConfig: (sortConfig: SortConfig<Campaign>[]) => set({ sortConfig }),
+  updateSortConfig: (sortConfig: SortConfig[]) => set({ sortConfig }),
   clearSortConfig: () => set({ sortConfig: [] })
 })
 

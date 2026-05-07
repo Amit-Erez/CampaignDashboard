@@ -7,7 +7,6 @@ const Landing = () => {
     const navigate = useNavigate()
 
   return (
-    // <div className="h-screen w-screen bg-[#E3FAFF] p-8">
     <div className="h-screen w-screen bg-[#E3FAFF] p-8">
       <div className="absolute flex flex-col items-center justify-center h-screen top-0 left-0 w-full bg-blue z-1000">
         <img

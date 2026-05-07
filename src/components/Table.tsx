@@ -1,13 +1,22 @@
-import { formatNumber, sortCampaigns, sortClick } from "../lib/utils";
+import { useEffect, useState } from "react";
+import { decodeSortConfig, encodeSortConfig, formatNumber, sortCampaigns, sortClick } from "../lib/utils";
 import { useCampaignStore } from "../store/store";
 import type { Campaign } from "../types";
 
-const Table = ({ filtered }: { filtered: Campaign[] }) => {
+const Table = ({
+  filtered,
+  setModalOpen,
+}: {
+  filtered: Campaign[];
+  setModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
+  const [hasLoadedUrl, setHasLoadedUrl] = useState(false);
   const sortConfig = useCampaignStore((state) => state.sortConfig);
+  const updateSortConfig = useCampaignStore((state) => state.updateSortConfig);
   const sorted = sortCampaigns(filtered, sortConfig);
 
   const tableHeaders = [
-    { name: "Select", sortName: "Select" },
+    { name: "Select" },
     { name: "Campaign Name", sortName: "name" },
     { name: "Channel", sortName: "channel" },
     { name: "Status", sortName: "status" },
@@ -17,9 +26,9 @@ const Table = ({ filtered }: { filtered: Campaign[] }) => {
     { name: "Spend", sortName: "spend" },
     { name: "Impressions", sortName: "impressions" },
     { name: "Clicks", sortName: "clicks" },
-    { name: "CTR" },
+    { name: "CTR", sortName: "ctr" },
     { name: "Conversions", sortName: "conversions" },
-    { name: "CPA" },
+    { name: "CPA", sortName: "cpa" },
   ];
 
   function formatDate(dateString: string | null) {
@@ -35,33 +44,82 @@ const Table = ({ filtered }: { filtered: Campaign[] }) => {
     sortClick(key);
   }
 
+  useEffect(() => {
+  const params = new URLSearchParams(window.location.search);
+  const sortFromUrl = decodeSortConfig(params.get("sort"));
+
+  updateSortConfig(sortFromUrl);
+  setHasLoadedUrl(true);
+}, [updateSortConfig]);
+
+useEffect(() => {
+  if (!hasLoadedUrl) return;
+
+  const params = new URLSearchParams(window.location.search);
+
+  if (sortConfig.length > 0) {
+    params.set("sort", encodeSortConfig(sortConfig));
+  } else {
+    params.delete("sort");
+  }
+
+  const newUrl = params.toString()
+    ? `?${params.toString()}`
+    : window.location.pathname;
+
+  window.history.replaceState(null, "", newUrl);
+}, [sortConfig, hasLoadedUrl]);
+
+
   return (
     <div className="h-full min-h-0 overflow-y-auto no-scrollbar border-gray-400 rounded-b-[20px] border">
       <table className="min-w-full">
         <thead className="sticky top-0 z-10 bg-gray-100 text-sm font-medium h-10 text-gray-700">
           <tr>
-            {tableHeaders.map((header, index) => (
-              <th
-                key={index}
-                className="text-center"
-                onClick={
-                  header.sortName
-                    ? () => handleSort(header.sortName as keyof Campaign)
-                    : undefined
-                }
-              >
-                {header.name}
-                {sortConfig[0]?.key === header.sortName && (
-                  <span>{sortConfig[0]?.direction === "asc" ? " ↑" : " ↓"}</span>
-                )}
-              </th>
-            ))}
+            {tableHeaders.map((header, index) => {
+              const activeSort = sortConfig.find(
+                (sort) => sort.key === header.sortName,
+              );
+
+              const sortIndex = sortConfig.findIndex(
+                (sort) => sort.key === header.sortName,
+              );
+              return (
+                <th
+                  key={index}
+                  className="text-center"
+                  onClick={
+                    header.sortName
+                      ? () => handleSort(header.sortName as keyof Campaign)
+                      : undefined
+                  }
+                >
+                  {activeSort ? (
+                    <span className="flex items-center justify-center">
+                      <span className="mr-1 text-xs text-gray-800 border rounded-full px-1 bg-[#b3ebce]">
+                        {sortIndex + 1}
+                      </span>
+                      {header.name}
+                      <span className="ml-1 text-lg font-bold text-gray-800">
+                        {activeSort.direction === "asc" ? " ↑" : " ↓"}
+                      </span>
+                    </span>
+                  ) : (
+                    header.name
+                  )}
+                </th>
+              );
+            })}
           </tr>
         </thead>
 
         <tbody>
           {sorted.map((campaign) => (
-            <tr className="h-20 border-t" key={campaign.id}>
+            <tr
+              className="h-20 border-t hover:bg-[#b0d7e5] transition-colors cursor-pointer"
+              key={campaign.id}
+              onClick={() => setModalOpen(true)}
+            >
               <td className="p-2 text-center">
                 <input type="checkbox" className="w-4 h-4" />
               </td>

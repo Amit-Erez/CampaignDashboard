@@ -56,13 +56,15 @@ export type FilterSlice = CampaignFilters & {
 
 export type SortDirection = "asc" | "desc";
 
-export type SortConfig<T> = {
-  key: keyof T;
+export type CampaignSortKey = keyof Campaign | "ctr" | "cpa";
+
+export type SortConfig = {
+  key: CampaignSortKey;
   direction: SortDirection;
 };
 
 export type SortSlice = {
-  sortConfig: SortConfig<Campaign>[];
-  updateSortConfig: (sortConfig: SortConfig<Campaign>[]) => void
+  sortConfig: SortConfig[];
+  updateSortConfig: (sortConfig: SortConfig[]) => void
   clearSortConfig: () => void
 }

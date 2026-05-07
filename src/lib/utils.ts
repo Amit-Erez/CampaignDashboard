@@ -3,6 +3,7 @@ import type {
   Campaign,
   CampaignChannel,
   CampaignFilters,
+  CampaignSortKey,
   CampaignStatus,
   key,
   SortConfig,
@@ -137,17 +138,29 @@ export function handleSearch(search: string) {
 // SORT LOGIC
 // ********************
 
+export function getSortValue(campaign: Campaign, key: CampaignSortKey) {
+  if (key === "ctr") {
+    return campaign.impressions === 0 ? null : campaign.clicks / campaign.impressions;
+  }
+
+  if (key === "cpa") {
+    return campaign.conversions === 0 ? null : campaign.spend / campaign.conversions;
+  }
+
+  return campaign[key];
+}
+
 export function sortCampaigns(
   campaigns: Campaign[],
-  sortConfig: SortConfig<Campaign>[],
+  sortConfig: SortConfig[],
 ): Campaign[] {
   if (sortConfig.length === 0) return [...campaigns];
 
   return [...campaigns].sort((a, b) => {
     for (const sort of sortConfig) {
-      const valueA = a[sort.key];
-      const valueB = b[sort.key];
-      if(valueA === null && valueB === null) continue
+      const valueA = getSortValue(a, sort.key);
+      const valueB = getSortValue(b, sort.key);
+      if (valueA === null && valueB === null) continue;
       if (valueA === null) return 1;
       if (valueB === null) return -1;
       if (valueA < valueB) return sort.direction === "asc" ? -1 : 1;
@@ -160,16 +173,52 @@ export function sortCampaigns(
 export function sortClick(column: keyof Campaign) {
   const { sortConfig, updateSortConfig } = useCampaignStore.getState();
 
-  const currentSort = sortConfig[0];
+  const existingSort = sortConfig.find((sort) => sort.key === column);
 
-  const nextDirection =
-    currentSort?.key === column && currentSort.direction === "asc"
-      ? "desc"
-      : "asc";
+  // FIRST CLICK: add this column as a new sort layer
+  if (!existingSort) {
+    updateSortConfig([...sortConfig, { key: column, direction: "asc" }]);
+    return;
+  }
 
-  updateSortConfig([{ key: column, direction: nextDirection }]);
+  // SECOND CLICK: change asc to desc
+  if (existingSort.direction === "asc") {
+    updateSortConfig(
+      sortConfig.map((sort) =>
+        sort.key === column ? { ...sort, direction: "desc" } : sort,
+      ),
+    );
+    return;
+  }
+
+  // THIRD CLICK: remove this column from sorting
+  updateSortConfig(sortConfig.filter((sort) => sort.key !== column));
 }
 
+// ****************
+// Sorts in URL
+// ***************
+
+//sortConfig --> string value
+export function encodeSortConfig(sortConfig: SortConfig[]) {
+  return sortConfig
+    .map((sort) => `${sort.key}:${sort.direction}`)
+    .join(",");
+}
+
+// String value --> sortConfig
+export function decodeSortConfig(value: string | null): SortConfig[] {
+  if (!value) return [];
+
+  return value.split(",").map((item) => {
+    const [key, direction] = item.split(":");
+
+    return {
+      key: key as CampaignSortKey,
+      direction: direction as "asc" | "desc",
+    };
+  });
+}
 
 // ***********************
 // KPI Cards Functions
