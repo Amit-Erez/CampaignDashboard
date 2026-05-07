@@ -16,7 +16,7 @@ export function cn(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export function formatNumber(num: number) {
+export function formatNumber(num: number): string {
   if (num < 1_000) {
     return num.toString();
   }
@@ -155,6 +155,19 @@ export function sortCampaigns(
     }
     return 0;
   });
+}
+
+export function sortClick(column: keyof Campaign) {
+  const { sortConfig, updateSortConfig } = useCampaignStore.getState();
+
+  const currentSort = sortConfig[0];
+
+  const nextDirection =
+    currentSort?.key === column && currentSort.direction === "asc"
+      ? "desc"
+      : "asc";
+
+  updateSortConfig([{ key: column, direction: nextDirection }]);
 }
 
 

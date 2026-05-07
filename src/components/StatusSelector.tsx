@@ -10,6 +10,9 @@ const StatusSelector = ({
   setStatusDropdownOpen: React.Dispatch<React.SetStateAction<boolean>>;
   filters: CampaignFilters;
 }) => {
+
+// to do - add 'click outside to close dropdown'
+
   return (
     <div className="relative group z-1000">
       <button

@@ -33,10 +33,10 @@ function Dashboard() {
           "h-full grid grid-cols-[220px_1fr] gap-4 text-2xl max-w-8xl mx-auto rounded-[20px]",
         )}
       >
-        <div className="rounded-[20px] p-4 mr-1 bg-[#F2F2F2] hidden md:flex md:flex-col items-center">
+        <div className="rounded-[20px] p-4 mr-1 bg-[#F2F2F2] hidden md:flex md:flex-col items-center shadow-2xl">
           <img src={logo} alt="Logo" className="w-34 inline-block mb-6" />
         </div>
-        <div className="rounded-[20px] bg-[#F2F2F2] flex flex-col col-span-2 md:col-2 overflow-hidden min-h-0">
+        <div className="rounded-[20px] bg-[#F2F2F2] flex flex-col col-span-2 md:col-2 overflow-hidden min-h-0 shadow-2xl">
           <div className="flex items-end pt-4 pb-4 pl-6 text-4xl font-bold text-[#0E5585]">
             {/* <img
               src={logo}

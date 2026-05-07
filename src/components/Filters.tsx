@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import type { CampaignFilters } from "../types";
 import ChannelBoxes from "./ChannelBoxes";
 import DateSelector from "./DateSelector";
@@ -13,7 +14,21 @@ const Filters = ({
   setStatusDropdownOpen: React.Dispatch<React.SetStateAction<boolean>>;
   filters: CampaignFilters;
 }) => {
+  const selectorRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    function handleOutsideClick(e: MouseEvent): void {
+      if (
+        selectorRef.current &&
+        !selectorRef.current?.contains(e.target as Node)
+      ) {
+        setStatusDropdownOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => document.removeEventListener("mousedown", handleOutsideClick);
+  }, [statusDropdownOpen, setStatusDropdownOpen]);
 
   return (
     <div className="px-6 py-4 border-b border-gray-200">
@@ -28,7 +43,13 @@ const Filters = ({
         <DateSelector />
 
         {/* Status Dropdown */}
-        <StatusSelector filters={filters} statusDropdownOpen={statusDropdownOpen} setStatusDropdownOpen={setStatusDropdownOpen} />
+        <div ref={selectorRef}>
+          <StatusSelector
+            filters={filters}
+            statusDropdownOpen={statusDropdownOpen}
+            setStatusDropdownOpen={setStatusDropdownOpen}
+          />
+        </div>
       </div>
     </div>
   );

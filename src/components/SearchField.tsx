@@ -3,6 +3,8 @@ import type { CampaignFilters } from "../types";
 
 const SearchField = ({ filters }: { filters: CampaignFilters }) => {
 
+  // to do - add debounce
+
 
   return (
     <input
