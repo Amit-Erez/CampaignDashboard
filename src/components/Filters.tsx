@@ -1,9 +1,15 @@
 import { useEffect, useRef } from "react";
-import type { CampaignFilters } from "../types";
+import type {
+  CampaignChannel,
+  CampaignFilters,
+  CampaignStatus,
+} from "../types";
 import ChannelBoxes from "./ChannelBoxes";
 import DateSelector from "./DateSelector";
 import SearchField from "./SearchField";
 import StatusSelector from "./StatusSelector";
+import { useCampaignStore } from "../store/store";
+import { noSortsOrFilters } from "../lib/utils";
 
 const Filters = ({
   statusDropdownOpen,
@@ -14,6 +20,9 @@ const Filters = ({
   setStatusDropdownOpen: React.Dispatch<React.SetStateAction<boolean>>;
   filters: CampaignFilters;
 }) => {
+  const updateSortConfig = useCampaignStore((state) => state.updateSortConfig);
+  const sortConfig = useCampaignStore((state) => state.sortConfig);
+  const setFilters = useCampaignStore((state) => state.setFilters);
   const selectorRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -30,9 +39,28 @@ const Filters = ({
     return () => document.removeEventListener("mousedown", handleOutsideClick);
   }, [statusDropdownOpen, setStatusDropdownOpen]);
 
+  function resetFilters() {
+    updateSortConfig([]);
+    setFilters({
+      search: "",
+      statuses: [] as CampaignStatus[],
+      channels: [] as CampaignChannel[],
+      startDateFrom: null,
+      startDateTo: null,
+    });
+  }
+
   return (
     <div className="px-6 py-4 border-b border-gray-200">
       <div className="flex flex-wrap items-center justify-end gap-6">
+        {!noSortsOrFilters(filters, sortConfig) && 
+        <button
+        className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 transition-colors cursor-pointer"
+        onClick={resetFilters}
+        >
+          Reset
+        </button>
+        }
         {/* Search Input */}
         <SearchField />
 

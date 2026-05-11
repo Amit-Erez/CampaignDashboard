@@ -29,6 +29,17 @@ export function formatNumber(num: number): string {
   return (num / 1_000_000).toFixed(1) + "M";
 }
 
+export function noSortsOrFilters(filters: CampaignFilters, sortConfig: SortConfig[]) {
+  const noFilters =
+    !filters.search &&
+    filters.channels.length === 0 &&
+    filters.statuses.length === 0 &&
+    !filters.startDateFrom &&
+    !filters.startDateTo;
+  const noSorts = sortConfig.length === 0;
+  return noFilters && noSorts
+}
+
 // ********************
 // FILTER LOGIC
 // ********************

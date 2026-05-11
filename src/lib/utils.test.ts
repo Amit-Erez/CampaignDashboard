@@ -18,7 +18,6 @@ import {
   CampaignStatus,
   type Campaign,
   type CampaignFilters,
-  type CampaignSortKey,
   type SortConfig,
 } from "../types";
 
