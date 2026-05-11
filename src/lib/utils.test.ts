@@ -1,13 +1,26 @@
+// @vitest-environment jsdom
 import { expect, test, describe } from "vitest";
 import {
   applyFilters,
+  decodeFiltersFromUrl,
+  decodeSortConfig,
+  encodeSortConfig,
   filterByChannel,
   filterByDateRange,
   filterBySearch,
   filterByStatus,
   sortCampaigns,
+  updateFiltersInUrl,
+  updateSortsInUrl,
 } from "./utils";
-import { CampaignChannel, CampaignStatus, type Campaign } from "../types";
+import {
+  CampaignChannel,
+  CampaignStatus,
+  type Campaign,
+  type CampaignFilters,
+  type CampaignSortKey,
+  type SortConfig,
+} from "../types";
 
 const testsArray: Campaign[] = [
   {
@@ -247,7 +260,7 @@ describe("sortCampaigns", () => {
     expect(result.map((c) => c.id)).toEqual(["4", "1", "2", "3"]);
   });
 
-    test("sort by one numeric field descending", () => {
+  test("sort by one numeric field descending", () => {
     const result = sortCampaigns(testsArray, [
       { key: "budget", direction: "desc" },
     ]);
@@ -263,23 +276,150 @@ describe("sortCampaigns", () => {
   });
 
   test("sort by string field descending", () => {
-   const result = sortCampaigns(testsArray, [
+    const result = sortCampaigns(testsArray, [
       { key: "channel", direction: "desc" },
-    ]); 
+    ]);
     expect(result.map((c) => c.id)).toEqual(["4", "1", "3", "2"]);
-  })
+  });
 
-    test("sort by string field ascending", () => {
-   const result = sortCampaigns(testsArray, [
+  test("sort by string field ascending", () => {
+    const result = sortCampaigns(testsArray, [
       { key: "channel", direction: "asc" },
-    ]); 
+    ]);
     expect(result.map((c) => c.id)).toEqual(["2", "3", "1", "4"]);
-  })
+  });
 
-    test("should place null values last when sorting by endDate", () => {
-   const result = sortCampaigns(testsArray, [
+  test("should place null values last when sorting by endDate", () => {
+    const result = sortCampaigns(testsArray, [
       { key: "endDate", direction: "asc" },
-    ]); 
+    ]);
     expect(result.map((c) => c.id)).toEqual(["3", "2", "1", "4"]);
-  })
+  });
+});
+
+//*************************************
+// TESTING URL<-->sortConfig ENCODE/DECODE FUNCTIONS
+//**************************************
+
+// String value from URL --> turned into a sortConfig object
+describe("decodeSortConfig", () => {
+  test("should return a sortConfig object when given a 'sort' string value", () => {
+    const value: string = "channel:asc,spend:desc";
+    const result: SortConfig[] = decodeSortConfig(value);
+    expect(result).toEqual([
+      { key: "channel", direction: "asc" },
+      { key: "spend", direction: "desc" },
+    ]);
+  });
+
+  test("should return empty array when value is null", () => {
+    const result = decodeSortConfig(null);
+    expect(result).toEqual([]);
+  });
+
+  test("should return empty array when value is an empty string", () => {
+    const result = decodeSortConfig("");
+    expect(result).toEqual([]);
+  });
+});
+
+// sortConfig object --> turned into a string value for URL
+describe("encodeSortConfig", () => {
+  test("should return a sort params string when given a sortConfig array - 1 sort", () => {
+    const value: SortConfig[] = [{ key: "channel", direction: "asc" }];
+    const result: string = encodeSortConfig(value);
+    expect(result).toEqual("channel:asc");
+  });
+
+  test("should return a sort params string when given a sortConfig array - 2 sort rules", () => {
+    const value: SortConfig[] = [
+      { key: "channel", direction: "asc" },
+      { key: "spend", direction: "desc" },
+    ];
+    const result: string = encodeSortConfig(value);
+    expect(result).toEqual("channel:asc,spend:desc");
+  });
+
+  test("should return an empty string when receiving an empty array", () => {
+    const result: string = encodeSortConfig([]);
+    expect(result).toEqual("");
+  });
+});
+
+// URL params turned into 'filters' object
+describe("decodeFiltersFromUrl", () => {
+  test("should return a 'filters' object when given string value of URL params", () => {
+    const value = "?channels=Google&statuses=Paused&search=tr";
+    const result: CampaignFilters = decodeFiltersFromUrl(value);
+    expect(result).toEqual({
+      search: "tr",
+      statuses: ["Paused"] as CampaignStatus[],
+      channels: ["Google"] as CampaignChannel[],
+      startDateFrom: null,
+      startDateTo: null,
+    });
+  });
+});
+
+// when 'filters' object is updated - URL params should update accordingly
+describe("updateFiltersInUrl", () => {
+  test("should update URL with search filter", () => {
+    window.history.pushState(null, "", "/");
+    updateFiltersInUrl({
+      search: "test",
+      statuses: [],
+      channels: [],
+      startDateFrom: null,
+      startDateTo: null,
+    });
+    expect(window.location.search).toBe("?search=test");
+  });
+
+  test("should remove filter from URL when filter value is reset to empty", () => {
+    window.history.pushState(null, "", "/?search=test");
+    updateFiltersInUrl({
+      search: "",
+      statuses: [],
+      channels: [],
+      startDateFrom: null,
+      startDateTo: null,
+    });
+    expect(window.location.search).toBe("");
+  });
+
+  test("should update URL correctly with an arrayed filter", () => {
+    window.history.pushState(null, "", "/");
+    updateFiltersInUrl({
+      search: "",
+      statuses: [],
+      channels: [CampaignChannel.Google, CampaignChannel.Meta],
+      startDateFrom: null,
+      startDateTo: null,
+    });
+    expect(window.location.search).toContain("channels=Google%2CMeta");
+  });
+});
+
+// when sortConfig is updated - URL params should update accordingly
+describe("updateSortsInUrl", () => {
+  test("should update URL with sortConfig", () => { 
+    window.history.pushState(null, "", "/");
+    updateSortsInUrl([
+      { key: "channel", direction: "asc" },
+      { key: "spend", direction: "desc" },
+    ]);
+    expect(window.location.search).toBe("?sort=channel%3Aasc%2Cspend%3Adesc");
+  });
+
+  test("should remove 'sort' from URL when sortConfig is empty", () => {
+    window.history.pushState(null, "", "/?sort=channel%3Aasc%2Cspend%3Adesc");
+    updateSortsInUrl([]);
+    expect(window.location.search).toBe("");
+    });
+
+    test("should update only 'sort' param in URL when other params exist", () => {
+      window.history.pushState(null, "", "/?search=test");
+      updateSortsInUrl([{ key: "channel", direction: "asc" }]);
+      expect(window.location.search).toBe("?search=test&sort=channel%3Aasc"); 
+  });
 });

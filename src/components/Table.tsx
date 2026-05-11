@@ -60,6 +60,7 @@ const Table = ({
     const params = new URLSearchParams(window.location.search);
     const sortFromUrl = decodeSortConfig(params.get("sort"));
     const filtersFromUrl = decodeFiltersFromUrl(window.location.search)
+    console.log(window.location.search)
 
     updateSortConfig(sortFromUrl);
     setFilters(filtersFromUrl)

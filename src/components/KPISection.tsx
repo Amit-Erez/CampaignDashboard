@@ -1,37 +1,42 @@
 import { avgCtr, cn, totals } from "../lib/utils";
 import type { Campaign } from "../types";
 
-function ArrowUpRight({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M7 17L17 7M17 7H7M17 7v10" />
-    </svg>
-  );
-}
+// function ArrowUpRight({ className }: { className?: string }) {
+//   return (
+//     <svg
+//       className={className}
+//       viewBox="0 0 24 24"
+//       fill="none"
+//       stroke="currentColor"
+//       strokeWidth={2}
+//       strokeLinecap="round"
+//       strokeLinejoin="round"
+//     >
+//       <path d="M7 17L17 7M17 7H7M17 7v10" />
+//     </svg>
+//   );
+// }
 
-function ArrowDownRight({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M7 7l10 10M17 17H7M17 17V7" />
-    </svg>
-  );
-}
+// function ArrowDownRight({ className }: { className?: string }) {
+//   return (
+//     <svg
+//       className={className}
+//       viewBox="0 0 24 24"
+//       fill="none"
+//       stroke="currentColor"
+//       strokeWidth={2}
+//       strokeLinecap="round"
+//       strokeLinejoin="round"
+//     >
+//       <path d="M7 7l10 10M17 17H7M17 17V7" />
+//     </svg>
+//   );
+// }
+
+              // ) : card.positive ? (
+              //   <ArrowUpRight className={cn("w-4 h-4", card.arrowColor)} />
+              // ) : (
+              //   <ArrowDownRight className={cn("w-4 h-4", card.arrowColor)} />
 
 function DollarIcon({ className }: { className?: string }) {
   return (
@@ -67,6 +72,7 @@ export function KPISection({filtered}: {filtered: Campaign[]}) {
     positive: false,
     bg: "ctr-blue",
     arrowColor: "text-blue-800",
+    dark: false,
   },
   {
     label: "Total Impressions",
@@ -74,6 +80,7 @@ export function KPISection({filtered}: {filtered: Campaign[]}) {
     positive: true,
     bg: "imp-violet",
     arrowColor: "text-black-500",
+    dark: false,
   },
   {
     label: "Total Conversions",
@@ -81,12 +88,13 @@ export function KPISection({filtered}: {filtered: Campaign[]}) {
     positive: true,
     bg: "conv-mint",
     arrowColor: "text-green-500",
+    dark: false,
   },
 ] as const;
 
   return (
     <div className="w-full">
-      {/* Section Header */}
+      {/* Section Header */} 
       <div className="flex items-center justify-between mb-5">
         <h2 className="text-xxl font-semibold text-gray-900">
           Analytics Overview
@@ -104,14 +112,10 @@ export function KPISection({filtered}: {filtered: Campaign[]}) {
           >
             {/* Top-right icon */}
             <div className="absolute top-4 right-4">
-              {"dark" in card && card.dark ? (
+              {card.dark && (
                 <div className="w-5 h-5 rounded-full bg-gray-500 flex items-center justify-center">
                   <DollarIcon className="w-3.5 h-3.5 text-gray-00" />
                 </div>
-              ) : card.positive ? (
-                <ArrowUpRight className={cn("w-4 h-4", card.arrowColor)} />
-              ) : (
-                <ArrowDownRight className={cn("w-4 h-4", card.arrowColor)} />
               )}
             </div>
 
