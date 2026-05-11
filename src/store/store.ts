@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import type { StateCreator } from "zustand";
-import type { CampaignChannel, CampaignStatus, FilterSlice, SortConfig, SortSlice } from "../types";
+import type { CampaignChannel, CampaignFilters, CampaignStatus, FilterSlice, SortConfig, SortSlice } from "../types";
 
 // SETTING SLICES
 
@@ -16,6 +16,13 @@ export const filterSlice: StateCreator<FilterSlice> = (set) => ({
   updateChannels: (channels: CampaignChannel[]) => set({ channels }),
   updateStartDateFrom: (startDateFrom: string | null) => set({ startDateFrom }),
   updateStartDateTo: (startDateTo: string | null) => set({ startDateTo }),
+  setFilters: (filters: CampaignFilters) => set({
+  search: filters.search,
+  statuses: filters.statuses,
+  channels: filters.channels,
+  startDateFrom: filters.startDateFrom,
+  startDateTo: filters.startDateTo,
+  })
 });
 
 

@@ -1,18 +1,29 @@
 import { useEffect, useState } from "react";
-import { decodeSortConfig, encodeSortConfig, formatNumber, sortCampaigns, sortClick } from "../lib/utils";
+import {
+  decodeFiltersFromUrl,
+  decodeSortConfig,
+  formatNumber,
+  sortCampaigns,
+  sortClick,
+  updateFiltersInUrl,
+  updateSortsInUrl,
+} from "../lib/utils";
 import { useCampaignStore } from "../store/store";
-import type { Campaign } from "../types";
+import type { Campaign, CampaignFilters } from "../types";
 
 const Table = ({
+  filters,
   filtered,
   setModalOpen,
 }: {
+  filters: CampaignFilters;
   filtered: Campaign[];
   setModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
-  const [hasLoadedUrl, setHasLoadedUrl] = useState(false);
+  const [hasLoadedUrl, setHasLoadedUrl] = useState<boolean>(false);
   const sortConfig = useCampaignStore((state) => state.sortConfig);
   const updateSortConfig = useCampaignStore((state) => state.updateSortConfig);
+  const setFilters = useCampaignStore((state) => state.setFilters)
   const sorted = sortCampaigns(filtered, sortConfig);
 
   const tableHeaders = [
@@ -44,37 +55,35 @@ const Table = ({
     sortClick(key);
   }
 
+  // On first mount - URL params will update sortConfig and filters in store
   useEffect(() => {
-  const params = new URLSearchParams(window.location.search);
-  const sortFromUrl = decodeSortConfig(params.get("sort"));
+    const params = new URLSearchParams(window.location.search);
+    const sortFromUrl = decodeSortConfig(params.get("sort"));
+    const filtersFromUrl = decodeFiltersFromUrl(window.location.search)
 
-  updateSortConfig(sortFromUrl);
-  setHasLoadedUrl(true);
-}, [updateSortConfig]);
+    updateSortConfig(sortFromUrl);
+    setFilters(filtersFromUrl)
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setHasLoadedUrl(true);
+  }, [updateSortConfig, setFilters]);
 
-useEffect(() => {
-  if (!hasLoadedUrl) return;
 
-  const params = new URLSearchParams(window.location.search);
+  // when sortConfig updates - we update the URL accordingly
+  useEffect(() => {
+    if (!hasLoadedUrl) return;
+    updateSortsInUrl(sortConfig)
+  }, [sortConfig, hasLoadedUrl]);
 
-  if (sortConfig.length > 0) {
-    params.set("sort", encodeSortConfig(sortConfig));
-  } else {
-    params.delete("sort");
-  }
-
-  const newUrl = params.toString()
-    ? `?${params.toString()}`
-    : window.location.pathname;
-
-  window.history.replaceState(null, "", newUrl);
-}, [sortConfig, hasLoadedUrl]);
-
+  // when 'filters' updates - we update the URL accordingly
+  useEffect(() => {
+    if (!hasLoadedUrl) return;
+    updateFiltersInUrl(filters)
+  }, [filters, hasLoadedUrl]);
 
   return (
     <div className="h-full min-h-0 overflow-y-auto no-scrollbar border-gray-400 rounded-b-[20px] border">
       <table className="min-w-full">
-        <thead className="sticky top-0 z-10 bg-gray-100 text-sm font-medium h-10 text-gray-700">
+        <thead className="sticky top-0 z-10 bg-[#ccdfe6] text-sm font-medium h-10 text-gray-700">
           <tr>
             {tableHeaders.map((header, index) => {
               const activeSort = sortConfig.find(

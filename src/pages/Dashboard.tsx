@@ -1,9 +1,9 @@
-import { applyFilters, cn, decodeSortConfig } from "../lib/utils";
+import { applyFilters, cn } from "../lib/utils";
 import { KPISection } from "../components/KPISection";
 import { campaigns } from "../data/campaigns";
 import { type Campaign, type CampaignFilters } from "../types";
 import { useCampaignStore } from "../store/store";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import logo from "../assets/logo4.svg";
 import Filters from "../components/Filters";
 import Table from "../components/Table";
@@ -17,7 +17,6 @@ function Dashboard() {
   const startDateFrom = useCampaignStore((state) => state.startDateFrom);
   const startDateTo = useCampaignStore((state) => state.startDateTo);
 
-  const updateSortConfig = useCampaignStore((state) => state.updateSortConfig);
 
   const filters: CampaignFilters = {
     search,
@@ -28,6 +27,7 @@ function Dashboard() {
   };
 
   const filtered: Campaign[] = applyFilters(campaigns, filters);
+
 
   return (
     <div className="relative h-screen w-screen bg-blue p-8 overflow-hidden">
@@ -59,7 +59,7 @@ function Dashboard() {
             filters={filters}
           />
           <div className="border-t border-gray-200 flex-1 min-h-0">
-            <Table filtered={filtered} setModalOpen={setModalOpen} />
+            <Table filters={filters} filtered={filtered} setModalOpen={setModalOpen} />
           </div>
         </div>
       </div>

@@ -135,6 +135,63 @@ export function handleSearch(search: string) {
 }
 
 // ********************
+// FILTERS IN URL
+// ********************
+
+
+// when 'filters' updates - we update the URL accordingly
+export function updateFiltersInUrl(filters: CampaignFilters): void {
+const params = new URLSearchParams(window.location.search);
+    for (const [key, value] of Object.entries(filters)) {
+      if (!value || (Array.isArray(value) && value.length === 0)) {
+        params.delete(key);
+      } else {
+        const encodedValue = Array.isArray(value)
+          ? value.join(",")
+          : value;
+        params.set(key, encodedValue);
+      }
+    }
+
+    const newUrl = params.toString()
+      ? `?${params.toString()}`
+      : window.location.pathname;
+
+    window.history.replaceState(null, "", newUrl);
+}
+
+
+// extracting filter params from URL and updating 'filters' object to match 
+export function decodeFiltersFromUrl(value: string | null): CampaignFilters {
+  if (!value) return {
+    search: "",
+    statuses: [] as CampaignStatus[],
+    channels: [] as CampaignChannel[],
+    startDateFrom: null,
+    startDateTo: null,
+  }
+
+  const params = new URLSearchParams(value);
+  const search = params.get("search") ?? "";
+  const channels = params.get("channels")?.split(",") ?? [];
+  const statuses = params.get("statuses")?.split(",") ?? [];
+  const startDateFrom = params.get("startDateFrom");
+  const startDateTo = params.get("startDateTo");
+
+  return {
+    search,
+    channels: channels as CampaignChannel[],
+    statuses: statuses as CampaignStatus[],
+    startDateFrom,
+    startDateTo,
+  }
+}
+
+
+
+
+
+// ********************
 // SORT LOGIC
 // ********************
 
@@ -150,6 +207,7 @@ export function getSortValue(campaign: Campaign, key: CampaignSortKey) {
   return campaign[key];
 }
 
+// updating mapped results in UI whenever sortConfig updates
 export function sortCampaigns(
   campaigns: Campaign[],
   sortConfig: SortConfig[],
@@ -170,6 +228,8 @@ export function sortCampaigns(
   });
 }
 
+
+// updating sortConfig in zustand store => updating the mapped 'sorted' array above
 export function sortClick(column: keyof Campaign) {
   const { sortConfig, updateSortConfig } = useCampaignStore.getState();
 
@@ -199,14 +259,14 @@ export function sortClick(column: keyof Campaign) {
 // Sorts in URL
 // ***************
 
-//sortConfig --> string value
+//sortConfig object --> turned into a string value for URL
 export function encodeSortConfig(sortConfig: SortConfig[]) {
   return sortConfig
     .map((sort) => `${sort.key}:${sort.direction}`)
     .join(",");
 }
 
-// String value --> sortConfig
+// String value from URL --> turned into a sortConfig object
 export function decodeSortConfig(value: string | null): SortConfig[] {
   if (!value) return [];
 
@@ -219,6 +279,24 @@ export function decodeSortConfig(value: string | null): SortConfig[] {
     };
   });
 }
+
+  // when 'sortConfig' updates - we update the URL accordingly
+export function updateSortsInUrl(sortConfig: SortConfig[]) {
+  const params = new URLSearchParams(window.location.search);
+
+    if (sortConfig.length > 0) {
+      params.set("sort", encodeSortConfig(sortConfig));
+    } else {
+      params.delete("sort");
+    }
+
+    const newUrl = params.toString()
+      ? `?${params.toString()}`
+      : window.location.pathname;
+
+    window.history.replaceState(null, "", newUrl);
+}
+
 
 // ***********************
 // KPI Cards Functions

@@ -46,12 +46,15 @@ export type CampaignFilters = {
   startDateTo: string | null;
 };
 
+// export type Filter = string | CampaignChannel[] | CampaignStatus[] | null
+
 export type FilterSlice = CampaignFilters & {
   updateSearch: (search: string) => void;
   updateStatuses: (statuses: CampaignStatus[]) => void;
   updateChannels: (channels: CampaignChannel[]) => void;
   updateStartDateFrom: (startDateFrom: string | null) => void;
   updateStartDateTo: (startDateTo: string | null) => void;
+  setFilters: (filters: CampaignFilters) => void;
 };
 
 export type SortDirection = "asc" | "desc";
