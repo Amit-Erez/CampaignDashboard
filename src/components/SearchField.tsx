@@ -1,21 +1,9 @@
-import { useEffect, useState } from "react";
-import { handleSearch } from "../lib/utils";
 
-const SearchField = () => {
-  const [query, setQuery] = useState<string>("");
-  const [debouncedQuery, setDebouncedQuery] = useState<string>("");
+const SearchField = ({query, setQuery}: {
+  query: string, setQuery:
+  React.Dispatch<React.SetStateAction<string>>  
+}) => {
 
-  useEffect(() => {
-    const timerId = setTimeout(() => {
-      setDebouncedQuery(query);
-    }, 400);
-
-    return () => clearTimeout(timerId);
-  }, [query]);
-
-  useEffect(() => {
-    handleSearch(debouncedQuery);
-  }, [debouncedQuery]);
 
   return (
     <input

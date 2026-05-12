@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import {
+  cn,
   decodeFiltersFromUrl,
   decodeSortConfig,
   formatNumber,
+  rowInteractionColor,
   sortCampaigns,
   sortClick,
   updateFiltersInUrl,
@@ -98,7 +100,6 @@ const Table = ({
                 <th
                   key={index}
                   scope="col"
-                  className="text-center"
                   aria-sort={
                     header.sortName
                       ? !activeSort
@@ -108,22 +109,34 @@ const Table = ({
                           : "descending"
                       : undefined
                   }
-                  onClick={
-                    header.sortName
-                      ? () => handleSort(header.sortName as keyof Campaign)
-                      : undefined
-                  }
+                  className="text-center"
                 >
-                  {activeSort ? (
-                    <span className="flex items-center justify-center">
-                      <span className="mr-1 text-xs text-gray-800 border rounded-full px-1 bg-[#b3ebce]">
-                        {sortIndex + 1}
-                      </span>
+                  {header.sortName ? (
+                    <button
+                      type="button"
+                      className="w-full flex items-center justify-center rounded-md transition-colors 
+                      focus:outline-none
+                      focus-visible:bg-[#d8eef8]
+                      focus-visible:ring-1  
+                      focus-visible:ring-[#0E5585]"
+                      onClick={() =>
+                        handleSort(header.sortName as keyof Campaign)
+                      }
+                    >
+                      {activeSort && (
+                        <span className="mr-1 text-xs text-gray-800 border rounded-full px-1 bg-[#b3ebce]">
+                          {sortIndex + 1}
+                        </span>
+                      )}
+
                       {header.name}
-                      <span className="ml-1 text-lg font-bold text-gray-800">
-                        {activeSort.direction === "asc" ? " ↑" : " ↓"}
-                      </span>
-                    </span>
+
+                      {activeSort && (
+                        <span className="ml-1 text-lg font-bold text-gray-800">
+                          {activeSort.direction === "asc" ? " ↑" : " ↓"}
+                        </span>
+                      )}
+                    </button>
                   ) : (
                     header.name
                   )}
@@ -139,16 +152,20 @@ const Table = ({
               role="button"
               tabIndex={0}
               aria-label={`Open ${campaign.name} details`}
-              className={`h-20 border-t 
-                ${campaign.status === "Ended" ? "hover:bg-red-200" : ""} 
-                ${campaign.status === "Active" ? "hover:bg-green-200" : ""}
-                ${campaign.status === "Paused" ? "hover:bg-yellow-50" : ""}
-                transition-colors cursor-pointer`}
+              className={cn(
+                "h-20 border-t transition-colors cursor-pointer focus-visible:outline-none",
+                rowInteractionColor(campaign.status),
+              )}
               key={campaign.id}
               onClick={(e) =>
                 (e.target as HTMLInputElement).type !== "checkbox" &&
                 setModalOpen(true)
               }
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  setModalOpen(true);
+                }
+              }}
             >
               <td className="p-2 text-center">
                 <input type="checkbox" className="w-4 h-4" />

@@ -3,7 +3,7 @@ import { KPISection } from "../components/KPISection";
 import { campaigns } from "../data/campaigns";
 import { type Campaign, type CampaignFilters } from "../types";
 import { useCampaignStore } from "../store/store";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../assets/logo4.svg";
 import Filters from "../components/Filters";
 import Table from "../components/Table";
@@ -26,6 +26,18 @@ function Dashboard() {
   };
 
   const filtered: Campaign[] = applyFilters(campaigns, filters);
+
+  useEffect(() => {
+    if (!modalOpen) return;
+
+    function handleEscape(e: KeyboardEvent) {
+      if(e.key === "Escape" && modalOpen) 
+        setModalOpen(false)
+    }
+
+    document.addEventListener("keydown", handleEscape)
+    return () => document.removeEventListener("keydown", handleEscape)
+  },[modalOpen])
 
   return (
     <main className="relative h-screen w-screen bg-blue p-8 overflow-hidden">

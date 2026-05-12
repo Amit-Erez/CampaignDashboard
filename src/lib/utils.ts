@@ -17,6 +17,18 @@ export function cn(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
+export function rowInteractionColor(status: CampaignStatus) {
+  if (status === "Ended") {
+    return "hover:bg-red-200 focus-visible:bg-red-200";
+  }
+
+  if (status === "Active") {
+    return "hover:bg-green-200 focus-visible:bg-green-200";
+  }
+
+  return "hover:bg-yellow-50 focus-visible:bg-yellow-50";
+}
+
 export function formatNumber(num: number): string {
   if (num < 1_000) {
     return num.toString();

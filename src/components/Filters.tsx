@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import type {
   CampaignChannel,
   CampaignFilters,
@@ -9,7 +9,7 @@ import DateSelector from "./DateSelector";
 import SearchField from "./SearchField";
 import StatusSelector from "./StatusSelector";
 import { useCampaignStore } from "../store/store";
-import { noSortsOrFilters } from "../lib/utils";
+import { handleSearch, noSortsOrFilters } from "../lib/utils";
 
 const Filters = ({
   statusDropdownOpen,
@@ -50,19 +50,37 @@ const Filters = ({
     });
   }
 
+  const [query, setQuery] = useState<string>("");
+  const [debouncedQuery, setDebouncedQuery] = useState<string>("");
+
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      setDebouncedQuery(query);
+    }, 400);
+
+    return () => clearTimeout(timerId);
+  }, [query]);
+
+  useEffect(() => {
+    handleSearch(debouncedQuery);
+  }, [debouncedQuery]);
+
   return (
     <div className="px-6 py-4 border-b border-gray-200">
       <div className="flex flex-wrap items-center justify-end gap-6">
-        {!noSortsOrFilters(filters, sortConfig) && 
-        <button
-        className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 transition-colors cursor-pointer"
-        onClick={resetFilters}
-        >
-          Reset
-        </button>
-        }
+        {!noSortsOrFilters(filters, sortConfig) && (
+          <button
+            className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 transition-colors cursor-pointer"
+            onClick={() => {
+              resetFilters();
+              setQuery("");
+            }}
+          >
+            Reset
+          </button>
+        )}
         {/* Search Input */}
-        <SearchField />
+        <SearchField query={query} setQuery={setQuery} />
 
         {/* Channel Checkboxes */}
         <ChannelBoxes filters={filters} />
