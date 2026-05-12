@@ -26,6 +26,7 @@ const Table = ({
   const setFilters = useCampaignStore((state) => state.setFilters)
   const sorted = sortCampaigns(filtered, sortConfig);
 
+
   const tableHeaders = [
     { name: "Select" },
     { name: "Campaign Name", sortName: "name" },
@@ -54,6 +55,7 @@ const Table = ({
   function handleSort(key: keyof Campaign) {
     sortClick(key);
   }
+
 
   // On first mount - URL params will update sortConfig and filters in store
   useEffect(() => {
@@ -128,9 +130,9 @@ const Table = ({
             <tr
               className="h-20 border-t hover:bg-[#b0d7e5] transition-colors cursor-pointer"
               key={campaign.id}
-              onClick={() => setModalOpen(true)}
+              onClick={(e) => (e.target as HTMLInputElement).type !== "checkbox" && setModalOpen(true)}
             >
-              <td className="p-2 text-center">
+              <td  className="p-2 text-center">
                 <input type="checkbox" className="w-4 h-4" />
               </td>
               <td className="p-2 text-center text-sm font-semibold w-50">
