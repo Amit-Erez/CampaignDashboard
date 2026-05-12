@@ -20,6 +20,7 @@ const SearchField = () => {
   return (
     <input
       type="text"
+      aria-label="Search campaigns"
       value={query}
       placeholder="Search campaigns..."
       className="px-3 py-2 border border-gray-400 rounded-lg text-lg flex-1 max-w-xs focus:outline-none"

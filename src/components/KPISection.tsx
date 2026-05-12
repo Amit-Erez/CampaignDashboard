@@ -41,6 +41,7 @@ import type { Campaign } from "../types";
 function DollarIcon({ className }: { className?: string }) {
   return (
     <svg
+      aria-hidden="true"
       className={className}
       viewBox="0 0 24 24"
       fill="none"
@@ -93,10 +94,10 @@ export function KPISection({filtered}: {filtered: Campaign[]}) {
 ] as const;
 
   return (
-    <div className="w-full">
+    <section aria-labelledby="analytics-overview-heading" className="w-full">
       {/* Section Header */} 
       <div className="flex items-center justify-between mb-5">
-        <h2 className="text-xxl font-semibold text-gray-900">
+        <h2 id="analytics-overview-heading" className="text-xxl font-semibold text-gray-900">
           Analytics Overview
         </h2>
       </div>
@@ -143,6 +144,6 @@ export function KPISection({filtered}: {filtered: Campaign[]}) {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

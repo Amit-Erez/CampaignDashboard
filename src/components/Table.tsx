@@ -23,9 +23,8 @@ const Table = ({
   const [hasLoadedUrl, setHasLoadedUrl] = useState<boolean>(false);
   const sortConfig = useCampaignStore((state) => state.sortConfig);
   const updateSortConfig = useCampaignStore((state) => state.updateSortConfig);
-  const setFilters = useCampaignStore((state) => state.setFilters)
+  const setFilters = useCampaignStore((state) => state.setFilters);
   const sorted = sortCampaigns(filtered, sortConfig);
-
 
   const tableHeaders = [
     { name: "Select" },
@@ -52,35 +51,34 @@ const Table = ({
     });
   }
 
+  // updating sortConfig in zustand store => updating the mapped 'sorted' array above
   function handleSort(key: keyof Campaign) {
     sortClick(key);
   }
-
 
   // On first mount - URL params will update sortConfig and filters in store
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const sortFromUrl = decodeSortConfig(params.get("sort"));
-    const filtersFromUrl = decodeFiltersFromUrl(window.location.search)
-    console.log(window.location.search)
+    const filtersFromUrl = decodeFiltersFromUrl(window.location.search);
+    console.log(window.location.search);
 
     updateSortConfig(sortFromUrl);
-    setFilters(filtersFromUrl)
+    setFilters(filtersFromUrl);
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setHasLoadedUrl(true);
   }, [updateSortConfig, setFilters]);
 
-
   // when sortConfig updates - we update the URL accordingly
   useEffect(() => {
     if (!hasLoadedUrl) return;
-    updateSortsInUrl(sortConfig)
+    updateSortsInUrl(sortConfig);
   }, [sortConfig, hasLoadedUrl]);
 
   // when 'filters' updates - we update the URL accordingly
   useEffect(() => {
     if (!hasLoadedUrl) return;
-    updateFiltersInUrl(filters)
+    updateFiltersInUrl(filters);
   }, [filters, hasLoadedUrl]);
 
   return (
@@ -99,7 +97,17 @@ const Table = ({
               return (
                 <th
                   key={index}
+                  scope="col"
                   className="text-center"
+                  aria-sort={
+                    header.sortName
+                      ? !activeSort
+                        ? "none"
+                        : activeSort.direction === "asc"
+                          ? "ascending"
+                          : "descending"
+                      : undefined
+                  }
                   onClick={
                     header.sortName
                       ? () => handleSort(header.sortName as keyof Campaign)
@@ -128,11 +136,21 @@ const Table = ({
         <tbody>
           {sorted.map((campaign) => (
             <tr
-              className="h-20 border-t hover:bg-[#b0d7e5] transition-colors cursor-pointer"
+              role="button"
+              tabIndex={0}
+              aria-label={`Open ${campaign.name} details`}
+              className={`h-20 border-t 
+                ${campaign.status === "Ended" ? "hover:bg-red-200" : ""} 
+                ${campaign.status === "Active" ? "hover:bg-green-200" : ""}
+                ${campaign.status === "Paused" ? "hover:bg-yellow-50" : ""}
+                transition-colors cursor-pointer`}
               key={campaign.id}
-              onClick={(e) => (e.target as HTMLInputElement).type !== "checkbox" && setModalOpen(true)}
+              onClick={(e) =>
+                (e.target as HTMLInputElement).type !== "checkbox" &&
+                setModalOpen(true)
+              }
             >
-              <td  className="p-2 text-center">
+              <td className="p-2 text-center">
                 <input type="checkbox" className="w-4 h-4" />
               </td>
               <td className="p-2 text-center text-sm font-semibold w-50">
