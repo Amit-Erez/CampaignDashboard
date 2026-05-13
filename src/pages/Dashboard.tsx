@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import logo from "../assets/logo4.svg";
 import Filters from "../components/Filters";
 import Table from "../components/Table";
+import Modal from "../components/Modal";
 
 function Dashboard() {
   const [statusDropdownOpen, setStatusDropdownOpen] = useState<boolean>(false);
@@ -31,13 +32,12 @@ function Dashboard() {
     if (!modalOpen) return;
 
     function handleEscape(e: KeyboardEvent) {
-      if(e.key === "Escape" && modalOpen) 
-        setModalOpen(false)
+      if (e.key === "Escape" && modalOpen) setModalOpen(false);
     }
 
-    document.addEventListener("keydown", handleEscape)
-    return () => document.removeEventListener("keydown", handleEscape)
-  },[modalOpen])
+    document.addEventListener("keydown", handleEscape);
+    return () => document.removeEventListener("keydown", handleEscape);
+  }, [modalOpen]);
 
   return (
     <main className="relative h-screen w-screen bg-blue p-8 overflow-hidden">
@@ -81,27 +81,27 @@ function Dashboard() {
           </div>
         </div>
       </div>
-      {modalOpen && (
-        <div className="absolute flex items-center justify-center h-screen w-full top-0 left-0 z-1000 bg-[#4d6a92d2]">
-          <div
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="campaign-modal-title"
-            className="flex items-center justify-center h-[80%] w-[80%] border bg-[#F2F2F2] rounded-2xl"
-          >
-            <h2 id="campaign-modal-title">Campaign details</h2>
-            <button
-              type="button"
-              aria-label="Close campaign details modal"
-              onClick={() => setModalOpen(false)}
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      )}
+      <Modal modalOpen={modalOpen} setModalOpen={setModalOpen} />
     </main>
   );
 }
 
 export default Dashboard;
+
+// <div className="absolute flex items-center justify-center h-screen w-full top-0 left-0 z-1000 bg-[#4d6a92d2]">
+//   <div
+//     role="dialog"
+//     aria-modal="true"
+//     aria-labelledby="campaign-modal-title"
+//     className="flex items-center justify-center h-[80%] w-[80%] border bg-[#F2F2F2] rounded-2xl"
+//   >
+//     <h2 id="campaign-modal-title">Campaign details</h2>
+//     <button
+//       type="button"
+//       aria-label="Close campaign details modal"
+//       onClick={() => setModalOpen(false)}
+//     >
+//       Close
+//     </button>
+//   </div>
+// </div>

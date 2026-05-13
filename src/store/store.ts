@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import type { StateCreator } from "zustand";
-import type { CampaignChannel, CampaignFilters, CampaignStatus, FilterSlice, SortConfig, SortSlice } from "../types";
+import type { Campaign, CampaignChannel, CampaignFilters, CampaignStatus, FilterSlice, SortConfig, SortSlice, VisibleCampaignsSlice } from "../types";
 
 // SETTING SLICES
 
@@ -32,14 +32,23 @@ export const sortSlice: StateCreator<SortSlice> = (set) => ({
   clearSortConfig: () => set({ sortConfig: [] })
 })
 
+export const visibleCampaignsSlice: StateCreator<VisibleCampaignsSlice> = (set) => ({
+  visibleCampaigns: [] as Campaign[],
+  selectedCampaignIndex: null,
+  updateVisibleCampaigns: (visibleCampaigns: Campaign[]) => set({ visibleCampaigns }),
+  setSelectedCampaignIndex: (selectedCampaignIndex: number | null) => set({selectedCampaignIndex}),
+});
+
 //SETTING STORE
 
-type CampaignStore = FilterSlice & SortSlice;
+type CampaignStore = FilterSlice & SortSlice & VisibleCampaignsSlice;
 
 export const useCampaignStore = create<CampaignStore>()((...a) => ({
   ...filterSlice(...a),
   ...sortSlice(...a),
+  ...visibleCampaignsSlice(...a),
 }));
+
 
 
 

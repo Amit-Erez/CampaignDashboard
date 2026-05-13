@@ -24,8 +24,13 @@ const Table = ({
 }) => {
   const [hasLoadedUrl, setHasLoadedUrl] = useState<boolean>(false);
   const sortConfig = useCampaignStore((state) => state.sortConfig);
-  const updateSortConfig = useCampaignStore((state) => state.updateSortConfig);
+  const visibleCampaigns = useCampaignStore((state) => state.visibleCampaigns);
+  const setSelectedCampaignIndex = useCampaignStore((state) => state.setSelectedCampaignIndex)
   const setFilters = useCampaignStore((state) => state.setFilters);
+  const updateSortConfig = useCampaignStore((state) => state.updateSortConfig);
+  const updateVisibleCampaigns = useCampaignStore(
+    (state) => state.updateVisibleCampaigns,
+  );
   const sorted = sortCampaigns(filtered, sortConfig);
 
   const tableHeaders = [
@@ -82,6 +87,12 @@ const Table = ({
     if (!hasLoadedUrl) return;
     updateFiltersInUrl(filters);
   }, [filters, hasLoadedUrl]);
+
+  // when sorting or filtering occurs and updates "sorted", we update the Zustand store with it.
+  useEffect(() => {
+    updateVisibleCampaigns(sorted);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sortConfig, filters, updateVisibleCampaigns]);
 
   return (
     <div className="h-full min-h-0 overflow-y-auto no-scrollbar border-gray-400 rounded-b-[20px] border">
@@ -147,7 +158,7 @@ const Table = ({
         </thead>
 
         <tbody>
-          {sorted.map((campaign) => (
+          {visibleCampaigns.map((campaign, index) => (
             <tr
               role="button"
               tabIndex={0}
@@ -157,10 +168,11 @@ const Table = ({
                 rowInteractionColor(campaign.status),
               )}
               key={campaign.id}
-              onClick={(e) =>
-                (e.target as HTMLInputElement).type !== "checkbox" &&
-                setModalOpen(true)
-              }
+              onClick={(e) => {
+                setSelectedCampaignIndex(index);
+                if((e.target as HTMLInputElement).type !== "checkbox")
+                setModalOpen(true);
+              }}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
                   setModalOpen(true);

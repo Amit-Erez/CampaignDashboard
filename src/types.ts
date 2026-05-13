@@ -38,6 +38,13 @@ export type Campaign = {
   budget: number;
 };
 
+export type VisibleCampaignsSlice = {
+  visibleCampaigns: Campaign[];
+  selectedCampaignIndex: number | null;
+  updateVisibleCampaigns: (visibleCampaigns: Campaign[]) => void;
+  setSelectedCampaignIndex: (selectedCampaignIndex: number | null) => void;
+};
+
 export type CampaignFilters = {
   search: string;
   channels: CampaignChannel[];
