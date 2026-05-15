@@ -24,6 +24,13 @@ export type CampaignChannel =
 
 export type key = "spend" | "impressions" | "clicks" | "conversions"
 
+export type WeeklyMetrics = {
+  weekStart: string;
+  spend: number;
+  impressions: number;
+  clicks: number;
+};
+
 export type Campaign = {
   id: string;
   name: string;
@@ -36,6 +43,7 @@ export type Campaign = {
   conversions: number;
   spend: number;
   budget: number;
+  weeklyMetrics: WeeklyMetrics[];
 };
 
 export type VisibleCampaignsSlice = {

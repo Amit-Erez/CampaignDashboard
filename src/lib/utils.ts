@@ -41,6 +41,15 @@ export function formatNumber(num: number): string {
   return (num / 1_000_000).toFixed(1) + "M";
 }
 
+  export function formatDate(dateString: string | null) {
+    if (!dateString) return "Ongoing";
+    return new Date(dateString).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  }
+
 export function noSortsOrFilters(filters: CampaignFilters, sortConfig: SortConfig[]) {
   const noFilters =
     !filters.search &&

@@ -11,7 +11,8 @@
     "clicks": 116669,
     "conversions": 93676,
     "spend": 3821,
-    "budget": 34076
+    "budget": 34076,
+    "weeklyMetrics": []
   },
   {
     "id": "e62f4e97-66b9-41f2-bcb7-c4a43f43f14e",
@@ -24,7 +25,8 @@
     "clicks": 117019,
     "conversions": 106456,
     "spend": 10049,
-    "budget": 19841
+    "budget": 19841,
+    "weeklyMetrics": []
   },
   {
     "id": "1c5d4fee-d02a-48b2-b8e1-750b38c4915f",
@@ -37,7 +39,8 @@
     "clicks": 211274,
     "conversions": 95838,
     "spend": 4435,
-    "budget": 47046
+    "budget": 47046,
+    "weeklyMetrics": []
   },
   {
     "id": "5e93a564-acc5-44bf-80d8-5771f0b27342",
@@ -50,7 +53,8 @@
     "clicks": 317877,
     "conversions": 76894,
     "spend": 13946,
-    "budget": 18113
+    "budget": 18113,
+    "weeklyMetrics": []
   },
   {
     "id": "12b081df-2312-4f87-9acb-6c446d95e845",
@@ -63,7 +67,8 @@
     "clicks": 127247,
     "conversions": 2634,
     "spend": 16672,
-    "budget": 22143
+    "budget": 22143,
+    "weeklyMetrics": []
   },
   {
     "id": "ef1d0f19-69df-4c1a-bcff-16d3dccf1be5",
@@ -76,7 +81,8 @@
     "clicks": 322442,
     "conversions": 138018,
     "spend": 6982,
-    "budget": 43222
+    "budget": 43222,
+    "weeklyMetrics": []
   },
   {
     "id": "3b58172f-692d-4d59-bcea-5e23fae41fb9",
@@ -89,7 +95,8 @@
     "clicks": 163288,
     "conversions": 8283,
     "spend": 10730,
-    "budget": 24108
+    "budget": 24108,
+    "weeklyMetrics": []
   },
   {
     "id": "6a07cbdb-5945-484f-9395-cbd4ccb2a26c",
@@ -102,7 +109,8 @@
     "clicks": 52893,
     "conversions": 28141,
     "spend": 17716,
-    "budget": 30662
+    "budget": 30662,
+    "weeklyMetrics": []
   },
   {
     "id": "5905751f-e197-4a21-b5d0-1aeb43766637",
@@ -115,7 +123,8 @@
     "clicks": 143261,
     "conversions": 83565,
     "spend": 15180,
-    "budget": 12166
+    "budget": 12166,
+    "weeklyMetrics": []
   },
   {
     "id": "9bc41b4c-0823-4a56-bbae-cf230d43d312",
@@ -128,7 +137,8 @@
     "clicks": 64326,
     "conversions": 54054,
     "spend": 11806,
-    "budget": 40553
+    "budget": 40553,
+    "weeklyMetrics": []
   },
   {
     "id": "e82d62b5-1e34-453e-8534-8bb0e8d73539",
@@ -141,7 +151,8 @@
     "clicks": 127350,
     "conversions": 89517,
     "spend": 16702,
-    "budget": 41325
+    "budget": 41325,
+    "weeklyMetrics": []
   },
   {
     "id": "196c1449-7ac4-447e-b293-a1758e4eb78d",
@@ -154,7 +165,8 @@
     "clicks": 24809,
     "conversions": 7044,
     "spend": 18508,
-    "budget": 6531
+    "budget": 6531,
+    "weeklyMetrics": []
   },
   {
     "id": "cfc68322-afb1-4fc5-b453-2bb37fb1fa65",
@@ -167,7 +179,8 @@
     "clicks": 906,
     "conversions": 274,
     "spend": 13790,
-    "budget": 26781
+    "budget": 26781,
+    "weeklyMetrics": []
   },
   {
     "id": "41e527e9-cb02-4bd7-88d2-fb35ec787d24",
@@ -180,7 +193,8 @@
     "clicks": 197165,
     "conversions": 190480,
     "spend": 9786,
-    "budget": 17466
+    "budget": 17466,
+    "weeklyMetrics": []
   },
   {
     "id": "0530917e-6f63-40ec-b6e6-cb313b91a7cf",
@@ -193,7 +207,8 @@
     "clicks": 110768,
     "conversions": 105978,
     "spend": 18553,
-    "budget": 49688
+    "budget": 49688,
+    "weeklyMetrics": []
   },
   {
     "id": "88104348-4ed2-4941-968a-be3fe5b59676",
@@ -206,7 +221,8 @@
     "clicks": 59878,
     "conversions": 32021,
     "spend": 19551,
-    "budget": 29836
+    "budget": 29836,
+    "weeklyMetrics": []
   },
   {
     "id": "be547f3d-627d-4d70-a78f-56e7659e3e76",
@@ -219,7 +235,8 @@
     "clicks": 96941,
     "conversions": 58637,
     "spend": 12106,
-    "budget": 24888
+    "budget": 24888,
+    "weeklyMetrics": []
   },
   {
     "id": "30bcdb15-6848-4d2b-9048-0332536a3e32",
@@ -232,7 +249,8 @@
     "clicks": 11504,
     "conversions": 123,
     "spend": 8492,
-    "budget": 44794
+    "budget": 44794,
+    "weeklyMetrics": []
   },
   {
     "id": "2e443471-4954-4d71-a7d3-4eaafac09be1",
@@ -245,7 +263,8 @@
     "clicks": 131390,
     "conversions": 129386,
     "spend": 16537,
-    "budget": 46755
+    "budget": 46755,
+    "weeklyMetrics": []
   },
   {
     "id": "c08d5b60-aecf-4d7b-954b-eea40c8a1278",
@@ -258,7 +277,8 @@
     "clicks": 56703,
     "conversions": 16860,
     "spend": 9681,
-    "budget": 38631
+    "budget": 38631,
+    "weeklyMetrics": []
   },
   {
     "id": "9a95bdc2-a40d-43b0-a057-1c902a498b3f",
@@ -271,7 +291,8 @@
     "clicks": 5115,
     "conversions": 1155,
     "spend": 14850,
-    "budget": 19027
+    "budget": 19027,
+    "weeklyMetrics": []
   },
   {
     "id": "1721901a-ef41-41d5-9559-33a19faf6f1b",
@@ -284,7 +305,8 @@
     "clicks": 456077,
     "conversions": 251201,
     "spend": 962,
-    "budget": 26791
+    "budget": 26791,
+    "weeklyMetrics": []
   },
   {
     "id": "5fcbbd91-c1ba-498d-b9fa-3a60aa7a255b",
@@ -297,7 +319,8 @@
     "clicks": 252020,
     "conversions": 44612,
     "spend": 6304,
-    "budget": 49923
+    "budget": 49923,
+    "weeklyMetrics": []
   },
   {
     "id": "809df98a-923e-4a05-b4c2-24c67a04d3bf",
@@ -310,7 +333,8 @@
     "clicks": 34720,
     "conversions": 21041,
     "spend": 11793,
-    "budget": 36621
+    "budget": 36621,
+    "weeklyMetrics": []
   },
   {
     "id": "df3e84c0-8137-46ea-9fa0-233641290fb8",
@@ -323,7 +347,8 @@
     "clicks": 169216,
     "conversions": 8282,
     "spend": 14610,
-    "budget": 20725
+    "budget": 20725,
+    "weeklyMetrics": []
   },
   {
     "id": "eaecf976-b2da-40f6-b270-866e1ea2f3e7",
@@ -336,7 +361,8 @@
     "clicks": 2409,
     "conversions": 2370,
     "spend": 1327,
-    "budget": 6731
+    "budget": 6731,
+    "weeklyMetrics": []
   },
   {
     "id": "79698b06-f5f9-48bd-a54f-51d5b35b7495",
@@ -349,7 +375,8 @@
     "clicks": 138328,
     "conversions": 65842,
     "spend": 14446,
-    "budget": 5779
+    "budget": 5779,
+    "weeklyMetrics": []
   },
   {
     "id": "24968268-0be4-4e61-9ce8-656f2e94ceed",
@@ -362,7 +389,8 @@
     "clicks": 137386,
     "conversions": 118420,
     "spend": 8753,
-    "budget": 20333
+    "budget": 20333,
+    "weeklyMetrics": []
   },
   {
     "id": "9f3367f9-305f-43de-8dd7-e5694a30342f",
@@ -375,7 +403,8 @@
     "clicks": 367054,
     "conversions": 271798,
     "spend": 19454,
-    "budget": 7586
+    "budget": 7586,
+    "weeklyMetrics": []
   },
   {
     "id": "aaa7a242-a1c5-4ed9-93ef-f9ddf25c186e",
@@ -388,7 +417,8 @@
     "clicks": 56409,
     "conversions": 45791,
     "spend": 11189,
-    "budget": 34540
+    "budget": 34540,
+    "weeklyMetrics": []
   },
   {
     "id": "9cc9ce7e-b4fc-4992-87c0-b6199c2c05fd",
@@ -401,7 +431,8 @@
     "clicks": 7424,
     "conversions": 5560,
     "spend": 3782,
-    "budget": 25174
+    "budget": 25174,
+    "weeklyMetrics": []
   },
   {
     "id": "496b40d0-ced3-4778-9a43-ea5c6abb3be9",
@@ -414,7 +445,8 @@
     "clicks": 8081,
     "conversions": 6686,
     "spend": 12858,
-    "budget": 8296
+    "budget": 8296,
+    "weeklyMetrics": []
   },
   {
     "id": "f64dee67-777d-4cea-966e-fe386b8fba86",
@@ -427,7 +459,8 @@
     "clicks": 40326,
     "conversions": 20229,
     "spend": 13385,
-    "budget": 45030
+    "budget": 45030,
+    "weeklyMetrics": []
   },
   {
     "id": "e880b685-1712-46ce-8829-6cdab95218fc",
@@ -440,7 +473,8 @@
     "clicks": 14648,
     "conversions": 13390,
     "spend": 13223,
-    "budget": 33450
+    "budget": 33450,
+    "weeklyMetrics": []
   },
   {
     "id": "11f833d7-149e-4b81-ab02-1fb3b2be811f",
@@ -453,7 +487,8 @@
     "clicks": 82063,
     "conversions": 6290,
     "spend": 9390,
-    "budget": 34235
+    "budget": 34235,
+    "weeklyMetrics": []
   },
   {
     "id": "f7719aa4-7b3d-46ef-9baa-917cd5fed26a",
@@ -466,7 +501,8 @@
     "clicks": 135437,
     "conversions": 17165,
     "spend": 3267,
-    "budget": 34367
+    "budget": 34367,
+    "weeklyMetrics": []
   },
   {
     "id": "d809157a-cd43-4539-83d1-af7967250a50",
@@ -479,7 +515,8 @@
     "clicks": 105950,
     "conversions": 25855,
     "spend": 3052,
-    "budget": 35667
+    "budget": 35667,
+    "weeklyMetrics": []
   },
   {
     "id": "5a39b748-419a-4211-af30-18de6937d22d",
@@ -492,7 +529,8 @@
     "clicks": 274469,
     "conversions": 128094,
     "spend": 15289,
-    "budget": 8421
+    "budget": 8421,
+    "weeklyMetrics": []
   },
   {
     "id": "0df80978-bdb5-4470-acce-f436665d2e95",
@@ -505,7 +543,8 @@
     "clicks": 260750,
     "conversions": 98900,
     "spend": 12774,
-    "budget": 24696
+    "budget": 24696,
+    "weeklyMetrics": []
   },
   {
     "id": "87de86d5-a08f-4917-9136-c8b786604206",
@@ -518,7 +557,8 @@
     "clicks": 99105,
     "conversions": 94924,
     "spend": 5601,
-    "budget": 37872
+    "budget": 37872,
+    "weeklyMetrics": []
   },
   {
     "id": "d970bd41-3d85-4eef-8140-282e8c6b84eb",
@@ -531,7 +571,8 @@
     "clicks": 180042,
     "conversions": 61445,
     "spend": 8996,
-    "budget": 6951
+    "budget": 6951,
+    "weeklyMetrics": []
   },
   {
     "id": "02a1920a-ee42-4dd4-8d61-4797ad263ffc",
@@ -544,7 +585,8 @@
     "clicks": 94174,
     "conversions": 91314,
     "spend": 12722,
-    "budget": 30968
+    "budget": 30968,
+    "weeklyMetrics": []
   },
   {
     "id": "9a7c1ed8-89b3-495d-9d51-d5f8e710ae49",
@@ -557,7 +599,8 @@
     "clicks": 33652,
     "conversions": 11458,
     "spend": 2715,
-    "budget": 34428
+    "budget": 34428,
+    "weeklyMetrics": []
   },
   {
     "id": "800638a6-a2cc-4121-8316-936e6ba9ee11",
@@ -570,7 +613,8 @@
     "clicks": 58451,
     "conversions": 30617,
     "spend": 3490,
-    "budget": 16565
+    "budget": 16565,
+    "weeklyMetrics": []
   },
   {
     "id": "cefd19d0-3db2-44a2-be63-7bd2a2a0f576",
@@ -583,6 +627,7 @@
     "clicks": 126211,
     "conversions": 55207,
     "spend": 10045,
-    "budget": 29614
+    "budget": 29614,
+    "weeklyMetrics": []
   }
 ]

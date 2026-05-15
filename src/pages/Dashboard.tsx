@@ -46,7 +46,7 @@ function Dashboard() {
           "h-full flex min-[960px]:grid min-[960px]:grid-cols-[220px_1fr] gap-4 text-2xl max-w-8xl mx-auto rounded-[20px]",
         )}
       >
-        <div className="rounded-[20px] p-4 mr-1 bg-[#F2F2F2] hidden min-[960px]:flex min-[960px]:flex-col items-center shadow-2xl">
+        <div className="rounded-[20px] pt-8 pb-8 pr-4 pl-4 mr-1 bg-[#F2F2F2] hidden min-[960px]:flex min-[960px]:flex-col items-center shadow-2xl">
           <img
             src={logo}
             alt="Pulse Analytics logo"

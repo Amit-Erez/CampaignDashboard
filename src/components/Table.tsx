@@ -3,6 +3,7 @@ import {
   cn,
   decodeFiltersFromUrl,
   decodeSortConfig,
+  formatDate,
   formatNumber,
   rowInteractionColor,
   sortCampaigns,
@@ -49,14 +50,14 @@ const Table = ({
     { name: "CPA", sortName: "cpa" },
   ];
 
-  function formatDate(dateString: string | null) {
-    if (!dateString) return "Ongoing";
-    return new Date(dateString).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-    });
-  }
+  // function formatDate(dateString: string | null) {
+  //   if (!dateString) return "Ongoing";
+  //   return new Date(dateString).toLocaleDateString("en-US", {
+  //     year: "numeric",
+  //     month: "short",
+  //     day: "numeric",
+  //   });
+  // }
 
   // updating sortConfig in zustand store => updating the mapped 'sorted' array above
   function handleSort(key: keyof Campaign) {
@@ -135,7 +136,7 @@ const Table = ({
                       }
                     >
                       {activeSort && (
-                        <span className="mr-1 text-xs text-gray-800 border rounded-full px-1 bg-[#b3ebce]">
+                        <span className="flex items-center justify-center w-4 h-4 mr-1 text-xs text-gray-800 border rounded-full px-1 bg-[#b3ebce]">
                           {sortIndex + 1}
                         </span>
                       )}

@@ -1,0 +1,4367 @@
+[
+  {
+    "id": "e7226b7f-b8e3-4812-9813-4cc0014a3096",
+    "name": "Grass-roots regional middleware",
+    "channel": "LinkedIn",
+    "status": "Paused",
+    "startDate": "2025-11-19T01:19:56.612Z",
+    "endDate": null,
+    "impressions": 403147,
+    "clicks": 116669,
+    "conversions": 93676,
+    "spend": 3821,
+    "budget": 34076,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-11-19",
+        "spend": 763.6,
+        "impressions": 80567,
+        "clicks": 23316
+      },
+      {
+        "weekStart": "2025-11-26",
+        "spend": 931.01,
+        "impressions": 98229,
+        "clicks": 28427
+      },
+      {
+        "weekStart": "2025-12-03",
+        "spend": 742.7,
+        "impressions": 78361,
+        "clicks": 22677
+      },
+      {
+        "weekStart": "2025-12-10",
+        "spend": 806.46,
+        "impressions": 85088,
+        "clicks": 24624
+      },
+      {
+        "weekStart": "2025-12-17",
+        "spend": 577.23,
+        "impressions": 60902,
+        "clicks": 17625
+      }
+    ]
+  },
+  {
+    "id": "e62f4e97-66b9-41f2-bcb7-c4a43f43f14e",
+    "name": "Adaptive coherent array",
+    "channel": "Meta",
+    "status": "Ended",
+    "startDate": "2026-01-07T17:03:17.315Z",
+    "endDate": "2026-12-08T11:44:40.066Z",
+    "impressions": 480525,
+    "clicks": 117019,
+    "conversions": 106456,
+    "spend": 10049,
+    "budget": 19841,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2026-01-07",
+        "spend": 151.52,
+        "impressions": 7245,
+        "clicks": 1764
+      },
+      {
+        "weekStart": "2026-01-14",
+        "spend": 241.94,
+        "impressions": 11569,
+        "clicks": 2817
+      },
+      {
+        "weekStart": "2026-01-21",
+        "spend": 266.01,
+        "impressions": 12720,
+        "clicks": 3098
+      },
+      {
+        "weekStart": "2026-01-28",
+        "spend": 233.7,
+        "impressions": 11175,
+        "clicks": 2721
+      },
+      {
+        "weekStart": "2026-02-04",
+        "spend": 169.15,
+        "impressions": 8089,
+        "clicks": 1970
+      },
+      {
+        "weekStart": "2026-02-11",
+        "spend": 257.95,
+        "impressions": 12334,
+        "clicks": 3004
+      },
+      {
+        "weekStart": "2026-02-18",
+        "spend": 268.46,
+        "impressions": 12837,
+        "clicks": 3126
+      },
+      {
+        "weekStart": "2026-02-25",
+        "spend": 177.76,
+        "impressions": 8500,
+        "clicks": 2070
+      },
+      {
+        "weekStart": "2026-03-04",
+        "spend": 251.06,
+        "impressions": 12005,
+        "clicks": 2924
+      },
+      {
+        "weekStart": "2026-03-11",
+        "spend": 191.75,
+        "impressions": 9169,
+        "clicks": 2233
+      },
+      {
+        "weekStart": "2026-03-18",
+        "spend": 242.74,
+        "impressions": 11607,
+        "clicks": 2827
+      },
+      {
+        "weekStart": "2026-03-25",
+        "spend": 199.54,
+        "impressions": 9542,
+        "clicks": 2324
+      },
+      {
+        "weekStart": "2026-04-01",
+        "spend": 184.63,
+        "impressions": 8829,
+        "clicks": 2150
+      },
+      {
+        "weekStart": "2026-04-08",
+        "spend": 169.08,
+        "impressions": 8085,
+        "clicks": 1969
+      },
+      {
+        "weekStart": "2026-04-15",
+        "spend": 219.76,
+        "impressions": 10508,
+        "clicks": 2559
+      },
+      {
+        "weekStart": "2026-04-22",
+        "spend": 194.16,
+        "impressions": 9284,
+        "clicks": 2261
+      },
+      {
+        "weekStart": "2026-04-29",
+        "spend": 252.2,
+        "impressions": 12060,
+        "clicks": 2937
+      },
+      {
+        "weekStart": "2026-05-06",
+        "spend": 150.51,
+        "impressions": 7197,
+        "clicks": 1753
+      },
+      {
+        "weekStart": "2026-05-13",
+        "spend": 152.31,
+        "impressions": 7283,
+        "clicks": 1774
+      },
+      {
+        "weekStart": "2026-05-20",
+        "spend": 264.8,
+        "impressions": 12662,
+        "clicks": 3084
+      },
+      {
+        "weekStart": "2026-05-27",
+        "spend": 265.48,
+        "impressions": 12695,
+        "clicks": 3091
+      },
+      {
+        "weekStart": "2026-06-03",
+        "spend": 189.6,
+        "impressions": 9066,
+        "clicks": 2208
+      },
+      {
+        "weekStart": "2026-06-10",
+        "spend": 255.83,
+        "impressions": 12233,
+        "clicks": 2979
+      },
+      {
+        "weekStart": "2026-06-17",
+        "spend": 168.39,
+        "impressions": 8052,
+        "clicks": 1961
+      },
+      {
+        "weekStart": "2026-06-24",
+        "spend": 148.44,
+        "impressions": 7098,
+        "clicks": 1729
+      },
+      {
+        "weekStart": "2026-07-01",
+        "spend": 259.67,
+        "impressions": 12417,
+        "clicks": 3024
+      },
+      {
+        "weekStart": "2026-07-08",
+        "spend": 168.56,
+        "impressions": 8060,
+        "clicks": 1963
+      },
+      {
+        "weekStart": "2026-07-15",
+        "spend": 236.53,
+        "impressions": 11310,
+        "clicks": 2754
+      },
+      {
+        "weekStart": "2026-07-22",
+        "spend": 150.54,
+        "impressions": 7198,
+        "clicks": 1753
+      },
+      {
+        "weekStart": "2026-07-29",
+        "spend": 187.13,
+        "impressions": 8948,
+        "clicks": 2179
+      },
+      {
+        "weekStart": "2026-08-05",
+        "spend": 179.64,
+        "impressions": 8590,
+        "clicks": 2092
+      },
+      {
+        "weekStart": "2026-08-12",
+        "spend": 223.03,
+        "impressions": 10665,
+        "clicks": 2597
+      },
+      {
+        "weekStart": "2026-08-19",
+        "spend": 263.68,
+        "impressions": 12609,
+        "clicks": 3071
+      },
+      {
+        "weekStart": "2026-08-26",
+        "spend": 154.05,
+        "impressions": 7367,
+        "clicks": 1794
+      },
+      {
+        "weekStart": "2026-09-02",
+        "spend": 232.49,
+        "impressions": 11117,
+        "clicks": 2707
+      },
+      {
+        "weekStart": "2026-09-09",
+        "spend": 208.9,
+        "impressions": 9989,
+        "clicks": 2433
+      },
+      {
+        "weekStart": "2026-09-16",
+        "spend": 251.98,
+        "impressions": 12049,
+        "clicks": 2934
+      },
+      {
+        "weekStart": "2026-09-23",
+        "spend": 182.82,
+        "impressions": 8742,
+        "clicks": 2129
+      },
+      {
+        "weekStart": "2026-09-30",
+        "spend": 170.66,
+        "impressions": 8161,
+        "clicks": 1987
+      },
+      {
+        "weekStart": "2026-10-07",
+        "spend": 239.04,
+        "impressions": 11430,
+        "clicks": 2784
+      },
+      {
+        "weekStart": "2026-10-14",
+        "spend": 234.58,
+        "impressions": 11217,
+        "clicks": 2732
+      },
+      {
+        "weekStart": "2026-10-21",
+        "spend": 170.69,
+        "impressions": 8162,
+        "clicks": 1988
+      },
+      {
+        "weekStart": "2026-10-28",
+        "spend": 208.13,
+        "impressions": 9952,
+        "clicks": 2424
+      },
+      {
+        "weekStart": "2026-11-04",
+        "spend": 170.99,
+        "impressions": 8176,
+        "clicks": 1991
+      },
+      {
+        "weekStart": "2026-11-11",
+        "spend": 207.49,
+        "impressions": 9922,
+        "clicks": 2416
+      },
+      {
+        "weekStart": "2026-11-18",
+        "spend": 253.97,
+        "impressions": 12145,
+        "clicks": 2957
+      },
+      {
+        "weekStart": "2026-11-25",
+        "spend": 254.89,
+        "impressions": 12188,
+        "clicks": 2968
+      },
+      {
+        "weekStart": "2026-12-02",
+        "spend": 172.77,
+        "impressions": 8267,
+        "clicks": 2009
+      }
+    ]
+  },
+  {
+    "id": "1c5d4fee-d02a-48b2-b8e1-750b38c4915f",
+    "name": "Compatible directional internet solution",
+    "channel": "Meta",
+    "status": "Active",
+    "startDate": "2025-08-25T07:54:55.148Z",
+    "endDate": null,
+    "impressions": 371078,
+    "clicks": 211274,
+    "conversions": 95838,
+    "spend": 4435,
+    "budget": 47046,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-08-25",
+        "spend": 987.94,
+        "impressions": 82661,
+        "clicks": 47063
+      },
+      {
+        "weekStart": "2025-09-01",
+        "spend": 747.02,
+        "impressions": 62503,
+        "clicks": 35586
+      },
+      {
+        "weekStart": "2025-09-08",
+        "spend": 1051.37,
+        "impressions": 87968,
+        "clicks": 50085
+      },
+      {
+        "weekStart": "2025-09-15",
+        "spend": 960.15,
+        "impressions": 80336,
+        "clicks": 45739
+      },
+      {
+        "weekStart": "2025-09-22",
+        "spend": 688.52,
+        "impressions": 57610,
+        "clicks": 32801
+      }
+    ]
+  },
+  {
+    "id": "5e93a564-acc5-44bf-80d8-5771f0b27342",
+    "name": "Sustainable mobile encryption",
+    "channel": "Meta",
+    "status": "Paused",
+    "startDate": "2025-08-24T06:50:26.487Z",
+    "endDate": null,
+    "impressions": 474307,
+    "clicks": 317877,
+    "conversions": 76894,
+    "spend": 13946,
+    "budget": 18113,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-08-24",
+        "spend": 2875.07,
+        "impressions": 97782,
+        "clicks": 65533
+      },
+      {
+        "weekStart": "2025-08-31",
+        "spend": 2783.33,
+        "impressions": 94662,
+        "clicks": 63442
+      },
+      {
+        "weekStart": "2025-09-07",
+        "spend": 2135.58,
+        "impressions": 72632,
+        "clicks": 48677
+      },
+      {
+        "weekStart": "2025-09-14",
+        "spend": 3187.06,
+        "impressions": 108393,
+        "clicks": 72644
+      },
+      {
+        "weekStart": "2025-09-21",
+        "spend": 2964.96,
+        "impressions": 100838,
+        "clicks": 67581
+      }
+    ]
+  },
+  {
+    "id": "12b081df-2312-4f87-9acb-6c446d95e845",
+    "name": "Business-focused content-based system engine",
+    "channel": "Meta",
+    "status": "Active",
+    "startDate": "2025-12-20T12:07:19.941Z",
+    "endDate": null,
+    "impressions": 417474,
+    "clicks": 127247,
+    "conversions": 2634,
+    "spend": 16672,
+    "budget": 22143,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-12-20",
+        "spend": 3696.13,
+        "impressions": 92553,
+        "clicks": 28210
+      },
+      {
+        "weekStart": "2025-12-27",
+        "spend": 3696.25,
+        "impressions": 92556,
+        "clicks": 28211
+      },
+      {
+        "weekStart": "2026-01-03",
+        "spend": 3091.31,
+        "impressions": 77408,
+        "clicks": 23594
+      },
+      {
+        "weekStart": "2026-01-10",
+        "spend": 3261.81,
+        "impressions": 81677,
+        "clicks": 24895
+      },
+      {
+        "weekStart": "2026-01-17",
+        "spend": 2926.5,
+        "impressions": 73280,
+        "clicks": 22337
+      }
+    ]
+  },
+  {
+    "id": "ef1d0f19-69df-4c1a-bcff-16d3dccf1be5",
+    "name": "Ergonomic human-resource projection",
+    "channel": "Google",
+    "status": "Paused",
+    "startDate": "2025-05-01T05:20:03.758Z",
+    "endDate": null,
+    "impressions": 455980,
+    "clicks": 322442,
+    "conversions": 138018,
+    "spend": 6982,
+    "budget": 43222,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-05-01",
+        "spend": 1432.46,
+        "impressions": 93551,
+        "clicks": 66154
+      },
+      {
+        "weekStart": "2025-05-08",
+        "spend": 1508.68,
+        "impressions": 98529,
+        "clicks": 69674
+      },
+      {
+        "weekStart": "2025-05-15",
+        "spend": 1503.55,
+        "impressions": 98194,
+        "clicks": 69437
+      },
+      {
+        "weekStart": "2025-05-22",
+        "spend": 1462.34,
+        "impressions": 95502,
+        "clicks": 67533
+      },
+      {
+        "weekStart": "2025-05-29",
+        "spend": 1074.97,
+        "impressions": 70204,
+        "clicks": 49644
+      }
+    ]
+  },
+  {
+    "id": "3b58172f-692d-4d59-bcea-5e23fae41fb9",
+    "name": "Expanded transitional internet solution",
+    "channel": "LinkedIn",
+    "status": "Ended",
+    "startDate": "2026-04-10T17:57:46.520Z",
+    "endDate": "2026-08-26T00:20:52.636Z",
+    "impressions": 446461,
+    "clicks": 163288,
+    "conversions": 8283,
+    "spend": 10730,
+    "budget": 24108,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2026-04-10",
+        "spend": 518.19,
+        "impressions": 21561,
+        "clicks": 7886
+      },
+      {
+        "weekStart": "2026-04-17",
+        "spend": 622.25,
+        "impressions": 25891,
+        "clicks": 9469
+      },
+      {
+        "weekStart": "2026-04-24",
+        "spend": 634,
+        "impressions": 26380,
+        "clicks": 9648
+      },
+      {
+        "weekStart": "2026-05-01",
+        "spend": 502.31,
+        "impressions": 20901,
+        "clicks": 7644
+      },
+      {
+        "weekStart": "2026-05-08",
+        "spend": 685.75,
+        "impressions": 28533,
+        "clicks": 10436
+      },
+      {
+        "weekStart": "2026-05-15",
+        "spend": 587.39,
+        "impressions": 24441,
+        "clicks": 8939
+      },
+      {
+        "weekStart": "2026-05-22",
+        "spend": 598.24,
+        "impressions": 24892,
+        "clicks": 9104
+      },
+      {
+        "weekStart": "2026-05-29",
+        "spend": 506.34,
+        "impressions": 21068,
+        "clicks": 7705
+      },
+      {
+        "weekStart": "2026-06-05",
+        "spend": 528.05,
+        "impressions": 21971,
+        "clicks": 8036
+      },
+      {
+        "weekStart": "2026-06-12",
+        "spend": 436.41,
+        "impressions": 18159,
+        "clicks": 6641
+      },
+      {
+        "weekStart": "2026-06-19",
+        "spend": 590.4,
+        "impressions": 24566,
+        "clicks": 8985
+      },
+      {
+        "weekStart": "2026-06-26",
+        "spend": 477.25,
+        "impressions": 19858,
+        "clicks": 7263
+      },
+      {
+        "weekStart": "2026-07-03",
+        "spend": 516.03,
+        "impressions": 21471,
+        "clicks": 7853
+      },
+      {
+        "weekStart": "2026-07-10",
+        "spend": 573.62,
+        "impressions": 23867,
+        "clicks": 8729
+      },
+      {
+        "weekStart": "2026-07-17",
+        "spend": 432.17,
+        "impressions": 17982,
+        "clicks": 6577
+      },
+      {
+        "weekStart": "2026-07-24",
+        "spend": 669.13,
+        "impressions": 27841,
+        "clicks": 10183
+      },
+      {
+        "weekStart": "2026-07-31",
+        "spend": 433.27,
+        "impressions": 18028,
+        "clicks": 6593
+      },
+      {
+        "weekStart": "2026-08-07",
+        "spend": 549.55,
+        "impressions": 22866,
+        "clicks": 8363
+      },
+      {
+        "weekStart": "2026-08-14",
+        "spend": 452.72,
+        "impressions": 18837,
+        "clicks": 6889
+      },
+      {
+        "weekStart": "2026-08-21",
+        "spend": 416.93,
+        "impressions": 17348,
+        "clicks": 6345
+      }
+    ]
+  },
+  {
+    "id": "6a07cbdb-5945-484f-9395-cbd4ccb2a26c",
+    "name": "Organic encompassing process improvement",
+    "channel": "LinkedIn",
+    "status": "Paused",
+    "startDate": "2025-10-05T01:23:59.000Z",
+    "endDate": null,
+    "impressions": 332793,
+    "clicks": 52893,
+    "conversions": 28141,
+    "spend": 17716,
+    "budget": 30662,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-10-05",
+        "spend": 3620.02,
+        "impressions": 68002,
+        "clicks": 10808
+      },
+      {
+        "weekStart": "2025-10-12",
+        "spend": 4227.15,
+        "impressions": 79407,
+        "clicks": 12621
+      },
+      {
+        "weekStart": "2025-10-19",
+        "spend": 2993.54,
+        "impressions": 56233,
+        "clicks": 8938
+      },
+      {
+        "weekStart": "2025-10-26",
+        "spend": 4067.57,
+        "impressions": 76409,
+        "clicks": 12144
+      },
+      {
+        "weekStart": "2025-11-02",
+        "spend": 2807.72,
+        "impressions": 52742,
+        "clicks": 8382
+      }
+    ]
+  },
+  {
+    "id": "5905751f-e197-4a21-b5d0-1aeb43766637",
+    "name": "Face to face resilient matrix",
+    "channel": "LinkedIn",
+    "status": "Ended",
+    "startDate": "2025-10-24T21:03:05.152Z",
+    "endDate": "2026-06-01T00:00:00.000Z",
+    "impressions": 193737,
+    "clicks": 143261,
+    "conversions": 83565,
+    "spend": 15180,
+    "budget": 12166,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-10-24",
+        "spend": 498.85,
+        "impressions": 6367,
+        "clicks": 4708
+      },
+      {
+        "weekStart": "2025-10-31",
+        "spend": 564.55,
+        "impressions": 7205,
+        "clicks": 5328
+      },
+      {
+        "weekStart": "2025-11-07",
+        "spend": 422.79,
+        "impressions": 5396,
+        "clicks": 3990
+      },
+      {
+        "weekStart": "2025-11-14",
+        "spend": 586.54,
+        "impressions": 7486,
+        "clicks": 5535
+      },
+      {
+        "weekStart": "2025-11-21",
+        "spend": 414.25,
+        "impressions": 5287,
+        "clicks": 3910
+      },
+      {
+        "weekStart": "2025-11-28",
+        "spend": 505.29,
+        "impressions": 6449,
+        "clicks": 4769
+      },
+      {
+        "weekStart": "2025-12-05",
+        "spend": 571.33,
+        "impressions": 7292,
+        "clicks": 5392
+      },
+      {
+        "weekStart": "2025-12-12",
+        "spend": 555.89,
+        "impressions": 7095,
+        "clicks": 5246
+      },
+      {
+        "weekStart": "2025-12-19",
+        "spend": 616.05,
+        "impressions": 7862,
+        "clicks": 5814
+      },
+      {
+        "weekStart": "2025-12-26",
+        "spend": 372.5,
+        "impressions": 4754,
+        "clicks": 3515
+      },
+      {
+        "weekStart": "2026-01-02",
+        "spend": 570.36,
+        "impressions": 7279,
+        "clicks": 5383
+      },
+      {
+        "weekStart": "2026-01-09",
+        "spend": 528.2,
+        "impressions": 6741,
+        "clicks": 4985
+      },
+      {
+        "weekStart": "2026-01-16",
+        "spend": 368.9,
+        "impressions": 4708,
+        "clicks": 3482
+      },
+      {
+        "weekStart": "2026-01-23",
+        "spend": 604.16,
+        "impressions": 7711,
+        "clicks": 5702
+      },
+      {
+        "weekStart": "2026-01-30",
+        "spend": 552.52,
+        "impressions": 7052,
+        "clicks": 5214
+      },
+      {
+        "weekStart": "2026-02-06",
+        "spend": 425.35,
+        "impressions": 5429,
+        "clicks": 4014
+      },
+      {
+        "weekStart": "2026-02-13",
+        "spend": 375.58,
+        "impressions": 4793,
+        "clicks": 3545
+      },
+      {
+        "weekStart": "2026-02-20",
+        "spend": 517.15,
+        "impressions": 6600,
+        "clicks": 4881
+      },
+      {
+        "weekStart": "2026-02-27",
+        "spend": 419.04,
+        "impressions": 5348,
+        "clicks": 3955
+      },
+      {
+        "weekStart": "2026-03-06",
+        "spend": 414.88,
+        "impressions": 5295,
+        "clicks": 3915
+      },
+      {
+        "weekStart": "2026-03-13",
+        "spend": 359.94,
+        "impressions": 4594,
+        "clicks": 3397
+      },
+      {
+        "weekStart": "2026-03-20",
+        "spend": 489.17,
+        "impressions": 6243,
+        "clicks": 4616
+      },
+      {
+        "weekStart": "2026-03-27",
+        "spend": 367.2,
+        "impressions": 4687,
+        "clicks": 3465
+      },
+      {
+        "weekStart": "2026-04-03",
+        "spend": 521.9,
+        "impressions": 6661,
+        "clicks": 4925
+      },
+      {
+        "weekStart": "2026-04-10",
+        "spend": 506.21,
+        "impressions": 6461,
+        "clicks": 4777
+      },
+      {
+        "weekStart": "2026-04-17",
+        "spend": 442.2,
+        "impressions": 5644,
+        "clicks": 4173
+      },
+      {
+        "weekStart": "2026-04-24",
+        "spend": 522.32,
+        "impressions": 6666,
+        "clicks": 4929
+      },
+      {
+        "weekStart": "2026-05-01",
+        "spend": 355.83,
+        "impressions": 4541,
+        "clicks": 3358
+      },
+      {
+        "weekStart": "2026-05-08",
+        "spend": 362.2,
+        "impressions": 4623,
+        "clicks": 3418
+      },
+      {
+        "weekStart": "2026-05-15",
+        "spend": 410.24,
+        "impressions": 5236,
+        "clicks": 3872
+      },
+      {
+        "weekStart": "2026-05-22",
+        "spend": 572.84,
+        "impressions": 7311,
+        "clicks": 5406
+      },
+      {
+        "weekStart": "2026-05-29",
+        "spend": 385.77,
+        "impressions": 4921,
+        "clicks": 3642
+      }
+    ]
+  },
+  {
+    "id": "9bc41b4c-0823-4a56-bbae-cf230d43d312",
+    "name": "Proactive AI-powered artificial intelligence",
+    "channel": "Meta",
+    "status": "Paused",
+    "startDate": "2026-04-06T12:08:17.141Z",
+    "endDate": null,
+    "impressions": 486800,
+    "clicks": 64326,
+    "conversions": 54054,
+    "spend": 11806,
+    "budget": 40553,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2026-04-06",
+        "spend": 2428.82,
+        "impressions": 100148,
+        "clicks": 13234
+      },
+      {
+        "weekStart": "2026-04-13",
+        "spend": 2357.72,
+        "impressions": 97217,
+        "clicks": 12846
+      },
+      {
+        "weekStart": "2026-04-20",
+        "spend": 2205.05,
+        "impressions": 90921,
+        "clicks": 12014
+      },
+      {
+        "weekStart": "2026-04-27",
+        "spend": 2562.4,
+        "impressions": 105656,
+        "clicks": 13961
+      },
+      {
+        "weekStart": "2026-05-04",
+        "spend": 2252.01,
+        "impressions": 92858,
+        "clicks": 12271
+      }
+    ]
+  },
+  {
+    "id": "e82d62b5-1e34-453e-8534-8bb0e8d73539",
+    "name": "Realigned coherent encoding",
+    "channel": "Meta",
+    "status": "Active",
+    "startDate": "2025-11-23T12:56:21.514Z",
+    "endDate": null,
+    "impressions": 133909,
+    "clicks": 127350,
+    "conversions": 89517,
+    "spend": 16702,
+    "budget": 41325,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-11-23",
+        "spend": 2620.91,
+        "impressions": 21013,
+        "clicks": 19984
+      },
+      {
+        "weekStart": "2025-11-30",
+        "spend": 3193.32,
+        "impressions": 25603,
+        "clicks": 24349
+      },
+      {
+        "weekStart": "2025-12-07",
+        "spend": 3686.72,
+        "impressions": 29558,
+        "clicks": 28111
+      },
+      {
+        "weekStart": "2025-12-14",
+        "spend": 3778.2,
+        "impressions": 30292,
+        "clicks": 28808
+      },
+      {
+        "weekStart": "2025-12-21",
+        "spend": 3422.85,
+        "impressions": 27443,
+        "clicks": 26098
+      }
+    ]
+  },
+  {
+    "id": "196c1449-7ac4-447e-b293-a1758e4eb78d",
+    "name": "Adaptive logistical installation",
+    "channel": "LinkedIn",
+    "status": "Ended",
+    "startDate": "2025-08-28T16:47:52.276Z",
+    "endDate": "2026-05-01T00:00:00.000Z",
+    "impressions": 154506,
+    "clicks": 24809,
+    "conversions": 7044,
+    "spend": 18508,
+    "budget": 6531,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-08-28",
+        "spend": 640.39,
+        "impressions": 5346,
+        "clicks": 858
+      },
+      {
+        "weekStart": "2025-09-04",
+        "spend": 615.78,
+        "impressions": 5141,
+        "clicks": 825
+      },
+      {
+        "weekStart": "2025-09-11",
+        "spend": 448.77,
+        "impressions": 3746,
+        "clicks": 602
+      },
+      {
+        "weekStart": "2025-09-18",
+        "spend": 383.65,
+        "impressions": 3203,
+        "clicks": 514
+      },
+      {
+        "weekStart": "2025-09-25",
+        "spend": 408.35,
+        "impressions": 3409,
+        "clicks": 547
+      },
+      {
+        "weekStart": "2025-10-02",
+        "spend": 695,
+        "impressions": 5802,
+        "clicks": 932
+      },
+      {
+        "weekStart": "2025-10-09",
+        "spend": 514.79,
+        "impressions": 4297,
+        "clicks": 690
+      },
+      {
+        "weekStart": "2025-10-16",
+        "spend": 540.04,
+        "impressions": 4508,
+        "clicks": 724
+      },
+      {
+        "weekStart": "2025-10-23",
+        "spend": 480.47,
+        "impressions": 4011,
+        "clicks": 644
+      },
+      {
+        "weekStart": "2025-10-30",
+        "spend": 409.6,
+        "impressions": 3419,
+        "clicks": 549
+      },
+      {
+        "weekStart": "2025-11-06",
+        "spend": 446.01,
+        "impressions": 3723,
+        "clicks": 598
+      },
+      {
+        "weekStart": "2025-11-13",
+        "spend": 538.86,
+        "impressions": 4498,
+        "clicks": 722
+      },
+      {
+        "weekStart": "2025-11-20",
+        "spend": 426.97,
+        "impressions": 3564,
+        "clicks": 572
+      },
+      {
+        "weekStart": "2025-11-27",
+        "spend": 619.77,
+        "impressions": 5174,
+        "clicks": 831
+      },
+      {
+        "weekStart": "2025-12-04",
+        "spend": 571.24,
+        "impressions": 4769,
+        "clicks": 766
+      },
+      {
+        "weekStart": "2025-12-11",
+        "spend": 406.7,
+        "impressions": 3395,
+        "clicks": 545
+      },
+      {
+        "weekStart": "2025-12-18",
+        "spend": 587.83,
+        "impressions": 4907,
+        "clicks": 788
+      },
+      {
+        "weekStart": "2025-12-25",
+        "spend": 395.2,
+        "impressions": 3299,
+        "clicks": 530
+      },
+      {
+        "weekStart": "2026-01-01",
+        "spend": 487.9,
+        "impressions": 4073,
+        "clicks": 654
+      },
+      {
+        "weekStart": "2026-01-08",
+        "spend": 475.74,
+        "impressions": 3972,
+        "clicks": 638
+      },
+      {
+        "weekStart": "2026-01-15",
+        "spend": 398.52,
+        "impressions": 3327,
+        "clicks": 534
+      },
+      {
+        "weekStart": "2026-01-22",
+        "spend": 562.24,
+        "impressions": 4694,
+        "clicks": 754
+      },
+      {
+        "weekStart": "2026-01-29",
+        "spend": 497.5,
+        "impressions": 4153,
+        "clicks": 667
+      },
+      {
+        "weekStart": "2026-02-05",
+        "spend": 654.75,
+        "impressions": 5466,
+        "clicks": 878
+      },
+      {
+        "weekStart": "2026-02-12",
+        "spend": 495.89,
+        "impressions": 4140,
+        "clicks": 665
+      },
+      {
+        "weekStart": "2026-02-19",
+        "spend": 513.72,
+        "impressions": 4289,
+        "clicks": 689
+      },
+      {
+        "weekStart": "2026-02-26",
+        "spend": 400.93,
+        "impressions": 3347,
+        "clicks": 537
+      },
+      {
+        "weekStart": "2026-03-05",
+        "spend": 690.12,
+        "impressions": 5761,
+        "clicks": 925
+      },
+      {
+        "weekStart": "2026-03-12",
+        "spend": 574.17,
+        "impressions": 4793,
+        "clicks": 770
+      },
+      {
+        "weekStart": "2026-03-19",
+        "spend": 651.35,
+        "impressions": 5438,
+        "clicks": 873
+      },
+      {
+        "weekStart": "2026-03-26",
+        "spend": 489.56,
+        "impressions": 4087,
+        "clicks": 656
+      },
+      {
+        "weekStart": "2026-04-02",
+        "spend": 567.73,
+        "impressions": 4739,
+        "clicks": 761
+      },
+      {
+        "weekStart": "2026-04-09",
+        "spend": 442.52,
+        "impressions": 3694,
+        "clicks": 593
+      },
+      {
+        "weekStart": "2026-04-16",
+        "spend": 411.9,
+        "impressions": 3439,
+        "clicks": 552
+      },
+      {
+        "weekStart": "2026-04-23",
+        "spend": 598.8,
+        "impressions": 4999,
+        "clicks": 803
+      },
+      {
+        "weekStart": "2026-04-30",
+        "spend": 465.24,
+        "impressions": 3884,
+        "clicks": 623
+      }
+    ]
+  },
+  {
+    "id": "cfc68322-afb1-4fc5-b453-2bb37fb1fa65",
+    "name": "Face to face cohesive ability",
+    "channel": "Google",
+    "status": "Paused",
+    "startDate": "2025-08-10T12:23:34.551Z",
+    "endDate": null,
+    "impressions": 25641,
+    "clicks": 906,
+    "conversions": 274,
+    "spend": 13790,
+    "budget": 26781,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-08-10",
+        "spend": 2349.87,
+        "impressions": 4369,
+        "clicks": 154
+      },
+      {
+        "weekStart": "2025-08-17",
+        "spend": 3564.08,
+        "impressions": 6627,
+        "clicks": 234
+      },
+      {
+        "weekStart": "2025-08-24",
+        "spend": 2660.08,
+        "impressions": 4946,
+        "clicks": 175
+      },
+      {
+        "weekStart": "2025-08-31",
+        "spend": 3036.81,
+        "impressions": 5647,
+        "clicks": 200
+      },
+      {
+        "weekStart": "2025-09-07",
+        "spend": 2179.16,
+        "impressions": 4052,
+        "clicks": 143
+      }
+    ]
+  },
+  {
+    "id": "41e527e9-cb02-4bd7-88d2-fb35ec787d24",
+    "name": "Face to face bifurcated knowledge user",
+    "channel": "LinkedIn",
+    "status": "Paused",
+    "startDate": "2025-07-14T02:52:51.506Z",
+    "endDate": null,
+    "impressions": 349337,
+    "clicks": 197165,
+    "conversions": 190480,
+    "spend": 9786,
+    "budget": 17466,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-07-14",
+        "spend": 2199.68,
+        "impressions": 78523,
+        "clicks": 44318
+      },
+      {
+        "weekStart": "2025-07-21",
+        "spend": 1718.88,
+        "impressions": 61360,
+        "clicks": 34631
+      },
+      {
+        "weekStart": "2025-07-28",
+        "spend": 1966.95,
+        "impressions": 70215,
+        "clicks": 39629
+      },
+      {
+        "weekStart": "2025-08-04",
+        "spend": 1953,
+        "impressions": 69717,
+        "clicks": 39348
+      },
+      {
+        "weekStart": "2025-08-11",
+        "spend": 1947.49,
+        "impressions": 69522,
+        "clicks": 39239
+      }
+    ]
+  },
+  {
+    "id": "0530917e-6f63-40ec-b6e6-cb313b91a7cf",
+    "name": "Persevering local hardware",
+    "channel": "TikTok",
+    "status": "Ended",
+    "startDate": "2025-07-19T08:14:45.425Z",
+    "endDate": "2026-04-01T00:00:00.000Z",
+    "impressions": 150671,
+    "clicks": 110768,
+    "conversions": 105978,
+    "spend": 18553,
+    "budget": 49688,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-07-19",
+        "spend": 634.73,
+        "impressions": 5155,
+        "clicks": 3790
+      },
+      {
+        "weekStart": "2025-07-26",
+        "spend": 360.19,
+        "impressions": 2925,
+        "clicks": 2150
+      },
+      {
+        "weekStart": "2025-08-02",
+        "spend": 365.72,
+        "impressions": 2970,
+        "clicks": 2183
+      },
+      {
+        "weekStart": "2025-08-09",
+        "spend": 443.91,
+        "impressions": 3605,
+        "clicks": 2650
+      },
+      {
+        "weekStart": "2025-08-16",
+        "spend": 597.05,
+        "impressions": 4849,
+        "clicks": 3565
+      },
+      {
+        "weekStart": "2025-08-23",
+        "spend": 507.11,
+        "impressions": 4118,
+        "clicks": 3028
+      },
+      {
+        "weekStart": "2025-08-30",
+        "spend": 452.33,
+        "impressions": 3673,
+        "clicks": 2701
+      },
+      {
+        "weekStart": "2025-09-06",
+        "spend": 446.95,
+        "impressions": 3630,
+        "clicks": 2668
+      },
+      {
+        "weekStart": "2025-09-13",
+        "spend": 462.26,
+        "impressions": 3754,
+        "clicks": 2760
+      },
+      {
+        "weekStart": "2025-09-20",
+        "spend": 446.25,
+        "impressions": 3624,
+        "clicks": 2664
+      },
+      {
+        "weekStart": "2025-09-27",
+        "spend": 404.26,
+        "impressions": 3283,
+        "clicks": 2414
+      },
+      {
+        "weekStart": "2025-10-04",
+        "spend": 564.39,
+        "impressions": 4583,
+        "clicks": 3370
+      },
+      {
+        "weekStart": "2025-10-11",
+        "spend": 624.4,
+        "impressions": 5071,
+        "clicks": 3728
+      },
+      {
+        "weekStart": "2025-10-18",
+        "spend": 549.25,
+        "impressions": 4460,
+        "clicks": 3279
+      },
+      {
+        "weekStart": "2025-10-25",
+        "spend": 607.41,
+        "impressions": 4933,
+        "clicks": 3626
+      },
+      {
+        "weekStart": "2025-11-01",
+        "spend": 602.49,
+        "impressions": 4893,
+        "clicks": 3597
+      },
+      {
+        "weekStart": "2025-11-08",
+        "spend": 392.88,
+        "impressions": 3191,
+        "clicks": 2346
+      },
+      {
+        "weekStart": "2025-11-15",
+        "spend": 447.62,
+        "impressions": 3635,
+        "clicks": 2672
+      },
+      {
+        "weekStart": "2025-11-22",
+        "spend": 473.21,
+        "impressions": 3843,
+        "clicks": 2825
+      },
+      {
+        "weekStart": "2025-11-29",
+        "spend": 598.67,
+        "impressions": 4862,
+        "clicks": 3574
+      },
+      {
+        "weekStart": "2025-12-06",
+        "spend": 599.11,
+        "impressions": 4865,
+        "clicks": 3577
+      },
+      {
+        "weekStart": "2025-12-13",
+        "spend": 582.48,
+        "impressions": 4730,
+        "clicks": 3478
+      },
+      {
+        "weekStart": "2025-12-20",
+        "spend": 493.2,
+        "impressions": 4005,
+        "clicks": 2945
+      },
+      {
+        "weekStart": "2025-12-27",
+        "spend": 457.37,
+        "impressions": 3714,
+        "clicks": 2731
+      },
+      {
+        "weekStart": "2026-01-03",
+        "spend": 432.05,
+        "impressions": 3509,
+        "clicks": 2580
+      },
+      {
+        "weekStart": "2026-01-10",
+        "spend": 619.1,
+        "impressions": 5028,
+        "clicks": 3696
+      },
+      {
+        "weekStart": "2026-01-17",
+        "spend": 638.13,
+        "impressions": 5182,
+        "clicks": 3810
+      },
+      {
+        "weekStart": "2026-01-24",
+        "spend": 481.74,
+        "impressions": 3912,
+        "clicks": 2876
+      },
+      {
+        "weekStart": "2026-01-31",
+        "spend": 461.61,
+        "impressions": 3749,
+        "clicks": 2756
+      },
+      {
+        "weekStart": "2026-02-07",
+        "spend": 367.58,
+        "impressions": 2985,
+        "clicks": 2195
+      },
+      {
+        "weekStart": "2026-02-14",
+        "spend": 529.15,
+        "impressions": 4297,
+        "clicks": 3159
+      },
+      {
+        "weekStart": "2026-02-21",
+        "spend": 455.01,
+        "impressions": 3695,
+        "clicks": 2717
+      },
+      {
+        "weekStart": "2026-02-28",
+        "spend": 599.28,
+        "impressions": 4867,
+        "clicks": 3578
+      },
+      {
+        "weekStart": "2026-03-07",
+        "spend": 454.76,
+        "impressions": 3693,
+        "clicks": 2715
+      },
+      {
+        "weekStart": "2026-03-14",
+        "spend": 630.38,
+        "impressions": 5119,
+        "clicks": 3764
+      },
+      {
+        "weekStart": "2026-03-21",
+        "spend": 401.74,
+        "impressions": 3263,
+        "clicks": 2399
+      },
+      {
+        "weekStart": "2026-03-28",
+        "spend": 369.23,
+        "impressions": 3001,
+        "clicks": 2202
+      }
+    ]
+  },
+  {
+    "id": "88104348-4ed2-4941-968a-be3fe5b59676",
+    "name": "Expanded 24/7 projection",
+    "channel": "TikTok",
+    "status": "Active",
+    "startDate": "2025-05-02T01:56:06.678Z",
+    "endDate": null,
+    "impressions": 129118,
+    "clicks": 59878,
+    "conversions": 32021,
+    "spend": 19551,
+    "budget": 29836,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-05-02",
+        "spend": 3527,
+        "impressions": 23293,
+        "clicks": 10802
+      },
+      {
+        "weekStart": "2025-05-09",
+        "spend": 3941.99,
+        "impressions": 26034,
+        "clicks": 12073
+      },
+      {
+        "weekStart": "2025-05-16",
+        "spend": 3886.01,
+        "impressions": 25664,
+        "clicks": 11902
+      },
+      {
+        "weekStart": "2025-05-23",
+        "spend": 4455.38,
+        "impressions": 29424,
+        "clicks": 13645
+      },
+      {
+        "weekStart": "2025-05-30",
+        "spend": 3740.62,
+        "impressions": 24703,
+        "clicks": 11456
+      }
+    ]
+  },
+  {
+    "id": "be547f3d-627d-4d70-a78f-56e7659e3e76",
+    "name": "Customer-focused interactive frame",
+    "channel": "Google",
+    "status": "Ended",
+    "startDate": "2025-10-16T21:27:47.858Z",
+    "endDate": "2026-06-01T00:00:00.000Z",
+    "impressions": 198076,
+    "clicks": 96941,
+    "conversions": 58637,
+    "spend": 12106,
+    "budget": 24888,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-10-16",
+        "spend": 335.18,
+        "impressions": 5484,
+        "clicks": 2684
+      },
+      {
+        "weekStart": "2025-10-23",
+        "spend": 348.75,
+        "impressions": 5706,
+        "clicks": 2793
+      },
+      {
+        "weekStart": "2025-10-30",
+        "spend": 443.81,
+        "impressions": 7262,
+        "clicks": 3554
+      },
+      {
+        "weekStart": "2025-11-06",
+        "spend": 302.38,
+        "impressions": 4947,
+        "clicks": 2421
+      },
+      {
+        "weekStart": "2025-11-13",
+        "spend": 409.83,
+        "impressions": 6705,
+        "clicks": 3282
+      },
+      {
+        "weekStart": "2025-11-20",
+        "spend": 315.79,
+        "impressions": 5167,
+        "clicks": 2529
+      },
+      {
+        "weekStart": "2025-11-27",
+        "spend": 297.41,
+        "impressions": 4866,
+        "clicks": 2382
+      },
+      {
+        "weekStart": "2025-12-04",
+        "spend": 474.14,
+        "impressions": 7758,
+        "clicks": 3797
+      },
+      {
+        "weekStart": "2025-12-11",
+        "spend": 362.09,
+        "impressions": 5924,
+        "clicks": 2899
+      },
+      {
+        "weekStart": "2025-12-18",
+        "spend": 403.28,
+        "impressions": 6598,
+        "clicks": 3229
+      },
+      {
+        "weekStart": "2025-12-25",
+        "spend": 335.15,
+        "impressions": 5484,
+        "clicks": 2684
+      },
+      {
+        "weekStart": "2026-01-01",
+        "spend": 309.81,
+        "impressions": 5069,
+        "clicks": 2481
+      },
+      {
+        "weekStart": "2026-01-08",
+        "spend": 291.18,
+        "impressions": 4764,
+        "clicks": 2332
+      },
+      {
+        "weekStart": "2026-01-15",
+        "spend": 290.59,
+        "impressions": 4755,
+        "clicks": 2327
+      },
+      {
+        "weekStart": "2026-01-22",
+        "spend": 393.34,
+        "impressions": 6436,
+        "clicks": 3150
+      },
+      {
+        "weekStart": "2026-01-29",
+        "spend": 418.83,
+        "impressions": 6853,
+        "clicks": 3354
+      },
+      {
+        "weekStart": "2026-02-05",
+        "spend": 269.65,
+        "impressions": 4412,
+        "clicks": 2159
+      },
+      {
+        "weekStart": "2026-02-12",
+        "spend": 414.87,
+        "impressions": 6788,
+        "clicks": 3322
+      },
+      {
+        "weekStart": "2026-02-19",
+        "spend": 384.78,
+        "impressions": 6296,
+        "clicks": 3081
+      },
+      {
+        "weekStart": "2026-02-26",
+        "spend": 393.94,
+        "impressions": 6446,
+        "clicks": 3155
+      },
+      {
+        "weekStart": "2026-03-05",
+        "spend": 359.52,
+        "impressions": 5882,
+        "clicks": 2879
+      },
+      {
+        "weekStart": "2026-03-12",
+        "spend": 455.94,
+        "impressions": 7460,
+        "clicks": 3651
+      },
+      {
+        "weekStart": "2026-03-19",
+        "spend": 471.08,
+        "impressions": 7708,
+        "clicks": 3772
+      },
+      {
+        "weekStart": "2026-03-26",
+        "spend": 330.95,
+        "impressions": 5415,
+        "clicks": 2650
+      },
+      {
+        "weekStart": "2026-04-02",
+        "spend": 327.61,
+        "impressions": 5360,
+        "clicks": 2623
+      },
+      {
+        "weekStart": "2026-04-09",
+        "spend": 278.86,
+        "impressions": 4563,
+        "clicks": 2233
+      },
+      {
+        "weekStart": "2026-04-16",
+        "spend": 271.52,
+        "impressions": 4443,
+        "clicks": 2174
+      },
+      {
+        "weekStart": "2026-04-23",
+        "spend": 413.8,
+        "impressions": 6770,
+        "clicks": 3314
+      },
+      {
+        "weekStart": "2026-04-30",
+        "spend": 426.52,
+        "impressions": 6979,
+        "clicks": 3415
+      },
+      {
+        "weekStart": "2026-05-07",
+        "spend": 433.2,
+        "impressions": 7088,
+        "clicks": 3469
+      },
+      {
+        "weekStart": "2026-05-14",
+        "spend": 406.08,
+        "impressions": 6644,
+        "clicks": 3252
+      },
+      {
+        "weekStart": "2026-05-21",
+        "spend": 471.88,
+        "impressions": 7721,
+        "clicks": 3779
+      },
+      {
+        "weekStart": "2026-05-28",
+        "spend": 264.24,
+        "impressions": 4323,
+        "clicks": 2115
+      }
+    ]
+  },
+  {
+    "id": "30bcdb15-6848-4d2b-9048-0332536a3e32",
+    "name": "AI-driven composite ability",
+    "channel": "TikTok",
+    "status": "Paused",
+    "startDate": "2025-12-17T11:29:24.276Z",
+    "endDate": null,
+    "impressions": 47850,
+    "clicks": 11504,
+    "conversions": 123,
+    "spend": 8492,
+    "budget": 44794,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-12-17",
+        "spend": 1793.48,
+        "impressions": 10106,
+        "clicks": 2430
+      },
+      {
+        "weekStart": "2025-12-24",
+        "spend": 1763.8,
+        "impressions": 9939,
+        "clicks": 2389
+      },
+      {
+        "weekStart": "2025-12-31",
+        "spend": 1497.94,
+        "impressions": 8440,
+        "clicks": 2029
+      },
+      {
+        "weekStart": "2026-01-07",
+        "spend": 1778.7,
+        "impressions": 10022,
+        "clicks": 2410
+      },
+      {
+        "weekStart": "2026-01-14",
+        "spend": 1658.08,
+        "impressions": 9343,
+        "clicks": 2246
+      }
+    ]
+  },
+  {
+    "id": "2e443471-4954-4d71-a7d3-4eaafac09be1",
+    "name": "Front-line value-added artificial intelligence",
+    "channel": "Google",
+    "status": "Ended",
+    "startDate": "2026-01-25T07:11:42.470Z",
+    "endDate": "2026-07-06T06:38:19.722Z",
+    "impressions": 409028,
+    "clicks": 131390,
+    "conversions": 129386,
+    "spend": 16537,
+    "budget": 46755,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2026-01-25",
+        "spend": 653.55,
+        "impressions": 16165,
+        "clicks": 5193
+      },
+      {
+        "weekStart": "2026-02-01",
+        "spend": 653.11,
+        "impressions": 16154,
+        "clicks": 5189
+      },
+      {
+        "weekStart": "2026-02-08",
+        "spend": 810.73,
+        "impressions": 20053,
+        "clicks": 6441
+      },
+      {
+        "weekStart": "2026-02-15",
+        "spend": 595.03,
+        "impressions": 14718,
+        "clicks": 4728
+      },
+      {
+        "weekStart": "2026-02-22",
+        "spend": 558.22,
+        "impressions": 13807,
+        "clicks": 4435
+      },
+      {
+        "weekStart": "2026-03-01",
+        "spend": 883.41,
+        "impressions": 21850,
+        "clicks": 7019
+      },
+      {
+        "weekStart": "2026-03-08",
+        "spend": 628.82,
+        "impressions": 15553,
+        "clicks": 4996
+      },
+      {
+        "weekStart": "2026-03-15",
+        "spend": 870.59,
+        "impressions": 21533,
+        "clicks": 6917
+      },
+      {
+        "weekStart": "2026-03-22",
+        "spend": 758.95,
+        "impressions": 18772,
+        "clicks": 6030
+      },
+      {
+        "weekStart": "2026-03-29",
+        "spend": 797.93,
+        "impressions": 19736,
+        "clicks": 6340
+      },
+      {
+        "weekStart": "2026-04-05",
+        "spend": 575.52,
+        "impressions": 14235,
+        "clicks": 4573
+      },
+      {
+        "weekStart": "2026-04-12",
+        "spend": 802.38,
+        "impressions": 19846,
+        "clicks": 6375
+      },
+      {
+        "weekStart": "2026-04-19",
+        "spend": 596.22,
+        "impressions": 14747,
+        "clicks": 4737
+      },
+      {
+        "weekStart": "2026-04-26",
+        "spend": 705.73,
+        "impressions": 17456,
+        "clicks": 5607
+      },
+      {
+        "weekStart": "2026-05-03",
+        "spend": 808.53,
+        "impressions": 19998,
+        "clicks": 6424
+      },
+      {
+        "weekStart": "2026-05-10",
+        "spend": 711.98,
+        "impressions": 17610,
+        "clicks": 5657
+      },
+      {
+        "weekStart": "2026-05-17",
+        "spend": 541.91,
+        "impressions": 13404,
+        "clicks": 4306
+      },
+      {
+        "weekStart": "2026-05-24",
+        "spend": 587.84,
+        "impressions": 14540,
+        "clicks": 4670
+      },
+      {
+        "weekStart": "2026-05-31",
+        "spend": 863,
+        "impressions": 21346,
+        "clicks": 6857
+      },
+      {
+        "weekStart": "2026-06-07",
+        "spend": 794.25,
+        "impressions": 19645,
+        "clicks": 6310
+      },
+      {
+        "weekStart": "2026-06-14",
+        "spend": 520.68,
+        "impressions": 12879,
+        "clicks": 4137
+      },
+      {
+        "weekStart": "2026-06-21",
+        "spend": 555.81,
+        "impressions": 13747,
+        "clicks": 4416
+      },
+      {
+        "weekStart": "2026-06-28",
+        "spend": 507.38,
+        "impressions": 12550,
+        "clicks": 4031
+      },
+      {
+        "weekStart": "2026-07-05",
+        "spend": 755.43,
+        "impressions": 18684,
+        "clicks": 6002
+      }
+    ]
+  },
+  {
+    "id": "c08d5b60-aecf-4d7b-954b-eea40c8a1278",
+    "name": "Implemented intangible orchestration",
+    "channel": "Google",
+    "status": "Active",
+    "startDate": "2025-08-10T12:45:03.360Z",
+    "endDate": null,
+    "impressions": 60888,
+    "clicks": 56703,
+    "conversions": 16860,
+    "spend": 9681,
+    "budget": 38631,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-08-10",
+        "spend": 1456.84,
+        "impressions": 9163,
+        "clicks": 8533
+      },
+      {
+        "weekStart": "2025-08-17",
+        "spend": 1705.99,
+        "impressions": 10730,
+        "clicks": 9992
+      },
+      {
+        "weekStart": "2025-08-24",
+        "spend": 2210.71,
+        "impressions": 13904,
+        "clicks": 12948
+      },
+      {
+        "weekStart": "2025-08-31",
+        "spend": 1783.39,
+        "impressions": 11216,
+        "clicks": 10446
+      },
+      {
+        "weekStart": "2025-09-07",
+        "spend": 2524.07,
+        "impressions": 15875,
+        "clicks": 14784
+      }
+    ]
+  },
+  {
+    "id": "9a95bdc2-a40d-43b0-a057-1c902a498b3f",
+    "name": "Upgradable well-modulated ability",
+    "channel": "TikTok",
+    "status": "Active",
+    "startDate": "2025-09-19T09:56:36.191Z",
+    "endDate": null,
+    "impressions": 22981,
+    "clicks": 5115,
+    "conversions": 1155,
+    "spend": 14850,
+    "budget": 19027,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-09-19",
+        "spend": 2461.32,
+        "impressions": 3809,
+        "clicks": 848
+      },
+      {
+        "weekStart": "2025-09-26",
+        "spend": 2653.17,
+        "impressions": 4106,
+        "clicks": 914
+      },
+      {
+        "weekStart": "2025-10-03",
+        "spend": 3773.62,
+        "impressions": 5840,
+        "clicks": 1300
+      },
+      {
+        "weekStart": "2025-10-10",
+        "spend": 2833.99,
+        "impressions": 4386,
+        "clicks": 976
+      },
+      {
+        "weekStart": "2025-10-17",
+        "spend": 3127.9,
+        "impressions": 4840,
+        "clicks": 1077
+      }
+    ]
+  },
+  {
+    "id": "1721901a-ef41-41d5-9559-33a19faf6f1b",
+    "name": "Polarised motivating hub",
+    "channel": "TikTok",
+    "status": "Ended",
+    "startDate": "2025-12-26T12:43:51.989Z",
+    "endDate": "2026-06-01T00:00:00.000Z",
+    "impressions": 464507,
+    "clicks": 456077,
+    "conversions": 251201,
+    "spend": 962,
+    "budget": 26791,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-12-26",
+        "spend": 44.12,
+        "impressions": 21306,
+        "clicks": 20919
+      },
+      {
+        "weekStart": "2026-01-02",
+        "spend": 48.42,
+        "impressions": 23382,
+        "clicks": 22957
+      },
+      {
+        "weekStart": "2026-01-09",
+        "spend": 44.37,
+        "impressions": 21425,
+        "clicks": 21036
+      },
+      {
+        "weekStart": "2026-01-16",
+        "spend": 37.17,
+        "impressions": 17950,
+        "clicks": 17624
+      },
+      {
+        "weekStart": "2026-01-23",
+        "spend": 44.7,
+        "impressions": 21584,
+        "clicks": 21192
+      },
+      {
+        "weekStart": "2026-01-30",
+        "spend": 45.9,
+        "impressions": 22165,
+        "clicks": 21763
+      },
+      {
+        "weekStart": "2026-02-06",
+        "spend": 49.98,
+        "impressions": 24134,
+        "clicks": 23696
+      },
+      {
+        "weekStart": "2026-02-13",
+        "spend": 44.23,
+        "impressions": 21358,
+        "clicks": 20971
+      },
+      {
+        "weekStart": "2026-02-20",
+        "spend": 49.67,
+        "impressions": 23984,
+        "clicks": 23548
+      },
+      {
+        "weekStart": "2026-02-27",
+        "spend": 46.42,
+        "impressions": 22412,
+        "clicks": 22005
+      },
+      {
+        "weekStart": "2026-03-06",
+        "spend": 32.3,
+        "impressions": 15598,
+        "clicks": 15315
+      },
+      {
+        "weekStart": "2026-03-13",
+        "spend": 42.46,
+        "impressions": 20503,
+        "clicks": 20131
+      },
+      {
+        "weekStart": "2026-03-20",
+        "spend": 34.32,
+        "impressions": 16573,
+        "clicks": 16272
+      },
+      {
+        "weekStart": "2026-03-27",
+        "spend": 42.46,
+        "impressions": 20501,
+        "clicks": 20128
+      },
+      {
+        "weekStart": "2026-04-03",
+        "spend": 44.31,
+        "impressions": 21394,
+        "clicks": 21006
+      },
+      {
+        "weekStart": "2026-04-10",
+        "spend": 49.1,
+        "impressions": 23708,
+        "clicks": 23277
+      },
+      {
+        "weekStart": "2026-04-17",
+        "spend": 49.18,
+        "impressions": 23748,
+        "clicks": 23317
+      },
+      {
+        "weekStart": "2026-04-24",
+        "spend": 30.14,
+        "impressions": 14553,
+        "clicks": 14288
+      },
+      {
+        "weekStart": "2026-05-01",
+        "spend": 39.31,
+        "impressions": 18983,
+        "clicks": 18639
+      },
+      {
+        "weekStart": "2026-05-08",
+        "spend": 38.98,
+        "impressions": 18819,
+        "clicks": 18478
+      },
+      {
+        "weekStart": "2026-05-15",
+        "spend": 29.23,
+        "impressions": 14116,
+        "clicks": 13860
+      },
+      {
+        "weekStart": "2026-05-22",
+        "spend": 36.76,
+        "impressions": 17749,
+        "clicks": 17427
+      },
+      {
+        "weekStart": "2026-05-29",
+        "spend": 38.47,
+        "impressions": 18562,
+        "clicks": 18228
+      }
+    ]
+  },
+  {
+    "id": "5fcbbd91-c1ba-498d-b9fa-3a60aa7a255b",
+    "name": "Triple-buffered disintermediate core",
+    "channel": "Google",
+    "status": "Paused",
+    "startDate": "2025-09-29T06:27:45.648Z",
+    "endDate": null,
+    "impressions": 259424,
+    "clicks": 252020,
+    "conversions": 44612,
+    "spend": 6304,
+    "budget": 49923,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-09-29",
+        "spend": 1491.12,
+        "impressions": 61363,
+        "clicks": 59612
+      },
+      {
+        "weekStart": "2025-10-06",
+        "spend": 1197.76,
+        "impressions": 49290,
+        "clicks": 47884
+      },
+      {
+        "weekStart": "2025-10-13",
+        "spend": 1206.42,
+        "impressions": 49647,
+        "clicks": 48230
+      },
+      {
+        "weekStart": "2025-10-20",
+        "spend": 998.06,
+        "impressions": 41073,
+        "clicks": 39900
+      },
+      {
+        "weekStart": "2025-10-27",
+        "spend": 1410.64,
+        "impressions": 58051,
+        "clicks": 56394
+      }
+    ]
+  },
+  {
+    "id": "809df98a-923e-4a05-b4c2-24c67a04d3bf",
+    "name": "Integrated needs-based algorithm",
+    "channel": "TikTok",
+    "status": "Ended",
+    "startDate": "2025-09-21T02:13:13.496Z",
+    "endDate": "2026-06-01T00:00:00.000Z",
+    "impressions": 283749,
+    "clicks": 34720,
+    "conversions": 21041,
+    "spend": 11793,
+    "budget": 36621,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-09-21",
+        "spend": 356.93,
+        "impressions": 8588,
+        "clicks": 1051
+      },
+      {
+        "weekStart": "2025-09-28",
+        "spend": 337.79,
+        "impressions": 8128,
+        "clicks": 994
+      },
+      {
+        "weekStart": "2025-10-05",
+        "spend": 373,
+        "impressions": 8975,
+        "clicks": 1098
+      },
+      {
+        "weekStart": "2025-10-12",
+        "spend": 383.15,
+        "impressions": 9219,
+        "clicks": 1128
+      },
+      {
+        "weekStart": "2025-10-19",
+        "spend": 269.62,
+        "impressions": 6487,
+        "clicks": 794
+      },
+      {
+        "weekStart": "2025-10-26",
+        "spend": 394.57,
+        "impressions": 9494,
+        "clicks": 1162
+      },
+      {
+        "weekStart": "2025-11-02",
+        "spend": 391.56,
+        "impressions": 9421,
+        "clicks": 1153
+      },
+      {
+        "weekStart": "2025-11-09",
+        "spend": 252.41,
+        "impressions": 6073,
+        "clicks": 743
+      },
+      {
+        "weekStart": "2025-11-16",
+        "spend": 290.83,
+        "impressions": 6998,
+        "clicks": 856
+      },
+      {
+        "weekStart": "2025-11-23",
+        "spend": 298.1,
+        "impressions": 7173,
+        "clicks": 878
+      },
+      {
+        "weekStart": "2025-11-30",
+        "spend": 354.73,
+        "impressions": 8535,
+        "clicks": 1044
+      },
+      {
+        "weekStart": "2025-12-07",
+        "spend": 327.79,
+        "impressions": 7887,
+        "clicks": 965
+      },
+      {
+        "weekStart": "2025-12-14",
+        "spend": 294.24,
+        "impressions": 7080,
+        "clicks": 866
+      },
+      {
+        "weekStart": "2025-12-21",
+        "spend": 296.91,
+        "impressions": 7144,
+        "clicks": 874
+      },
+      {
+        "weekStart": "2025-12-28",
+        "spend": 260.5,
+        "impressions": 6268,
+        "clicks": 767
+      },
+      {
+        "weekStart": "2026-01-04",
+        "spend": 346.56,
+        "impressions": 8339,
+        "clicks": 1020
+      },
+      {
+        "weekStart": "2026-01-11",
+        "spend": 333.8,
+        "impressions": 8031,
+        "clicks": 983
+      },
+      {
+        "weekStart": "2026-01-18",
+        "spend": 229.96,
+        "impressions": 5533,
+        "clicks": 677
+      },
+      {
+        "weekStart": "2026-01-25",
+        "spend": 321.56,
+        "impressions": 7737,
+        "clicks": 947
+      },
+      {
+        "weekStart": "2026-02-01",
+        "spend": 273.79,
+        "impressions": 6587,
+        "clicks": 806
+      },
+      {
+        "weekStart": "2026-02-08",
+        "spend": 345.34,
+        "impressions": 8309,
+        "clicks": 1017
+      },
+      {
+        "weekStart": "2026-02-15",
+        "spend": 269.29,
+        "impressions": 6479,
+        "clicks": 793
+      },
+      {
+        "weekStart": "2026-02-22",
+        "spend": 268.85,
+        "impressions": 6469,
+        "clicks": 792
+      },
+      {
+        "weekStart": "2026-03-01",
+        "spend": 398.69,
+        "impressions": 9593,
+        "clicks": 1174
+      },
+      {
+        "weekStart": "2026-03-08",
+        "spend": 261.71,
+        "impressions": 6297,
+        "clicks": 771
+      },
+      {
+        "weekStart": "2026-03-15",
+        "spend": 268.45,
+        "impressions": 6459,
+        "clicks": 790
+      },
+      {
+        "weekStart": "2026-03-22",
+        "spend": 306.68,
+        "impressions": 7379,
+        "clicks": 903
+      },
+      {
+        "weekStart": "2026-03-29",
+        "spend": 245.81,
+        "impressions": 5914,
+        "clicks": 724
+      },
+      {
+        "weekStart": "2026-04-05",
+        "spend": 353.79,
+        "impressions": 8512,
+        "clicks": 1042
+      },
+      {
+        "weekStart": "2026-04-12",
+        "spend": 228.96,
+        "impressions": 5509,
+        "clicks": 674
+      },
+      {
+        "weekStart": "2026-04-19",
+        "spend": 401.06,
+        "impressions": 9650,
+        "clicks": 1181
+      },
+      {
+        "weekStart": "2026-04-26",
+        "spend": 371.31,
+        "impressions": 8934,
+        "clicks": 1093
+      },
+      {
+        "weekStart": "2026-05-03",
+        "spend": 397.98,
+        "impressions": 9576,
+        "clicks": 1172
+      },
+      {
+        "weekStart": "2026-05-10",
+        "spend": 324.81,
+        "impressions": 7815,
+        "clicks": 956
+      },
+      {
+        "weekStart": "2026-05-17",
+        "spend": 362.66,
+        "impressions": 8726,
+        "clicks": 1068
+      },
+      {
+        "weekStart": "2026-05-24",
+        "spend": 296.13,
+        "impressions": 7125,
+        "clicks": 872
+      },
+      {
+        "weekStart": "2026-05-31",
+        "spend": 303.68,
+        "impressions": 7306,
+        "clicks": 892
+      }
+    ]
+  },
+  {
+    "id": "df3e84c0-8137-46ea-9fa0-233641290fb8",
+    "name": "Multi-tiered scalable neural-net",
+    "channel": "TikTok",
+    "status": "Active",
+    "startDate": "2026-04-11T14:37:01.561Z",
+    "endDate": null,
+    "impressions": 183661,
+    "clicks": 169216,
+    "conversions": 8282,
+    "spend": 14610,
+    "budget": 20725,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2026-04-11",
+        "spend": 2555.37,
+        "impressions": 32123,
+        "clicks": 29597
+      },
+      {
+        "weekStart": "2026-04-18",
+        "spend": 2566.56,
+        "impressions": 32264,
+        "clicks": 29726
+      },
+      {
+        "weekStart": "2026-04-25",
+        "spend": 3180.02,
+        "impressions": 39976,
+        "clicks": 36832
+      },
+      {
+        "weekStart": "2026-05-02",
+        "spend": 2897.11,
+        "impressions": 36419,
+        "clicks": 33555
+      },
+      {
+        "weekStart": "2026-05-09",
+        "spend": 3410.94,
+        "impressions": 42879,
+        "clicks": 39506
+      }
+    ]
+  },
+  {
+    "id": "eaecf976-b2da-40f6-b270-866e1ea2f3e7",
+    "name": "Face to face optimizing algorithm",
+    "channel": "TikTok",
+    "status": "Active",
+    "startDate": "2025-11-19T14:56:54.219Z",
+    "endDate": null,
+    "impressions": 337248,
+    "clicks": 2409,
+    "conversions": 2370,
+    "spend": 1327,
+    "budget": 6731,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-11-19",
+        "spend": 294.92,
+        "impressions": 74953,
+        "clicks": 535
+      },
+      {
+        "weekStart": "2025-11-26",
+        "spend": 288.56,
+        "impressions": 73336,
+        "clicks": 524
+      },
+      {
+        "weekStart": "2025-12-03",
+        "spend": 338.44,
+        "impressions": 86012,
+        "clicks": 614
+      },
+      {
+        "weekStart": "2025-12-10",
+        "spend": 217.11,
+        "impressions": 55177,
+        "clicks": 394
+      },
+      {
+        "weekStart": "2025-12-17",
+        "spend": 187.97,
+        "impressions": 47770,
+        "clicks": 342
+      }
+    ]
+  },
+  {
+    "id": "79698b06-f5f9-48bd-a54f-51d5b35b7495",
+    "name": "Public-key cloud-native interface",
+    "channel": "Meta",
+    "status": "Paused",
+    "startDate": "2025-05-02T06:11:26.125Z",
+    "endDate": null,
+    "impressions": 195262,
+    "clicks": 138328,
+    "conversions": 65842,
+    "spend": 14446,
+    "budget": 5779,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-05-02",
+        "spend": 2649.52,
+        "impressions": 35813,
+        "clicks": 25371
+      },
+      {
+        "weekStart": "2025-05-09",
+        "spend": 3184.4,
+        "impressions": 43042,
+        "clicks": 30492
+      },
+      {
+        "weekStart": "2025-05-16",
+        "spend": 3396.41,
+        "impressions": 45908,
+        "clicks": 32522
+      },
+      {
+        "weekStart": "2025-05-23",
+        "spend": 2718.16,
+        "impressions": 36740,
+        "clicks": 26028
+      },
+      {
+        "weekStart": "2025-05-30",
+        "spend": 2497.51,
+        "impressions": 33759,
+        "clicks": 23915
+      }
+    ]
+  },
+  {
+    "id": "24968268-0be4-4e61-9ce8-656f2e94ceed",
+    "name": "Centralized eco-centric array",
+    "channel": "LinkedIn",
+    "status": "Active",
+    "startDate": "2026-03-19T06:48:20.891Z",
+    "endDate": null,
+    "impressions": 208961,
+    "clicks": 137386,
+    "conversions": 118420,
+    "spend": 8753,
+    "budget": 20333,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2026-03-19",
+        "spend": 1668.1,
+        "impressions": 39823,
+        "clicks": 26182
+      },
+      {
+        "weekStart": "2026-03-26",
+        "spend": 2140.8,
+        "impressions": 51107,
+        "clicks": 33602
+      },
+      {
+        "weekStart": "2026-04-02",
+        "spend": 1997.69,
+        "impressions": 47691,
+        "clicks": 31355
+      },
+      {
+        "weekStart": "2026-04-09",
+        "spend": 1465.52,
+        "impressions": 34986,
+        "clicks": 23003
+      },
+      {
+        "weekStart": "2026-04-16",
+        "spend": 1480.89,
+        "impressions": 35354,
+        "clicks": 23244
+      }
+    ]
+  },
+  {
+    "id": "9f3367f9-305f-43de-8dd7-e5694a30342f",
+    "name": "Configurable contextually-based collaboration",
+    "channel": "Meta",
+    "status": "Active",
+    "startDate": "2026-04-29T00:34:54.025Z",
+    "endDate": null,
+    "impressions": 395122,
+    "clicks": 367054,
+    "conversions": 271798,
+    "spend": 19454,
+    "budget": 7586,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2026-04-29",
+        "spend": 3379.43,
+        "impressions": 68638,
+        "clicks": 63762
+      },
+      {
+        "weekStart": "2026-05-06",
+        "spend": 4039.08,
+        "impressions": 82036,
+        "clicks": 76208
+      },
+      {
+        "weekStart": "2026-05-13",
+        "spend": 4797.02,
+        "impressions": 97430,
+        "clicks": 90509
+      },
+      {
+        "weekStart": "2026-05-20",
+        "spend": 3905.75,
+        "impressions": 79328,
+        "clicks": 73693
+      },
+      {
+        "weekStart": "2026-05-27",
+        "spend": 3332.72,
+        "impressions": 67690,
+        "clicks": 62882
+      }
+    ]
+  },
+  {
+    "id": "aaa7a242-a1c5-4ed9-93ef-f9ddf25c186e",
+    "name": "Synchronised bottom-line portal",
+    "channel": "TikTok",
+    "status": "Active",
+    "startDate": "2025-11-11T01:07:08.673Z",
+    "endDate": null,
+    "impressions": 152568,
+    "clicks": 56409,
+    "conversions": 45791,
+    "spend": 11189,
+    "budget": 34540,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-11-11",
+        "spend": 1761.01,
+        "impressions": 24012,
+        "clicks": 8878
+      },
+      {
+        "weekStart": "2025-11-18",
+        "spend": 2749.41,
+        "impressions": 37490,
+        "clicks": 13861
+      },
+      {
+        "weekStart": "2025-11-25",
+        "spend": 2732.48,
+        "impressions": 37259,
+        "clicks": 13776
+      },
+      {
+        "weekStart": "2025-12-02",
+        "spend": 2358.06,
+        "impressions": 32153,
+        "clicks": 11888
+      },
+      {
+        "weekStart": "2025-12-09",
+        "spend": 1588.04,
+        "impressions": 21654,
+        "clicks": 8006
+      }
+    ]
+  },
+  {
+    "id": "9cc9ce7e-b4fc-4992-87c0-b6199c2c05fd",
+    "name": "Sharable 24 hour open architecture",
+    "channel": "TikTok",
+    "status": "Active",
+    "startDate": "2026-01-03T13:01:53.213Z",
+    "endDate": null,
+    "impressions": 68976,
+    "clicks": 7424,
+    "conversions": 5560,
+    "spend": 3782,
+    "budget": 25174,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2026-01-03",
+        "spend": 735.09,
+        "impressions": 13407,
+        "clicks": 1443
+      },
+      {
+        "weekStart": "2026-01-10",
+        "spend": 747.68,
+        "impressions": 13636,
+        "clicks": 1468
+      },
+      {
+        "weekStart": "2026-01-17",
+        "spend": 788.43,
+        "impressions": 14379,
+        "clicks": 1548
+      },
+      {
+        "weekStart": "2026-01-24",
+        "spend": 601.73,
+        "impressions": 10974,
+        "clicks": 1181
+      },
+      {
+        "weekStart": "2026-01-31",
+        "spend": 909.07,
+        "impressions": 16580,
+        "clicks": 1784
+      }
+    ]
+  },
+  {
+    "id": "496b40d0-ced3-4778-9a43-ea5c6abb3be9",
+    "name": "Operative holistic artificial intelligence",
+    "channel": "LinkedIn",
+    "status": "Paused",
+    "startDate": "2025-11-10T17:38:51.655Z",
+    "endDate": null,
+    "impressions": 10432,
+    "clicks": 8081,
+    "conversions": 6686,
+    "spend": 12858,
+    "budget": 8296,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-11-10",
+        "spend": 3222.78,
+        "impressions": 2615,
+        "clicks": 2025
+      },
+      {
+        "weekStart": "2025-11-17",
+        "spend": 1949.78,
+        "impressions": 1582,
+        "clicks": 1225
+      },
+      {
+        "weekStart": "2025-11-24",
+        "spend": 3000.76,
+        "impressions": 2435,
+        "clicks": 1886
+      },
+      {
+        "weekStart": "2025-12-01",
+        "spend": 1876.85,
+        "impressions": 1523,
+        "clicks": 1180
+      },
+      {
+        "weekStart": "2025-12-08",
+        "spend": 2807.83,
+        "impressions": 2277,
+        "clicks": 1765
+      }
+    ]
+  },
+  {
+    "id": "f64dee67-777d-4cea-966e-fe386b8fba86",
+    "name": "Smart eco-centric project",
+    "channel": "Meta",
+    "status": "Active",
+    "startDate": "2025-11-15T09:02:21.652Z",
+    "endDate": null,
+    "impressions": 99758,
+    "clicks": 40326,
+    "conversions": 20229,
+    "spend": 13385,
+    "budget": 45030,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-11-15",
+        "spend": 3076.38,
+        "impressions": 22928,
+        "clicks": 9268
+      },
+      {
+        "weekStart": "2025-11-22",
+        "spend": 2245.11,
+        "impressions": 16733,
+        "clicks": 6764
+      },
+      {
+        "weekStart": "2025-11-29",
+        "spend": 2656.16,
+        "impressions": 19796,
+        "clicks": 8002
+      },
+      {
+        "weekStart": "2025-12-06",
+        "spend": 3047.94,
+        "impressions": 22716,
+        "clicks": 9183
+      },
+      {
+        "weekStart": "2025-12-13",
+        "spend": 2359.41,
+        "impressions": 17585,
+        "clicks": 7109
+      }
+    ]
+  },
+  {
+    "id": "e880b685-1712-46ce-8829-6cdab95218fc",
+    "name": "Smart attitude-oriented concept",
+    "channel": "Meta",
+    "status": "Active",
+    "startDate": "2025-07-24T00:33:47.223Z",
+    "endDate": null,
+    "impressions": 116723,
+    "clicks": 14648,
+    "conversions": 13390,
+    "spend": 13223,
+    "budget": 33450,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-07-24",
+        "spend": 2413.06,
+        "impressions": 21301,
+        "clicks": 2673
+      },
+      {
+        "weekStart": "2025-07-31",
+        "spend": 2760.78,
+        "impressions": 24370,
+        "clicks": 3058
+      },
+      {
+        "weekStart": "2025-08-07",
+        "spend": 2903.29,
+        "impressions": 25628,
+        "clicks": 3216
+      },
+      {
+        "weekStart": "2025-08-14",
+        "spend": 3024.57,
+        "impressions": 26699,
+        "clicks": 3351
+      },
+      {
+        "weekStart": "2025-08-21",
+        "spend": 2121.3,
+        "impressions": 18725,
+        "clicks": 2350
+      }
+    ]
+  },
+  {
+    "id": "11f833d7-149e-4b81-ab02-1fb3b2be811f",
+    "name": "Customizable human-resource local area network",
+    "channel": "LinkedIn",
+    "status": "Ended",
+    "startDate": "2025-09-17T19:14:32.620Z",
+    "endDate": "2026-10-13T00:18:33.250Z",
+    "impressions": 330079,
+    "clicks": 82063,
+    "conversions": 6290,
+    "spend": 9390,
+    "budget": 34235,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-09-17",
+        "spend": 127.38,
+        "impressions": 4478,
+        "clicks": 1113
+      },
+      {
+        "weekStart": "2025-09-24",
+        "spend": 159.86,
+        "impressions": 5619,
+        "clicks": 1397
+      },
+      {
+        "weekStart": "2025-10-01",
+        "spend": 199.21,
+        "impressions": 7003,
+        "clicks": 1741
+      },
+      {
+        "weekStart": "2025-10-08",
+        "spend": 177.47,
+        "impressions": 6238,
+        "clicks": 1551
+      },
+      {
+        "weekStart": "2025-10-15",
+        "spend": 157.05,
+        "impressions": 5521,
+        "clicks": 1373
+      },
+      {
+        "weekStart": "2025-10-22",
+        "spend": 193.7,
+        "impressions": 6809,
+        "clicks": 1693
+      },
+      {
+        "weekStart": "2025-10-29",
+        "spend": 123.67,
+        "impressions": 4347,
+        "clicks": 1081
+      },
+      {
+        "weekStart": "2025-11-05",
+        "spend": 175.34,
+        "impressions": 6163,
+        "clicks": 1532
+      },
+      {
+        "weekStart": "2025-11-12",
+        "spend": 134.93,
+        "impressions": 4743,
+        "clicks": 1179
+      },
+      {
+        "weekStart": "2025-11-19",
+        "spend": 137.55,
+        "impressions": 4835,
+        "clicks": 1202
+      },
+      {
+        "weekStart": "2025-11-26",
+        "spend": 179.84,
+        "impressions": 6322,
+        "clicks": 1572
+      },
+      {
+        "weekStart": "2025-12-03",
+        "spend": 212.92,
+        "impressions": 7484,
+        "clicks": 1861
+      },
+      {
+        "weekStart": "2025-12-10",
+        "spend": 188.09,
+        "impressions": 6612,
+        "clicks": 1644
+      },
+      {
+        "weekStart": "2025-12-17",
+        "spend": 135.63,
+        "impressions": 4768,
+        "clicks": 1185
+      },
+      {
+        "weekStart": "2025-12-24",
+        "spend": 198.79,
+        "impressions": 6988,
+        "clicks": 1737
+      },
+      {
+        "weekStart": "2025-12-31",
+        "spend": 204.06,
+        "impressions": 7173,
+        "clicks": 1783
+      },
+      {
+        "weekStart": "2026-01-07",
+        "spend": 153.08,
+        "impressions": 5381,
+        "clicks": 1338
+      },
+      {
+        "weekStart": "2026-01-14",
+        "spend": 159.94,
+        "impressions": 5622,
+        "clicks": 1398
+      },
+      {
+        "weekStart": "2026-01-21",
+        "spend": 159.32,
+        "impressions": 5600,
+        "clicks": 1392
+      },
+      {
+        "weekStart": "2026-01-28",
+        "spend": 220.19,
+        "impressions": 7740,
+        "clicks": 1924
+      },
+      {
+        "weekStart": "2026-02-04",
+        "spend": 128.64,
+        "impressions": 4522,
+        "clicks": 1124
+      },
+      {
+        "weekStart": "2026-02-11",
+        "spend": 136.58,
+        "impressions": 4801,
+        "clicks": 1194
+      },
+      {
+        "weekStart": "2026-02-18",
+        "spend": 151.46,
+        "impressions": 5324,
+        "clicks": 1324
+      },
+      {
+        "weekStart": "2026-02-25",
+        "spend": 132.07,
+        "impressions": 4642,
+        "clicks": 1154
+      },
+      {
+        "weekStart": "2026-03-04",
+        "spend": 124.52,
+        "impressions": 4377,
+        "clicks": 1088
+      },
+      {
+        "weekStart": "2026-03-11",
+        "spend": 139.98,
+        "impressions": 4921,
+        "clicks": 1223
+      },
+      {
+        "weekStart": "2026-03-18",
+        "spend": 186.4,
+        "impressions": 6553,
+        "clicks": 1629
+      },
+      {
+        "weekStart": "2026-03-25",
+        "spend": 200.12,
+        "impressions": 7035,
+        "clicks": 1749
+      },
+      {
+        "weekStart": "2026-04-01",
+        "spend": 176.6,
+        "impressions": 6208,
+        "clicks": 1543
+      },
+      {
+        "weekStart": "2026-04-08",
+        "spend": 138.17,
+        "impressions": 4857,
+        "clicks": 1208
+      },
+      {
+        "weekStart": "2026-04-15",
+        "spend": 148.97,
+        "impressions": 5237,
+        "clicks": 1302
+      },
+      {
+        "weekStart": "2026-04-22",
+        "spend": 161.97,
+        "impressions": 5694,
+        "clicks": 1416
+      },
+      {
+        "weekStart": "2026-04-29",
+        "spend": 199.64,
+        "impressions": 7018,
+        "clicks": 1745
+      },
+      {
+        "weekStart": "2026-05-06",
+        "spend": 204.62,
+        "impressions": 7193,
+        "clicks": 1788
+      },
+      {
+        "weekStart": "2026-05-13",
+        "spend": 145.73,
+        "impressions": 5123,
+        "clicks": 1274
+      },
+      {
+        "weekStart": "2026-05-20",
+        "spend": 203.39,
+        "impressions": 7149,
+        "clicks": 1777
+      },
+      {
+        "weekStart": "2026-05-27",
+        "spend": 122.6,
+        "impressions": 4310,
+        "clicks": 1071
+      },
+      {
+        "weekStart": "2026-06-03",
+        "spend": 189.73,
+        "impressions": 6669,
+        "clicks": 1658
+      },
+      {
+        "weekStart": "2026-06-10",
+        "spend": 137.3,
+        "impressions": 4826,
+        "clicks": 1200
+      },
+      {
+        "weekStart": "2026-06-17",
+        "spend": 149.04,
+        "impressions": 5239,
+        "clicks": 1303
+      },
+      {
+        "weekStart": "2026-06-24",
+        "spend": 183.94,
+        "impressions": 6466,
+        "clicks": 1607
+      },
+      {
+        "weekStart": "2026-07-01",
+        "spend": 163.04,
+        "impressions": 5731,
+        "clicks": 1425
+      },
+      {
+        "weekStart": "2026-07-08",
+        "spend": 159.2,
+        "impressions": 5596,
+        "clicks": 1391
+      },
+      {
+        "weekStart": "2026-07-15",
+        "spend": 210.13,
+        "impressions": 7386,
+        "clicks": 1836
+      },
+      {
+        "weekStart": "2026-07-22",
+        "spend": 220.17,
+        "impressions": 7739,
+        "clicks": 1924
+      },
+      {
+        "weekStart": "2026-07-29",
+        "spend": 212.57,
+        "impressions": 7472,
+        "clicks": 1858
+      },
+      {
+        "weekStart": "2026-08-05",
+        "spend": 195.5,
+        "impressions": 6872,
+        "clicks": 1709
+      },
+      {
+        "weekStart": "2026-08-12",
+        "spend": 176.18,
+        "impressions": 6193,
+        "clicks": 1540
+      },
+      {
+        "weekStart": "2026-08-19",
+        "spend": 137.64,
+        "impressions": 4838,
+        "clicks": 1203
+      },
+      {
+        "weekStart": "2026-08-26",
+        "spend": 142.95,
+        "impressions": 5025,
+        "clicks": 1249
+      },
+      {
+        "weekStart": "2026-09-02",
+        "spend": 194.31,
+        "impressions": 6830,
+        "clicks": 1698
+      },
+      {
+        "weekStart": "2026-09-09",
+        "spend": 136.45,
+        "impressions": 4797,
+        "clicks": 1193
+      },
+      {
+        "weekStart": "2026-09-16",
+        "spend": 142.72,
+        "impressions": 5017,
+        "clicks": 1247
+      },
+      {
+        "weekStart": "2026-09-23",
+        "spend": 163.5,
+        "impressions": 5747,
+        "clicks": 1429
+      },
+      {
+        "weekStart": "2026-09-30",
+        "spend": 221.09,
+        "impressions": 7772,
+        "clicks": 1932
+      },
+      {
+        "weekStart": "2026-10-07",
+        "spend": 155.06,
+        "impressions": 5454,
+        "clicks": 1356
+      }
+    ]
+  },
+  {
+    "id": "f7719aa4-7b3d-46ef-9baa-917cd5fed26a",
+    "name": "Fundamental homogeneous process improvement",
+    "channel": "TikTok",
+    "status": "Ended",
+    "startDate": "2025-08-21T09:00:12.080Z",
+    "endDate": "2026-10-13T00:18:33.250Z",
+    "impressions": 150506,
+    "clicks": 135437,
+    "conversions": 17165,
+    "spend": 3267,
+    "budget": 34367,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-08-21",
+        "spend": 67.45,
+        "impressions": 3107,
+        "clicks": 2796
+      },
+      {
+        "weekStart": "2025-08-28",
+        "spend": 37.99,
+        "impressions": 1750,
+        "clicks": 1575
+      },
+      {
+        "weekStart": "2025-09-04",
+        "spend": 49.74,
+        "impressions": 2292,
+        "clicks": 2062
+      },
+      {
+        "weekStart": "2025-09-11",
+        "spend": 58.96,
+        "impressions": 2716,
+        "clicks": 2444
+      },
+      {
+        "weekStart": "2025-09-18",
+        "spend": 62.56,
+        "impressions": 2882,
+        "clicks": 2594
+      },
+      {
+        "weekStart": "2025-09-25",
+        "spend": 50.1,
+        "impressions": 2308,
+        "clicks": 2077
+      },
+      {
+        "weekStart": "2025-10-02",
+        "spend": 56.84,
+        "impressions": 2619,
+        "clicks": 2357
+      },
+      {
+        "weekStart": "2025-10-09",
+        "spend": 60.96,
+        "impressions": 2808,
+        "clicks": 2527
+      },
+      {
+        "weekStart": "2025-10-16",
+        "spend": 62.69,
+        "impressions": 2888,
+        "clicks": 2599
+      },
+      {
+        "weekStart": "2025-10-23",
+        "spend": 45.32,
+        "impressions": 2088,
+        "clicks": 1879
+      },
+      {
+        "weekStart": "2025-10-30",
+        "spend": 49.03,
+        "impressions": 2259,
+        "clicks": 2033
+      },
+      {
+        "weekStart": "2025-11-06",
+        "spend": 67.67,
+        "impressions": 3118,
+        "clicks": 2805
+      },
+      {
+        "weekStart": "2025-11-13",
+        "spend": 62.34,
+        "impressions": 2872,
+        "clicks": 2584
+      },
+      {
+        "weekStart": "2025-11-20",
+        "spend": 59.21,
+        "impressions": 2728,
+        "clicks": 2455
+      },
+      {
+        "weekStart": "2025-11-27",
+        "spend": 67.33,
+        "impressions": 3102,
+        "clicks": 2791
+      },
+      {
+        "weekStart": "2025-12-04",
+        "spend": 54.46,
+        "impressions": 2509,
+        "clicks": 2258
+      },
+      {
+        "weekStart": "2025-12-11",
+        "spend": 54.2,
+        "impressions": 2497,
+        "clicks": 2247
+      },
+      {
+        "weekStart": "2025-12-18",
+        "spend": 65.91,
+        "impressions": 3036,
+        "clicks": 2732
+      },
+      {
+        "weekStart": "2025-12-25",
+        "spend": 40.56,
+        "impressions": 1868,
+        "clicks": 1681
+      },
+      {
+        "weekStart": "2026-01-01",
+        "spend": 38.7,
+        "impressions": 1783,
+        "clicks": 1604
+      },
+      {
+        "weekStart": "2026-01-08",
+        "spend": 67.03,
+        "impressions": 3088,
+        "clicks": 2779
+      },
+      {
+        "weekStart": "2026-01-15",
+        "spend": 38.31,
+        "impressions": 1765,
+        "clicks": 1588
+      },
+      {
+        "weekStart": "2026-01-22",
+        "spend": 63.42,
+        "impressions": 2921,
+        "clicks": 2629
+      },
+      {
+        "weekStart": "2026-01-29",
+        "spend": 60.45,
+        "impressions": 2785,
+        "clicks": 2506
+      },
+      {
+        "weekStart": "2026-02-05",
+        "spend": 65.8,
+        "impressions": 3031,
+        "clicks": 2728
+      },
+      {
+        "weekStart": "2026-02-12",
+        "spend": 60.15,
+        "impressions": 2771,
+        "clicks": 2494
+      },
+      {
+        "weekStart": "2026-02-19",
+        "spend": 62.13,
+        "impressions": 2862,
+        "clicks": 2576
+      },
+      {
+        "weekStart": "2026-02-26",
+        "spend": 51.75,
+        "impressions": 2384,
+        "clicks": 2146
+      },
+      {
+        "weekStart": "2026-03-05",
+        "spend": 39.44,
+        "impressions": 1817,
+        "clicks": 1635
+      },
+      {
+        "weekStart": "2026-03-12",
+        "spend": 66.24,
+        "impressions": 3051,
+        "clicks": 2746
+      },
+      {
+        "weekStart": "2026-03-19",
+        "spend": 51.72,
+        "impressions": 2383,
+        "clicks": 2144
+      },
+      {
+        "weekStart": "2026-03-26",
+        "spend": 56.45,
+        "impressions": 2601,
+        "clicks": 2340
+      },
+      {
+        "weekStart": "2026-04-02",
+        "spend": 47.08,
+        "impressions": 2169,
+        "clicks": 1952
+      },
+      {
+        "weekStart": "2026-04-09",
+        "spend": 36.91,
+        "impressions": 1700,
+        "clicks": 1530
+      },
+      {
+        "weekStart": "2026-04-16",
+        "spend": 36.9,
+        "impressions": 1700,
+        "clicks": 1530
+      },
+      {
+        "weekStart": "2026-04-23",
+        "spend": 59.16,
+        "impressions": 2726,
+        "clicks": 2453
+      },
+      {
+        "weekStart": "2026-04-30",
+        "spend": 39.6,
+        "impressions": 1824,
+        "clicks": 1641
+      },
+      {
+        "weekStart": "2026-05-07",
+        "spend": 44.23,
+        "impressions": 2038,
+        "clicks": 1834
+      },
+      {
+        "weekStart": "2026-05-14",
+        "spend": 53.67,
+        "impressions": 2472,
+        "clicks": 2225
+      },
+      {
+        "weekStart": "2026-05-21",
+        "spend": 48.65,
+        "impressions": 2241,
+        "clicks": 2017
+      },
+      {
+        "weekStart": "2026-05-28",
+        "spend": 67.12,
+        "impressions": 3092,
+        "clicks": 2783
+      },
+      {
+        "weekStart": "2026-06-04",
+        "spend": 65.89,
+        "impressions": 3035,
+        "clicks": 2731
+      },
+      {
+        "weekStart": "2026-06-11",
+        "spend": 58.9,
+        "impressions": 2713,
+        "clicks": 2442
+      },
+      {
+        "weekStart": "2026-06-18",
+        "spend": 64.29,
+        "impressions": 2962,
+        "clicks": 2665
+      },
+      {
+        "weekStart": "2026-06-25",
+        "spend": 51.62,
+        "impressions": 2378,
+        "clicks": 2140
+      },
+      {
+        "weekStart": "2026-07-02",
+        "spend": 67.88,
+        "impressions": 3127,
+        "clicks": 2814
+      },
+      {
+        "weekStart": "2026-07-09",
+        "spend": 53.71,
+        "impressions": 2474,
+        "clicks": 2226
+      },
+      {
+        "weekStart": "2026-07-16",
+        "spend": 42.19,
+        "impressions": 1944,
+        "clicks": 1749
+      },
+      {
+        "weekStart": "2026-07-23",
+        "spend": 37.45,
+        "impressions": 1725,
+        "clicks": 1552
+      },
+      {
+        "weekStart": "2026-07-30",
+        "spend": 47.72,
+        "impressions": 2198,
+        "clicks": 1978
+      },
+      {
+        "weekStart": "2026-08-06",
+        "spend": 37.06,
+        "impressions": 1707,
+        "clicks": 1536
+      },
+      {
+        "weekStart": "2026-08-13",
+        "spend": 63.01,
+        "impressions": 2903,
+        "clicks": 2612
+      },
+      {
+        "weekStart": "2026-08-20",
+        "spend": 57.54,
+        "impressions": 2651,
+        "clicks": 2385
+      },
+      {
+        "weekStart": "2026-08-27",
+        "spend": 51.85,
+        "impressions": 2389,
+        "clicks": 2150
+      },
+      {
+        "weekStart": "2026-09-03",
+        "spend": 57.1,
+        "impressions": 2631,
+        "clicks": 2367
+      },
+      {
+        "weekStart": "2026-09-10",
+        "spend": 67.84,
+        "impressions": 3125,
+        "clicks": 2812
+      },
+      {
+        "weekStart": "2026-09-17",
+        "spend": 42.51,
+        "impressions": 1958,
+        "clicks": 1762
+      },
+      {
+        "weekStart": "2026-09-24",
+        "spend": 67.39,
+        "impressions": 3105,
+        "clicks": 2794
+      },
+      {
+        "weekStart": "2026-10-01",
+        "spend": 40.02,
+        "impressions": 1843,
+        "clicks": 1659
+      },
+      {
+        "weekStart": "2026-10-08",
+        "spend": 64.8,
+        "impressions": 2987,
+        "clicks": 2687
+      }
+    ]
+  },
+  {
+    "id": "d809157a-cd43-4539-83d1-af7967250a50",
+    "name": "Reduced content-based support",
+    "channel": "LinkedIn",
+    "status": "Ended",
+    "startDate": "2026-03-29T12:11:33.249Z",
+    "endDate": "2027-01-26T04:49:39.974Z",
+    "impressions": 223939,
+    "clicks": 105950,
+    "conversions": 25855,
+    "spend": 3052,
+    "budget": 35667,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2026-03-29",
+        "spend": 62.49,
+        "impressions": 4585,
+        "clicks": 2169
+      },
+      {
+        "weekStart": "2026-04-05",
+        "spend": 58.83,
+        "impressions": 4317,
+        "clicks": 2042
+      },
+      {
+        "weekStart": "2026-04-12",
+        "spend": 68.45,
+        "impressions": 5023,
+        "clicks": 2376
+      },
+      {
+        "weekStart": "2026-04-19",
+        "spend": 77.87,
+        "impressions": 5714,
+        "clicks": 2703
+      },
+      {
+        "weekStart": "2026-04-26",
+        "spend": 79.81,
+        "impressions": 5856,
+        "clicks": 2770
+      },
+      {
+        "weekStart": "2026-05-03",
+        "spend": 84.5,
+        "impressions": 6200,
+        "clicks": 2933
+      },
+      {
+        "weekStart": "2026-05-10",
+        "spend": 88.32,
+        "impressions": 6481,
+        "clicks": 3066
+      },
+      {
+        "weekStart": "2026-05-17",
+        "spend": 88.22,
+        "impressions": 6473,
+        "clicks": 3062
+      },
+      {
+        "weekStart": "2026-05-24",
+        "spend": 77.56,
+        "impressions": 5691,
+        "clicks": 2692
+      },
+      {
+        "weekStart": "2026-05-31",
+        "spend": 69.69,
+        "impressions": 5113,
+        "clicks": 2419
+      },
+      {
+        "weekStart": "2026-06-07",
+        "spend": 92.26,
+        "impressions": 6770,
+        "clicks": 3203
+      },
+      {
+        "weekStart": "2026-06-14",
+        "spend": 54.21,
+        "impressions": 3978,
+        "clicks": 1882
+      },
+      {
+        "weekStart": "2026-06-21",
+        "spend": 53.97,
+        "impressions": 3960,
+        "clicks": 1873
+      },
+      {
+        "weekStart": "2026-06-28",
+        "spend": 84.91,
+        "impressions": 6230,
+        "clicks": 2948
+      },
+      {
+        "weekStart": "2026-07-05",
+        "spend": 63.85,
+        "impressions": 4685,
+        "clicks": 2217
+      },
+      {
+        "weekStart": "2026-07-12",
+        "spend": 80.33,
+        "impressions": 5894,
+        "clicks": 2789
+      },
+      {
+        "weekStart": "2026-07-19",
+        "spend": 78.93,
+        "impressions": 5791,
+        "clicks": 2740
+      },
+      {
+        "weekStart": "2026-07-26",
+        "spend": 78.03,
+        "impressions": 5726,
+        "clicks": 2709
+      },
+      {
+        "weekStart": "2026-08-02",
+        "spend": 81.82,
+        "impressions": 6004,
+        "clicks": 2841
+      },
+      {
+        "weekStart": "2026-08-09",
+        "spend": 70.54,
+        "impressions": 5176,
+        "clicks": 2449
+      },
+      {
+        "weekStart": "2026-08-16",
+        "spend": 64.95,
+        "impressions": 4765,
+        "clicks": 2255
+      },
+      {
+        "weekStart": "2026-08-23",
+        "spend": 57.55,
+        "impressions": 4222,
+        "clicks": 1998
+      },
+      {
+        "weekStart": "2026-08-30",
+        "spend": 74.04,
+        "impressions": 5433,
+        "clicks": 2570
+      },
+      {
+        "weekStart": "2026-09-06",
+        "spend": 77.18,
+        "impressions": 5663,
+        "clicks": 2679
+      },
+      {
+        "weekStart": "2026-09-13",
+        "spend": 60.98,
+        "impressions": 4474,
+        "clicks": 2117
+      },
+      {
+        "weekStart": "2026-09-20",
+        "spend": 63.43,
+        "impressions": 4654,
+        "clicks": 2202
+      },
+      {
+        "weekStart": "2026-09-27",
+        "spend": 57.48,
+        "impressions": 4217,
+        "clicks": 1995
+      },
+      {
+        "weekStart": "2026-10-04",
+        "spend": 79.01,
+        "impressions": 5798,
+        "clicks": 2743
+      },
+      {
+        "weekStart": "2026-10-11",
+        "spend": 52.38,
+        "impressions": 3843,
+        "clicks": 1818
+      },
+      {
+        "weekStart": "2026-10-18",
+        "spend": 53.48,
+        "impressions": 3924,
+        "clicks": 1856
+      },
+      {
+        "weekStart": "2026-10-25",
+        "spend": 53.8,
+        "impressions": 3948,
+        "clicks": 1868
+      },
+      {
+        "weekStart": "2026-11-01",
+        "spend": 62.67,
+        "impressions": 4598,
+        "clicks": 2176
+      },
+      {
+        "weekStart": "2026-11-08",
+        "spend": 71.4,
+        "impressions": 5239,
+        "clicks": 2479
+      },
+      {
+        "weekStart": "2026-11-15",
+        "spend": 73.43,
+        "impressions": 5388,
+        "clicks": 2549
+      },
+      {
+        "weekStart": "2026-11-22",
+        "spend": 69.77,
+        "impressions": 5119,
+        "clicks": 2422
+      },
+      {
+        "weekStart": "2026-11-29",
+        "spend": 62.64,
+        "impressions": 4596,
+        "clicks": 2175
+      },
+      {
+        "weekStart": "2026-12-06",
+        "spend": 52.37,
+        "impressions": 3843,
+        "clicks": 1818
+      },
+      {
+        "weekStart": "2026-12-13",
+        "spend": 65.41,
+        "impressions": 4800,
+        "clicks": 2271
+      },
+      {
+        "weekStart": "2026-12-20",
+        "spend": 87.2,
+        "impressions": 6399,
+        "clicks": 3027
+      },
+      {
+        "weekStart": "2026-12-27",
+        "spend": 71.11,
+        "impressions": 5218,
+        "clicks": 2469
+      },
+      {
+        "weekStart": "2027-01-03",
+        "spend": 52.68,
+        "impressions": 3865,
+        "clicks": 1829
+      },
+      {
+        "weekStart": "2027-01-10",
+        "spend": 70.56,
+        "impressions": 5178,
+        "clicks": 2450
+      },
+      {
+        "weekStart": "2027-01-17",
+        "spend": 66.73,
+        "impressions": 4896,
+        "clicks": 2317
+      },
+      {
+        "weekStart": "2027-01-24",
+        "spend": 57.16,
+        "impressions": 4192,
+        "clicks": 1984
+      }
+    ]
+  },
+  {
+    "id": "5a39b748-419a-4211-af30-18de6937d22d",
+    "name": "Adaptive needs-based time-frame",
+    "channel": "Meta",
+    "status": "Paused",
+    "startDate": "2025-12-14T20:48:13.841Z",
+    "endDate": null,
+    "impressions": 470218,
+    "clicks": 274469,
+    "conversions": 128094,
+    "spend": 15289,
+    "budget": 8421,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-12-14",
+        "spend": 3302.27,
+        "impressions": 101562,
+        "clicks": 59283
+      },
+      {
+        "weekStart": "2025-12-21",
+        "spend": 2467.08,
+        "impressions": 75876,
+        "clicks": 44289
+      },
+      {
+        "weekStart": "2025-12-28",
+        "spend": 3431.63,
+        "impressions": 105541,
+        "clicks": 61605
+      },
+      {
+        "weekStart": "2026-01-04",
+        "spend": 2472.45,
+        "impressions": 76041,
+        "clicks": 44386
+      },
+      {
+        "weekStart": "2026-01-11",
+        "spend": 3615.57,
+        "impressions": 111198,
+        "clicks": 64906
+      }
+    ]
+  },
+  {
+    "id": "0df80978-bdb5-4470-acce-f436665d2e95",
+    "name": "Reactive zero administration analyzer",
+    "channel": "Meta",
+    "status": "Active",
+    "startDate": "2025-11-09T12:37:00.931Z",
+    "endDate": null,
+    "impressions": 485335,
+    "clicks": 260750,
+    "conversions": 98900,
+    "spend": 12774,
+    "budget": 24696,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-11-09",
+        "spend": 3139.37,
+        "impressions": 119277,
+        "clicks": 64083
+      },
+      {
+        "weekStart": "2025-11-16",
+        "spend": 2577.31,
+        "impressions": 97922,
+        "clicks": 52610
+      },
+      {
+        "weekStart": "2025-11-23",
+        "spend": 2099.63,
+        "impressions": 79773,
+        "clicks": 42859
+      },
+      {
+        "weekStart": "2025-11-30",
+        "spend": 2653.77,
+        "impressions": 100827,
+        "clicks": 54170
+      },
+      {
+        "weekStart": "2025-12-07",
+        "spend": 2303.92,
+        "impressions": 87536,
+        "clicks": 47028
+      }
+    ]
+  },
+  {
+    "id": "87de86d5-a08f-4917-9136-c8b786604206",
+    "name": "Organized fresh-thinking task-force",
+    "channel": "TikTok",
+    "status": "Active",
+    "startDate": "2025-05-11T15:19:12.661Z",
+    "endDate": null,
+    "impressions": 131417,
+    "clicks": 99105,
+    "conversions": 94924,
+    "spend": 5601,
+    "budget": 37872,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-05-11",
+        "spend": 779.15,
+        "impressions": 18281,
+        "clicks": 13786
+      },
+      {
+        "weekStart": "2025-05-18",
+        "spend": 1008.15,
+        "impressions": 23654,
+        "clicks": 17838
+      },
+      {
+        "weekStart": "2025-05-25",
+        "spend": 1392.67,
+        "impressions": 32676,
+        "clicks": 24642
+      },
+      {
+        "weekStart": "2025-06-01",
+        "spend": 1196.27,
+        "impressions": 28068,
+        "clicks": 21167
+      },
+      {
+        "weekStart": "2025-06-08",
+        "spend": 1224.76,
+        "impressions": 28738,
+        "clicks": 21672
+      }
+    ]
+  },
+  {
+    "id": "d970bd41-3d85-4eef-8140-282e8c6b84eb",
+    "name": "Sustainable executive interface",
+    "channel": "TikTok",
+    "status": "Active",
+    "startDate": "2025-11-27T21:56:58.101Z",
+    "endDate": null,
+    "impressions": 369512,
+    "clicks": 180042,
+    "conversions": 61445,
+    "spend": 8996,
+    "budget": 6951,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-11-27",
+        "spend": 1729.18,
+        "impressions": 71026,
+        "clicks": 34607
+      },
+      {
+        "weekStart": "2025-12-04",
+        "spend": 1910.04,
+        "impressions": 78455,
+        "clicks": 38227
+      },
+      {
+        "weekStart": "2025-12-11",
+        "spend": 1780.38,
+        "impressions": 73129,
+        "clicks": 35632
+      },
+      {
+        "weekStart": "2025-12-18",
+        "spend": 1461.4,
+        "impressions": 60027,
+        "clicks": 29248
+      },
+      {
+        "weekStart": "2025-12-25",
+        "spend": 2115,
+        "impressions": 86875,
+        "clicks": 42328
+      }
+    ]
+  },
+  {
+    "id": "02a1920a-ee42-4dd4-8d61-4797ad263ffc",
+    "name": "Secured explicit definition",
+    "channel": "LinkedIn",
+    "status": "Paused",
+    "startDate": "2026-02-19T18:21:50.598Z",
+    "endDate": null,
+    "impressions": 465828,
+    "clicks": 94174,
+    "conversions": 91314,
+    "spend": 12722,
+    "budget": 30968,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2026-02-19",
+        "spend": 2702.52,
+        "impressions": 98955,
+        "clicks": 20005
+      },
+      {
+        "weekStart": "2026-02-26",
+        "spend": 2627.28,
+        "impressions": 96200,
+        "clicks": 19448
+      },
+      {
+        "weekStart": "2026-03-05",
+        "spend": 2740.85,
+        "impressions": 100359,
+        "clicks": 20289
+      },
+      {
+        "weekStart": "2026-03-12",
+        "spend": 2370.18,
+        "impressions": 86786,
+        "clicks": 17545
+      },
+      {
+        "weekStart": "2026-03-19",
+        "spend": 2281.17,
+        "impressions": 83528,
+        "clicks": 16887
+      }
+    ]
+  },
+  {
+    "id": "9a7c1ed8-89b3-495d-9d51-d5f8e710ae49",
+    "name": "Distributed intangible solution",
+    "channel": "Meta",
+    "status": "Active",
+    "startDate": "2025-05-15T20:12:33.195Z",
+    "endDate": null,
+    "impressions": 454625,
+    "clicks": 33652,
+    "conversions": 11458,
+    "spend": 2715,
+    "budget": 34428,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-05-15",
+        "spend": 481.73,
+        "impressions": 80665,
+        "clicks": 5971
+      },
+      {
+        "weekStart": "2025-05-22",
+        "spend": 664.15,
+        "impressions": 111212,
+        "clicks": 8232
+      },
+      {
+        "weekStart": "2025-05-29",
+        "spend": 723.82,
+        "impressions": 121203,
+        "clicks": 8972
+      },
+      {
+        "weekStart": "2025-06-05",
+        "spend": 396.18,
+        "impressions": 66341,
+        "clicks": 4911
+      },
+      {
+        "weekStart": "2025-06-12",
+        "spend": 449.12,
+        "impressions": 75204,
+        "clicks": 5566
+      }
+    ]
+  },
+  {
+    "id": "800638a6-a2cc-4121-8316-936e6ba9ee11",
+    "name": "Streamlined dynamic implementation",
+    "channel": "LinkedIn",
+    "status": "Active",
+    "startDate": "2025-09-01T06:30:20.050Z",
+    "endDate": null,
+    "impressions": 155199,
+    "clicks": 58451,
+    "conversions": 30617,
+    "spend": 3490,
+    "budget": 16565,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2025-09-01",
+        "spend": 767.48,
+        "impressions": 34130,
+        "clicks": 12854
+      },
+      {
+        "weekStart": "2025-09-08",
+        "spend": 645.45,
+        "impressions": 28703,
+        "clicks": 10810
+      },
+      {
+        "weekStart": "2025-09-15",
+        "spend": 661.36,
+        "impressions": 29410,
+        "clicks": 11076
+      },
+      {
+        "weekStart": "2025-09-22",
+        "spend": 654.34,
+        "impressions": 29098,
+        "clicks": 10959
+      },
+      {
+        "weekStart": "2025-09-29",
+        "spend": 761.37,
+        "impressions": 33858,
+        "clicks": 12752
+      }
+    ]
+  },
+  {
+    "id": "cefd19d0-3db2-44a2-be63-7bd2a2a0f576",
+    "name": "Streamlined directional conglomeration",
+    "channel": "LinkedIn",
+    "status": "Paused",
+    "startDate": "2026-01-31T13:24:23.978Z",
+    "endDate": null,
+    "impressions": 238170,
+    "clicks": 126211,
+    "conversions": 55207,
+    "spend": 10045,
+    "budget": 29614,
+    "weeklyMetrics": [
+      {
+        "weekStart": "2026-01-31",
+        "spend": 2303.92,
+        "impressions": 54627,
+        "clicks": 28948
+      },
+      {
+        "weekStart": "2026-02-07",
+        "spend": 2021.86,
+        "impressions": 47939,
+        "clicks": 25404
+      },
+      {
+        "weekStart": "2026-02-14",
+        "spend": 1789.71,
+        "impressions": 42435,
+        "clicks": 22487
+      },
+      {
+        "weekStart": "2026-02-21",
+        "spend": 1839.05,
+        "impressions": 43605,
+        "clicks": 23107
+      },
+      {
+        "weekStart": "2026-02-28",
+        "spend": 2090.46,
+        "impressions": 49564,
+        "clicks": 26265
+      }
+    ]
+  }
+]
