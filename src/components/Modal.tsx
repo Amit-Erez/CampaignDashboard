@@ -62,7 +62,7 @@ export default function Modal({
           <Dialog.Description className="sr-only">
             Detailed analytics and campaign performance metrics.
           </Dialog.Description>
-          <div className="flex items-center justify-between w-full h-20 p-6 mt-4">
+          <div className="flex items-center justify-between w-full h-20 p-6 mt-4 animate-fade-in">
             <button onClick={handlePrev}>
               <FontAwesomeIcon
                 icon={faChevronLeft}
@@ -77,7 +77,7 @@ export default function Modal({
               />
             </button>
           </div>
-          <div className="flex-1 min-h-0 overflow-y-auto mt-6 rounded-xl">
+          <div className="flex-1 min-h-0 overflow-y-auto mt-6 rounded-xl animate-fade-in">
             <div className="grid h-full grid-cols-1 min-[980px]:grid-cols-[2fr_1fr] gap-4">
               <div className="flex h-full flex-col gap-4 order-2 min-[980px]:order-1">
                 <div className="flex-1 rounded-2xl border border-[#3a6073]/20 bg-white/70 p-5 shadow-sm">
