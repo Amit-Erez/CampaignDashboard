@@ -35,7 +35,7 @@ const Table = ({
   const sorted = sortCampaigns(filtered, sortConfig);
 
   const tableHeaders = [
-    { name: "Select" },
+    // { name: "Select" }, (checkboxes for selecting rows - potential future feature)
     { name: "Campaign Name", sortName: "name" },
     { name: "Channel", sortName: "channel" },
     { name: "Status", sortName: "status" },
@@ -50,14 +50,6 @@ const Table = ({
     { name: "CPA", sortName: "cpa" },
   ];
 
-  // function formatDate(dateString: string | null) {
-  //   if (!dateString) return "Ongoing";
-  //   return new Date(dateString).toLocaleDateString("en-US", {
-  //     year: "numeric",
-  //     month: "short",
-  //     day: "numeric",
-  //   });
-  // }
 
   // updating sortConfig in zustand store => updating the mapped 'sorted' array above
   function handleSort(key: keyof Campaign) {
@@ -96,8 +88,10 @@ const Table = ({
   }, [sortConfig, filters, updateVisibleCampaigns]);
 
   return (
-    <div className="h-full min-h-0 overflow-y-auto no-scrollbar border-gray-400 rounded-b-[20px] border">
-      <table className="min-w-full">
+    <div className="h-full min-h-0 min-w-0 overflow-hidden rounded-b-[20px] border border-gray-400">
+      <div className="h-full min-w-0 overflow-x-auto overflow-y-auto no-scrollbar">
+
+      <table className="w-full min-w-270">
         <thead className="sticky top-0 z-10 bg-[#ccdfe6] text-sm font-medium h-10 text-gray-700">
           <tr>
             {tableHeaders.map((header, index) => {
@@ -121,12 +115,12 @@ const Table = ({
                           : "descending"
                       : undefined
                   }
-                  className="text-center"
+                  className="whitespace-nowrap text-center px-2"
                 >
                   {header.sortName ? (
                     <button
                       type="button"
-                      className="w-full flex items-center justify-center rounded-md transition-colors 
+                      className="w-full flex items-center justify-center rounded-md transition-colors cursor-pointer hover:scale-[1.02]
                       focus:outline-none
                       focus-visible:bg-[#d8eef8]
                       focus-visible:ring-1  
@@ -180,9 +174,9 @@ const Table = ({
                 }
               }}
             >
-              <td className="p-2 text-center">
+              {/* <td className="p-2 text-center">
                 <input type="checkbox" className="w-4 h-4" />
-              </td>
+              </td> */}
               <td className="p-2 text-center text-sm font-semibold w-50">
                 {campaign.name}
               </td>
@@ -191,35 +185,36 @@ const Table = ({
               <td className="text-center text-sm">
                 {formatDate(campaign.startDate)}
               </td>
-              <td className="text-center text-sm">
+              <td className="whitespace-nowrap text-center text-sm">
                 {formatDate(campaign.endDate)}
               </td>
-              <td className="text-center text-sm">
+              <td className="whitespace-nowrap text-center text-sm">
                 {"$" + formatNumber(campaign.budget)}
               </td>
-              <td className="text-center text-sm">
+              <td className="whitespace-nowrap text-center text-sm">
                 {"$" + formatNumber(campaign.spend)}
               </td>
-              <td className="text-center text-sm">
+              <td className="whitespace-nowrap text-center text-sm">
                 {formatNumber(campaign.impressions)}
               </td>
-              <td className="text-center text-sm">
+              <td className="whitespace-nowrap text-center text-sm">
                 {formatNumber(campaign.clicks)}
               </td>
-              <td className="text-center text-sm">
+              <td className="whitespace-nowrap text-center text-sm">
                 {((campaign.clicks / campaign.impressions) * 100).toFixed(1) +
                   "%"}
               </td>
-              <td className="text-center text-sm">
+              <td className="whitespace-nowrap text-center text-sm">
                 {formatNumber(campaign.conversions)}
               </td>
-              <td className="text-center text-sm">
+              <td className="whitespace-nowrap text-center text-sm pr-2">
                 {"$" + (campaign.spend / campaign.conversions).toFixed(2)}
               </td>
             </tr>
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

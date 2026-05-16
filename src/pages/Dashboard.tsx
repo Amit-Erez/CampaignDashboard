@@ -4,7 +4,7 @@ import { campaigns } from "../data/campaigns";
 import { type Campaign, type CampaignFilters } from "../types";
 import { useCampaignStore } from "../store/store";
 import { useEffect, useState } from "react";
-import logo from "../assets/logo4.svg";
+import logo from "../assets/logo4-home.svg";
 import Filters from "../components/Filters";
 import Table from "../components/Table";
 import Modal from "../components/Modal";
@@ -40,39 +40,34 @@ function Dashboard() {
   }, [modalOpen]);
 
   return (
-    <main className="relative h-screen w-screen bg-blue p-8 overflow-hidden">
+    <main className="relative flex h-screen w-screen bg-blue p-8 overflow-hidden">
       <div
         className={cn(
-          "h-full flex min-[960px]:grid min-[960px]:grid-cols-[220px_1fr] gap-4 text-2xl max-w-8xl mx-auto rounded-[20px]",
+          "h-full flex text-2xl w-full min-w-0 mx-auto rounded-[20px] animate-fade-in",
         )}
       >
-        <div className="rounded-[20px] pt-8 pb-8 pr-4 pl-4 mr-1 bg-[#F2F2F2] hidden min-[960px]:flex min-[960px]:flex-col items-center shadow-2xl">
-          <img
-            src={logo}
-            alt="Pulse Analytics logo"
-            className="w-34 inline-block mb-6"
-          />
-        </div>
-        <div className="rounded-[20px] bg-[#F2F2F2] flex flex-col col-span-2 md:col-2 overflow-hidden min-h-0 shadow-2xl">
-          <div className="flex items-end pt-4 pb-4 pl-6 text-4xl font-bold text-[#0E5585]">
-            {/* <img
+        <div className="rounded-[20px] bg-[#F2F2F2] flex flex-col col-span-2 md:col-2 overflow-hidden min-h-0 shadow-2xl w-full max-w-400 mx-auto">
+          <div className="flex items-center md:items-end pt-4 pb-4 pl-6 text-4xl font-bold text-[#0E5585]">
+            <img
               src={logo}
               alt="Logo"
-              className="w-34 inline-block md:hidden border-[#02252b] border-r-3 pr-1"
-            /> */}
-            <h1 className="flex text-[26px] text-[#02252b] font-semibold">
+              className="w-24 inline-block border-[#02252b] pb-1 mr-10"
+            />
+            <h1 className="flex text-[26px] md:text-[36px] font-semibold text-[#02252b]!">
               Campaign Performance Dashboard
             </h1>
           </div>
-          <div className="pl-6 pr-6 pt-4 pb-4">
+          <div className="pl-6 pr-6 pt-2 pb-4">
             <KPISection filtered={filtered} />
           </div>
+          <div className="flex justify-end">
           <Filters
             statusDropdownOpen={statusDropdownOpen}
             setStatusDropdownOpen={setStatusDropdownOpen}
             filters={filters}
           />
-          <div className="border-t border-gray-200 flex-1 min-h-0">
+          </div>
+          <div className="border-t border-gray-200 flex-1 min-h-0 min-w-0 overflow-hidden">
             <Table
               filters={filters}
               filtered={filtered}

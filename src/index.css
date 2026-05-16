@@ -5,6 +5,21 @@
   --font-sans: "Figtree", sans-serif;
 }
 
+@theme {
+  /* 1. Define the animation variable */
+  --animate-fade-in: fade-in 1s ease-out forwards;
+
+  /* 2. Define the keyframes */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
 h1 {
   color: #3a6073;
 }
@@ -22,7 +37,7 @@ h1 {
 .bg-blue {
 background: #3a7bd5;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, #58809e, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .ctr-blue {
@@ -42,5 +57,4 @@ background: linear-gradient(to left, #ebffd1, #b3ebce); /* W3C, IE 10+/ Edge, Fi
   background: #654ea3;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #eaafc8, #654ea3b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }

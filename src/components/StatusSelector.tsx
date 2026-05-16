@@ -19,7 +19,7 @@ const StatusSelector = ({
         aria-haspopup="true"
         aria-expanded={statusDropdownOpen}
         aria-controls="status-filter-menu"
-        className="cursor-pointer px-4 py-2 border border-gray-300 rounded-lg text-lg bg-white hover:bg-gray-50 flex items-center gap-2"
+        className="cursor-pointer px-4 py-1 border border-gray-300 rounded-lg text-lg bg-white hover:bg-gray-50 flex items-center gap-2"
         onClick={() => setStatusDropdownOpen((prev) => !prev)}
       >
         <span>Status</span>
@@ -42,36 +42,36 @@ const StatusSelector = ({
         id="status-filter-menu"
         className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg z-10 cursor-pointer">
           <label
-            className="flex items-center gap-2 px-4 py-3 text-lg hover:bg-gray-50 cursor-pointer border-b border-gray-200"
+            className="flex items-center gap-2 px-4 py-2 text-lg hover:bg-gray-50 cursor-pointer border-b border-gray-200"
             onClick={() => handleStatusChange(CampaignStatus.Active)}
           >
             <input
               type="checkbox"
-              className="w-5 h-5"
+              className="w-4 h-4"
               checked={filters.statuses.includes(CampaignStatus.Active)}
               readOnly
             />
             <span>Active</span>
           </label>
           <label
-            className="flex items-center gap-2 px-4 py-3 text-lg hover:bg-gray-50 cursor-pointer border-b border-gray-200"
+            className="flex items-center gap-2 px-4 py-2 text-lg hover:bg-gray-50 cursor-pointer border-b border-gray-200"
             onClick={() => handleStatusChange(CampaignStatus.Paused)}
           >
             <input
               type="checkbox"
-              className="w-5 h-5"
+              className="w-4 h-4"
               checked={filters.statuses.includes(CampaignStatus.Paused)}
               readOnly
             />
             <span>Paused</span>
           </label>
           <label
-            className="flex items-center gap-2 px-4 py-3 text-lg hover:bg-gray-50 cursor-pointer"
+            className="flex items-center gap-2 px-4 py-2 text-lg hover:bg-gray-50 cursor-pointer"
             onClick={() => handleStatusChange(CampaignStatus.Ended)}
           >
             <input
               type="checkbox"
-              className="w-5 h-5"
+              className="w-4 h-4"
               checked={filters.statuses.includes(CampaignStatus.Ended)}
               readOnly
             />

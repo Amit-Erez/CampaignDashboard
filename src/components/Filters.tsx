@@ -66,11 +66,11 @@ const Filters = ({
   }, [debouncedQuery]);
 
   return (
-    <div className="px-6 py-4 border-b border-gray-200">
-      <div className="flex flex-wrap items-center justify-end gap-6">
+    <div className="flex items-end justify-between gap-3 border-b border-gray-200 px-4 py-3">
+      <div className="flex flex-wrap items-center justify-end gap-3">
         {!noSortsOrFilters(filters, sortConfig) && (
           <button
-            className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 transition-colors cursor-pointer"
+            className="rounded-md border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50"
             onClick={() => {
               resetFilters();
               setQuery("");
@@ -79,22 +79,26 @@ const Filters = ({
             Reset
           </button>
         )}
-        {/* Search Input */}
         <SearchField query={query} setQuery={setQuery} />
-
-        {/* Channel Checkboxes */}
-        <ChannelBoxes filters={filters} />
-
-        {/* Date Range Selector */}
-        <DateSelector />
-
-        {/* Status Dropdown */}
-        <div ref={selectorRef}>
+        <div ref={selectorRef} className="block sm:hidden">
           <StatusSelector
             filters={filters}
             statusDropdownOpen={statusDropdownOpen}
             setStatusDropdownOpen={setStatusDropdownOpen}
           />
+        </div>
+
+        <ChannelBoxes filters={filters} />
+        <div className="flex">
+
+        <DateSelector />
+        <div ref={selectorRef} className="hidden sm:block ml-3">
+          <StatusSelector
+            filters={filters}
+            statusDropdownOpen={statusDropdownOpen}
+            setStatusDropdownOpen={setStatusDropdownOpen}
+          />
+        </div>
         </div>
       </div>
     </div>

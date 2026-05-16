@@ -1,4 +1,5 @@
 import { avgCtr, cn, totals } from "../lib/utils";
+import { useCampaignStore } from "../store/store";
 import type { Campaign } from "../types";
 
 // function ArrowUpRight({ className }: { className?: string }) {
@@ -33,10 +34,10 @@ import type { Campaign } from "../types";
 //   );
 // }
 
-              // ) : card.positive ? (
-              //   <ArrowUpRight className={cn("w-4 h-4", card.arrowColor)} />
-              // ) : (
-              //   <ArrowDownRight className={cn("w-4 h-4", card.arrowColor)} />
+// ) : card.positive ? (
+//   <ArrowUpRight className={cn("w-4 h-4", card.arrowColor)} />
+// ) : (
+//   <ArrowDownRight className={cn("w-4 h-4", card.arrowColor)} />
 
 function DollarIcon({ className }: { className?: string }) {
   return (
@@ -56,50 +57,57 @@ function DollarIcon({ className }: { className?: string }) {
   );
 }
 
-export function KPISection({filtered}: {filtered: Campaign[]}) {
+export function KPISection({ filtered }: { filtered: Campaign[] }) {
+  const visibleCampaigns = useCampaignStore((state) => state.visibleCampaigns);
 
   const kpiCards = [
-  {
-    label: "Total Spend",
-    value: totals(filtered, "spend"),
-    positive: false,
-    bg: "bg-gray-700",
-    arrowColor: "text-gray-400",
-    dark: true,
-  },
-  {
-    label: "Avg. CTR",
-    value: avgCtr(filtered),
-    positive: false,
-    bg: "ctr-blue",
-    arrowColor: "text-blue-800",
-    dark: false,
-  },
-  {
-    label: "Total Impressions",
-    value: totals(filtered, "impressions"),
-    positive: true,
-    bg: "imp-violet",
-    arrowColor: "text-black-500",
-    dark: false,
-  },
-  {
-    label: "Total Conversions",
-    value: totals(filtered, "conversions"),
-    positive: true,
-    bg: "conv-mint",
-    arrowColor: "text-green-500",
-    dark: false,
-  },
-] as const;
+    {
+      label: "Total Spend",
+      value: totals(filtered, "spend"),
+      positive: false,
+      bg: "bg-gray-700",
+      arrowColor: "text-gray-400",
+      dark: true,
+    },
+    {
+      label: "Avg. CTR",
+      value: avgCtr(filtered),
+      positive: false,
+      bg: "ctr-blue",
+      arrowColor: "text-blue-800",
+      dark: false,
+    },
+    {
+      label: "Total Impressions",
+      value: totals(filtered, "impressions"),
+      positive: true,
+      bg: "imp-violet",
+      arrowColor: "text-black-500",
+      dark: false,
+    },
+    {
+      label: "Total Conversions",
+      value: totals(filtered, "conversions"),
+      positive: true,
+      bg: "conv-mint",
+      arrowColor: "text-green-500",
+      dark: false,
+    },
+  ] as const;
 
   return (
     <section aria-labelledby="analytics-overview-heading" className="w-full">
-      {/* Section Header */} 
-      <div className="flex items-center justify-between mb-5">
-        <h2 id="analytics-overview-heading" className="text-xxl font-semibold text-gray-900">
-          Analytics Overview
+      {/* Section Header */}
+      <div className="flex items-center mb-5">
+        <h2
+          id="analytics-overview-heading"
+          className="text-xl sm:text-2xl font-semibold text-[#3a6073]"
+        >
+          Analytics Overview:
         </h2>
+        <p className="ml-2 text-xl sm:text-2xl font-semibold text-[#3a6073]">
+          {visibleCampaigns.length} Campaigns
+        </p>
       </div>
       {/* KPI Cards */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -107,7 +115,7 @@ export function KPISection({filtered}: {filtered: Campaign[]}) {
           <div
             key={card.label}
             className={cn(
-              "relative rounded-2xl p-5 flex flex-col justify-center sm:min-h-32.5 shadow-md",
+              "relative rounded-2xl p-5 flex flex-col justify-center sm:min-h-28 shadow-md",
               card.bg,
             )}
           >

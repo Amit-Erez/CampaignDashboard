@@ -22,7 +22,7 @@ const Landing = () => {
         <br />
         <div className="flex items-center animate-pulse">
           <img src={mylogo} alt="" aria-hidden="true" className="w-6" />
-          <p className="pl-2 text-[16px] text-[#02252b] font-semibold">
+          <p className="pl-2 text-[16px] text-[#d1d1d1] font-semibold">
             © Amit Erez 2026
           </p>
         </div>

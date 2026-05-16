@@ -67,7 +67,7 @@ export default function Modal({
                 className="text-5xl text-[#3a6073] hover:opacity-70 hover:scale-105 transition-all cursor-pointer active:scale-95"
               />
             </button>
-            <h1 className="text-4xl font-semibold">{selectedCampaign?.name}</h1>
+            <h1 className="text-center text-2xl md:text-4xl font-semibold">{selectedCampaign?.name}</h1>
             <button onClick={handleNext}>
               <FontAwesomeIcon
                 icon={faChevronRight}
@@ -76,8 +76,8 @@ export default function Modal({
             </button>
           </div>
           <div className="flex-1 min-h-0 overflow-y-auto mt-6 rounded-xl">
-            <div className="grid h-full grid-cols-[2fr_1fr] gap-4">
-              <div className="flex h-full flex-col gap-4">
+            <div className="grid h-full grid-cols-1 md:grid-cols-[2fr_1fr] gap-4">
+              <div className="flex h-full flex-col gap-4 order-2 md:order-1">
                 <div className="flex-1 rounded-2xl border border-[#3a6073]/20 bg-white/70 p-5 shadow-sm">
                   <h2 className="text-xl font-semibold text-[#294f63]">
                     Spend Over Time
@@ -91,7 +91,7 @@ export default function Modal({
                 </div>
               </div>
 
-              <div className="flex h-full flex-col gap-4">
+              <div className="flex h-full flex-col gap-4 order-1 md:order-2">
                 <div className="rounded-2xl border border-[#3a6073]/20 bg-white/70 p-5 shadow-sm">
                   <h2 className="mb-4 text-xl font-semibold text-[#294f63]">
                     Details
