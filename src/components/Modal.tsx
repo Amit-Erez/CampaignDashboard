@@ -14,6 +14,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { formatDate, formatNumber } from "../lib/utils";
 import type { CampaignChannel } from "../types";
+import SpendLineChart from "./SpendLineChart";
+import TrafficBarChart from "./TrafficBarChart";
 
 export default function Modal({
   modalOpen,
@@ -76,22 +78,24 @@ export default function Modal({
             </button>
           </div>
           <div className="flex-1 min-h-0 overflow-y-auto mt-6 rounded-xl">
-            <div className="grid h-full grid-cols-1 md:grid-cols-[2fr_1fr] gap-4">
-              <div className="flex h-full flex-col gap-4 order-2 md:order-1">
+            <div className="grid h-full grid-cols-1 min-[980px]:grid-cols-[2fr_1fr] gap-4">
+              <div className="flex h-full flex-col gap-4 order-2 min-[980px]:order-1">
                 <div className="flex-1 rounded-2xl border border-[#3a6073]/20 bg-white/70 p-5 shadow-sm">
                   <h2 className="text-xl font-semibold text-[#294f63]">
                     Spend Over Time
                   </h2>
+                  <SpendLineChart selectedCampaign={selectedCampaign} />
                 </div>
 
                 <div className="flex-1 rounded-2xl border border-[#3a6073]/20 bg-white/70 p-5 shadow-sm">
                   <h2 className="text-xl font-semibold text-[#294f63]">
                     Impressions vs. Clicks
                   </h2>
+                  <TrafficBarChart selectedCampaign={selectedCampaign} />
                 </div>
               </div>
 
-              <div className="flex h-full flex-col gap-4 order-1 md:order-2">
+              <div className="flex h-full flex-col gap-4 order-1 min-[980px]:order-2">
                 <div className="rounded-2xl border border-[#3a6073]/20 bg-white/70 p-5 shadow-sm">
                   <h2 className="mb-4 text-xl font-semibold text-[#294f63]">
                     Details
