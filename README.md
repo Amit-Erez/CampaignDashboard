@@ -31,7 +31,9 @@ LIVE DEMO: https://ae-pulse.vercel.app/
 - Vite
 - Tailwind CSS
 - Zustand
+  ** Zustand over Redux, because the filter and sort state maps cleanly to independent slices without boilerplate overhead.
 - Recharts
+  ** Recharts over Chart.js, because it is built as React components and integrates directly with the component tree without imperative DOM manipulation
 - Radix UI Dialog
 - Vitest
 - jsdom
@@ -111,14 +113,18 @@ The dashboard includes accessibility considerations such as:
 
 ## Testing
 
-Vitest is used to test core utility logic, including:
+The project currently includes 39 unit tests covering:
 
-- sort encoding / decoding
-- URL filter updates
-- URL sort updates
-- preserving existing query parameters
-- clearing inactive filters from the URL
-- Running Locally
+- all filter utility functions
+- layered multi-sort logic
+- computed sorting behavior
+- URL encoding / decoding
+- URL synchronization updates
+- edge cases such as null dates, empty filters, whitespace trimming, and preserving existing query parameters
+
+Testing is implemented with Vitest and jsdom.
+
+Future improvements include integration tests for filter panel interactions and modal behavior using React Testing Library.
 
 ## Install dependencies:
 
