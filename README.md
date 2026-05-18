@@ -95,30 +95,28 @@ A local Node script distributes campaign totals across weekly buckets with contr
 
 ### 5. Responsive Dashboard Layout
 
-The dashboard uses a responsive layout that keeps the main app shell stable while allowing dense table data to scroll horizontally on smaller screens.
-
-This prevents table columns from becoming unreadably compressed while preserving the overall page spacing and layout.
+The dashboard uses a responsive layout that keeps the main app shell stable while allowing dense table data to scroll horizontally on smaller screens. This prevents table columns from becoming unreadably compressed while preserving the overall page spacing and layout.
 
 ### 6. Accessibility
 
 The dashboard includes accessibility considerations such as:
 
--semantic table structure
--keyboard-accessible sorting controls
--ARIA sorting attributes
--accessible modal dialog behavior using Radix UI
--keyboard navigation for interactive rows and controls
+- semantic table structure
+- keyboard-accessible sorting controls
+- ARIA sorting attributes
+- accessible modal dialog behavior using Radix UI
+- keyboard navigation for interactive rows and controls
 
 ## Testing
 
 Vitest is used to test core utility logic, including:
 
-sort encoding / decoding
-URL filter updates
-URL sort updates
-preserving existing query parameters
-clearing inactive filters from the URL
-Running Locally
+- sort encoding / decoding
+- URL filter updates
+- URL sort updates
+- preserving existing query parameters
+- clearing inactive filters from the URL
+- Running Locally
 
 ## Install dependencies:
 
@@ -135,9 +133,11 @@ npm run test
 
 ## Future Improvements:
 
-Additional campaign comparison charts
-Saved dashboard views
-API integration
-Expanded test coverage
-Improved mobile filter UX
-Campaign selection and bulk actions
+- Additional campaign comparison charts
+- Saved dashboard views
+- API integration
+- Expanded test coverage
+- Improved mobile filter UX
+- Campaign selection and bulk actions
+
+
