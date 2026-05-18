@@ -34,7 +34,20 @@ const testsArray: Campaign[] = [
     conversions: 10,
     spend: 500,
     budget: 6000,
-  },
+    weeklyMetrics: [
+     {
+        "weekStart": "2026-01-07",
+        "spend": 151.52,
+        "impressions": 7245,
+        "clicks": 1764
+      },
+      {
+        "weekStart": "2026-01-14",
+        "spend": 241.94,
+        "impressions": 11569,
+        "clicks": 2817
+      }],
+    },
   {
     id: "2",
     name: "Blue Campaign",
@@ -47,6 +60,25 @@ const testsArray: Campaign[] = [
     conversions: 10,
     spend: 800,
     budget: 2000,
+    weeklyMetrics: [
+     {
+        "weekStart": "2026-03-29",
+        "spend": 62.49,
+        "impressions": 4585,
+        "clicks": 2169
+      },
+      {
+        "weekStart": "2026-04-05",
+        "spend": 58.83,
+        "impressions": 4317,
+        "clicks": 2042
+      },
+      {
+        "weekStart": "2026-04-12",
+        "spend": 68.45,
+        "impressions": 5023,
+        "clicks": 2376
+      }],
   },
   {
     id: "3",
@@ -60,6 +92,13 @@ const testsArray: Campaign[] = [
     conversions: 10,
     spend: 900,
     budget: 4000,
+    weeklyMetrics: [
+     {
+        "weekStart": "2026-06-21",
+        "spend": 53.97,
+        "impressions": 3960,
+        "clicks": 1873
+      }],
   },
   {
     id: "4",
@@ -73,6 +112,19 @@ const testsArray: Campaign[] = [
     conversions: 10,
     spend: 300,
     budget: 1000,
+    weeklyMetrics: [
+      {
+        "weekStart": "2025-11-15",
+        "spend": 3076.38,
+        "impressions": 22928,
+        "clicks": 9268
+      },
+      {
+        "weekStart": "2025-11-22",
+        "spend": 2245.11,
+        "impressions": 16733,
+        "clicks": 6764
+      }],
   },
 ];
 
