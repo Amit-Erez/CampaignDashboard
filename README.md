@@ -3,6 +3,8 @@
 Pulse is a frontend analytics dashboard for ad campaign data, built for the kind of reporting workflows 
 that digital agencies and marketing teams deal with every day.
 
+LIVE DEMO: https://ae-pulse.vercel.app/ 
+
 ## Preview
 
 ![Pulse Dashboard Preview](./assets/mainScreen.png)
