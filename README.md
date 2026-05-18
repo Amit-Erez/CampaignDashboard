@@ -30,11 +30,11 @@ LIVE DEMO: https://ae-pulse.vercel.app/
 - TypeScript
 - Vite
 - Tailwind CSS
-- Zustand
-  ** Zustand over Redux, because the filter and sort state maps cleanly to independent slices without boilerplate overhead.
-- Recharts
-  ** Recharts over Chart.js, because it is built as React components and integrates directly with the component tree without imperative DOM manipulation
+- Zustand: 
+  I chose Zustand over Redux, because the filter and sort state maps cleanly to independent slices without boilerplate overhead.
 - Radix UI Dialog
+- Recharts: 
+  I chose Recharts over Chart.js, because it is built as React components and integrates directly with the component tree without imperative DOM manipulation.
 - Vitest
 - jsdom
 
