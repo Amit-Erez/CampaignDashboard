@@ -15,6 +15,8 @@ const Landing = () => {
         >
           <img
             src={logo}
+            width={96}
+            height={96}
             alt="Pulse Analytics logo"
             className="w-200 inline-block mb-6 animate-pulse cursor-pointer"
           />

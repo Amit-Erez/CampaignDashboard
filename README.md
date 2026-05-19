@@ -101,7 +101,7 @@ A local Node script distributes campaign totals across weekly buckets with contr
 
 The dashboard uses a responsive layout that keeps the main app shell stable while allowing dense table data to scroll horizontally on smaller screens. This prevents table columns from becoming unreadably compressed while preserving the overall page spacing and layout.
 
-### 6. Accessibility
+### 6. Accessibility & Quality Validation
 
 The dashboard includes accessibility considerations such as:
 
@@ -112,7 +112,13 @@ The dashboard includes accessibility considerations such as:
 - keyboard navigation for interactive rows and controls
 - accessible labeling for icon-only buttons
 - WCAG-compliant color contrast adjustments
-- axe DevTools validation with zero WCAG 2.1 AA violations detected
+
+Accessibility was validated using axe DevTools with zero WCAG 2.1 AA violations detected in both the dashboard and modal flows.
+
+Lighthouse testing achieved:
+
+- Desktop: 99 Performance / 100 Accessibility / 100 Best Practices / 100 SEO
+- Mobile: 95 Performance / 100 Accessibility / 100 Best Practices / 100 SEO
 
 ## Testing
 

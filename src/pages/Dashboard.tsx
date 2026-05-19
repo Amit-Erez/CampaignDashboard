@@ -51,6 +51,8 @@ function Dashboard() {
             <img
               src={logo}
               alt="Logo"
+              width={96}
+              height={96}
               className="w-24 inline-block border-[#02252b] pb-1 mr-10"
             />
             <h1 className="flex text-[26px] md:text-[36px] font-semibold text-[#02252b]!">
@@ -61,11 +63,11 @@ function Dashboard() {
             <KPISection filtered={filtered} />
           </div>
           <div className="flex justify-end">
-          <Filters
-            statusDropdownOpen={statusDropdownOpen}
-            setStatusDropdownOpen={setStatusDropdownOpen}
-            filters={filters}
-          />
+            <Filters
+              statusDropdownOpen={statusDropdownOpen}
+              setStatusDropdownOpen={setStatusDropdownOpen}
+              filters={filters}
+            />
           </div>
           <div className="border-t border-gray-200 flex-1 min-h-0 min-w-0 overflow-hidden">
             <Table
