@@ -110,6 +110,9 @@ The dashboard includes accessibility considerations such as:
 - ARIA sorting attributes
 - accessible modal dialog behavior using Radix UI
 - keyboard navigation for interactive rows and controls
+- accessible labeling for icon-only buttons
+- WCAG-compliant color contrast adjustments
+- axe DevTools validation with zero WCAG 2.1 AA violations detected
 
 ## Testing
 

@@ -46,7 +46,7 @@ export default function Modal({
     );
   }
 
-  function channelLogos(channel: CampaignChannel){
+  function channelLogos(channel: CampaignChannel) {
     if (channel === "Meta") return <FontAwesomeIcon icon={faMeta} />;
     if (channel === "LinkedIn") return <FontAwesomeIcon icon={faLinkedin} />;
     if (channel === "Google") return <FontAwesomeIcon icon={faGoogle} />;
@@ -63,14 +63,24 @@ export default function Modal({
             Detailed analytics and campaign performance metrics.
           </Dialog.Description>
           <div className="flex items-center justify-between w-full h-20 p-6 mt-4 animate-fade-in">
-            <button onClick={handlePrev}>
+            <button
+              type="button"
+              aria-label="Previous campaign"
+              onClick={handlePrev}
+            >
               <FontAwesomeIcon
                 icon={faChevronLeft}
                 className="text-5xl text-[#3a6073] hover:opacity-70 hover:scale-105 transition-all cursor-pointer active:scale-95"
               />
             </button>
-            <h1 className="text-center text-2xl md:text-4xl font-semibold">{selectedCampaign?.name}</h1>
-            <button onClick={handleNext}>
+            <h1 className="text-center text-2xl md:text-4xl font-semibold">
+              {selectedCampaign?.name}
+            </h1>
+            <button
+              type="button"
+              aria-label="Next campaign"
+              onClick={handleNext}
+            >
               <FontAwesomeIcon
                 icon={faChevronRight}
                 className="text-5xl text-[#3a6073] hover:opacity-70 hover:scale-105 transition-all cursor-pointer active:scale-95"
@@ -109,8 +119,8 @@ export default function Modal({
                           selectedCampaign.status === "Ended"
                             ? "bg-red-200 text-red-700"
                             : selectedCampaign.status === "Paused"
-                              ? "bg-amber-200 text-amber-700"
-                              : "bg-green-200 text-green-700"
+                              ? "bg-amber-100 text-red-800"
+                              : "bg-green-100 text-green-900"
                         } px-3 py-1 text-sm font-semibold text-[#294f63]`}
                       >
                         {selectedCampaign.status}
@@ -120,12 +130,12 @@ export default function Modal({
                     <div className="flex items-center justify-between">
                       <span className="text-sm text-slate-500">Channel</span>
                       <div className="flex items-center gap-2">
-                      <span className="flex items-center gap-2 rounded-full bg-blue-100 px-3 py-1 text-[16px] font-semibold text-blue-700">
-                        <figure className="flex items-center text-blue-700">
-                      {channelLogos(selectedCampaign.channel)}
-                        </figure>
-                        {selectedCampaign.channel}
-                      </span>
+                        <span className="flex items-center gap-2 rounded-full bg-blue-100 px-3 py-1 text-[16px] font-semibold text-blue-700">
+                          <figure className="flex items-center text-blue-700">
+                            {channelLogos(selectedCampaign.channel)}
+                          </figure>
+                          {selectedCampaign.channel}
+                        </span>
                       </div>
                     </div>
 
@@ -218,7 +228,7 @@ export default function Modal({
           </div>
 
           <Dialog.Close asChild className="absolute top-4 right-4">
-            <button>
+            <button type="button" aria-label="Close campaign details">
               <FontAwesomeIcon
                 icon={faArrowRightFromBracket}
                 className="text-2xl text-[#3a6073] hover:opacity-70 transition-all cursor-pointer"
