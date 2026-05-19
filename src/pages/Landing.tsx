@@ -18,7 +18,7 @@ const Landing = () => {
             width={96}
             height={96}
             alt="Pulse Analytics logo"
-            className="w-200 inline-block mb-6 animate-pulse cursor-pointer"
+            className="w-80 min-[800px]:w-200 inline-block mb-6 animate-pulse cursor-pointer"
           />
         </button>
         <br />
