@@ -76,31 +76,23 @@ const Filters = ({
               setQuery("");
             }}
           >
-<span className="hidden min-[455px]:inline">Reset</span>
-<span className="inline min-[455px]:hidden">R</span>
+            <span className="hidden min-[455px]:inline">Reset</span>
+            <span className="inline min-[455px]:hidden">R</span>
           </button>
         )}
         <SearchField query={query} setQuery={setQuery} />
-        <div ref={selectorRef} className="block sm:hidden">
-          <StatusSelector
-            filters={filters}
-            statusDropdownOpen={statusDropdownOpen}
-            setStatusDropdownOpen={setStatusDropdownOpen}
-          />
-        </div>
 
         <ChannelBoxes filters={filters} />
-        <div className="flex">
 
-        <DateSelector />
-        <div ref={selectorRef} className="hidden sm:block ml-3">
-          <StatusSelector
-            filters={filters}
-            statusDropdownOpen={statusDropdownOpen}
-            setStatusDropdownOpen={setStatusDropdownOpen}
-          />
-        </div>
-        </div>
+          <DateSelector />
+          
+          <div ref={selectorRef} className="order-first sm:order-0 ml-3">
+            <StatusSelector
+              filters={filters}
+              statusDropdownOpen={statusDropdownOpen}
+              setStatusDropdownOpen={setStatusDropdownOpen}
+            />
+          </div>
       </div>
     </div>
   );

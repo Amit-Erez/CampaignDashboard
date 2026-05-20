@@ -10,7 +10,6 @@ const StatusSelector = ({
   setStatusDropdownOpen: React.Dispatch<React.SetStateAction<boolean>>;
   filters: CampaignFilters;
 }) => {
-  // to do - add 'click outside to close dropdown'
 
   return (
     <div className="relative group z-1000">
@@ -23,7 +22,7 @@ const StatusSelector = ({
         onClick={() => setStatusDropdownOpen((prev) => !prev)}
       >
         <span className="hidden min-[455px]:inline">Status</span>
-<span className="inline min-[455px]:hidden">ST</span>
+        <span className="inline min-[455px]:hidden">ST</span>
         <svg
           className="w-4 h-4"
           fill="none"
@@ -39,42 +38,34 @@ const StatusSelector = ({
         </svg>
       </button>
       {statusDropdownOpen && (
-        <div 
-        id="status-filter-menu"
-        className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg z-10 cursor-pointer">
-          <label
-            className="flex items-center gap-2 px-4 py-2 text-lg hover:bg-gray-50 cursor-pointer border-b border-gray-200"
-            onClick={() => handleStatusChange(CampaignStatus.Active)}
-          >
+        <div
+          id="status-filter-menu"
+          className="absolute sm:right-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg z-10 cursor-pointer"
+        >
+          <label className="flex items-center gap-2 px-4 py-2 text-lg hover:bg-gray-50 cursor-pointer border-b border-gray-200">
             <input
               type="checkbox"
               className="w-4 h-4"
               checked={filters.statuses.includes(CampaignStatus.Active)}
-              readOnly
+              onChange={() => handleStatusChange(CampaignStatus.Active)}
             />
             <span>Active</span>
           </label>
-          <label
-            className="flex items-center gap-2 px-4 py-2 text-lg hover:bg-gray-50 cursor-pointer border-b border-gray-200"
-            onClick={() => handleStatusChange(CampaignStatus.Paused)}
-          >
+          <label className="flex items-center gap-2 px-4 py-2 text-lg hover:bg-gray-50 cursor-pointer border-b border-gray-200">
             <input
               type="checkbox"
               className="w-4 h-4"
               checked={filters.statuses.includes(CampaignStatus.Paused)}
-              readOnly
+              onChange={() => handleStatusChange(CampaignStatus.Paused)}
             />
             <span>Paused</span>
           </label>
-          <label
-            className="flex items-center gap-2 px-4 py-2 text-lg hover:bg-gray-50 cursor-pointer"
-            onClick={() => handleStatusChange(CampaignStatus.Ended)}
-          >
+          <label className="flex items-center gap-2 px-4 py-2 text-lg hover:bg-gray-50 cursor-pointer">
             <input
               type="checkbox"
               className="w-4 h-4"
               checked={filters.statuses.includes(CampaignStatus.Ended)}
-              readOnly
+              onChange={() => handleStatusChange(CampaignStatus.Ended)}
             />
             <span>Ended</span>
           </label>
