@@ -66,17 +66,18 @@ const Filters = ({
   }, [debouncedQuery]);
 
   return (
-    <div className="flex items-end justify-between gap-3 border-b border-gray-200 px-4 py-3">
-      <div className="flex flex-wrap items-center justify-end gap-3">
+    <div className="w-full flex items-end justify-between gap-3 border-b border-gray-200 px-4 py-3">
+      <div className="w-full flex flex-wrap items-center justify-center sm:justify-end gap-3">
         {!noSortsOrFilters(filters, sortConfig) && (
           <button
-            className="rounded-md border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50"
+            className="rounded-md border border-gray-300 bg-red-200 px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 cursor-pointer"
             onClick={() => {
               resetFilters();
               setQuery("");
             }}
           >
-            Reset
+<span className="hidden min-[455px]:inline">Reset</span>
+<span className="inline min-[455px]:hidden">R</span>
           </button>
         )}
         <SearchField query={query} setQuery={setQuery} />

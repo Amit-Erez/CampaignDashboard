@@ -40,14 +40,14 @@ function Dashboard() {
   }, [modalOpen]);
 
   return (
-    <main className="relative flex h-screen w-screen bg-blue p-8 overflow-hidden">
+    <main className="relative flex sm:h-screen w-full bg-blue p-4 sm:p-8 overflow-hidden">
       <div
         className={cn(
           "h-full flex text-2xl w-full min-w-0 mx-auto rounded-[20px] animate-fade-in",
         )}
       >
         <div className="rounded-[20px] bg-[#F2F2F2] flex flex-col col-span-2 md:col-2 overflow-hidden min-h-0 shadow-2xl w-full max-w-400 mx-auto">
-          <div className="flex items-center md:items-end pt-4 pb-4 pl-6 text-4xl font-bold text-[#0E5585]">
+          <div className="flex items-center md:items-end pt-4 sm:pb-4 pl-6 text-4xl font-bold text-[#0E5585]">
             <img
               src={logo}
               alt="Logo"
@@ -55,7 +55,7 @@ function Dashboard() {
               height={96}
               className="w-24 inline-block border-[#02252b] pb-1 mr-10"
             />
-            <h1 className="flex text-[26px] md:text-[36px] font-semibold text-[#02252b]!">
+            <h1 className="flex text-[16px] sm:text-[26px] md:text-[36px] font-semibold text-[#02252b]!">
               Campaign Performance Dashboard
             </h1>
           </div>

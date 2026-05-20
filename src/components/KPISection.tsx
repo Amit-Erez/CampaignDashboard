@@ -98,7 +98,18 @@ export function KPISection({ filtered }: { filtered: Campaign[] }) {
   return (
     <section aria-labelledby="analytics-overview-heading" className="w-full">
       {/* Section Header */}
-      <div className="flex items-center mb-5">
+      <div className="flex justify-center sm:hidden items-center mb-2">
+        <h2
+          id="analytics-overview-heading"
+          className="text-[16px] font-semibold text-[#3a6073]"
+        >
+          Analytics Overview:
+        </h2>
+        <p className="ml-2 text-[16px] font-semibold text-[#3a6073]">
+          {visibleCampaigns.length} Campaigns
+        </p>
+      </div>
+      <div className="hidden sm:flex items-center mb-5">
         <h2
           id="analytics-overview-heading"
           className="text-xl sm:text-2xl font-semibold text-[#3a6073]"
@@ -115,7 +126,7 @@ export function KPISection({ filtered }: { filtered: Campaign[] }) {
           <div
             key={card.label}
             className={cn(
-              "relative rounded-2xl p-5 flex flex-col justify-center sm:min-h-28 shadow-md",
+              "relative rounded-2xl p-5 flex flex-col justify-center h-16 sm:min-h-28 shadow-md",
               card.bg,
             )}
           >
@@ -132,7 +143,7 @@ export function KPISection({ filtered }: { filtered: Campaign[] }) {
             <div>
               <p
                 className={cn(
-                  "text-3xl font-bold tracking-tight",
+                  "text-sm sm:text-3xl font-bold tracking-tight",
                   "dark" in card && card.dark ? "text-white" : "text-stone-800",
                 )}
               >
@@ -140,7 +151,7 @@ export function KPISection({ filtered }: { filtered: Campaign[] }) {
               </p>
               <p
                 className={cn(
-                  "text-sm font-medium mt-1",
+                  "text-sm font-medium sm:mt-1",
                   "dark" in card && card.dark
                     ? "text-gray-300"
                     : "text-stone-800",

@@ -22,7 +22,8 @@ const StatusSelector = ({
         className="cursor-pointer px-4 py-1 border border-gray-300 rounded-lg text-lg bg-white hover:bg-gray-50 flex items-center gap-2"
         onClick={() => setStatusDropdownOpen((prev) => !prev)}
       >
-        <span>Status</span>
+        <span className="hidden min-[455px]:inline">Status</span>
+<span className="inline min-[455px]:hidden">ST</span>
         <svg
           className="w-4 h-4"
           fill="none"
